@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-09T23:10:57+03:00
+
+====== modules ======
+Created Суббота 09 Июль 2016
+
+**list ol function in module:**
+dir(module)
+help(module)

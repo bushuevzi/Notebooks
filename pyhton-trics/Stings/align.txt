@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-21T00:30:13+03:00
+
+====== align ======
+Created Вторник 21 Июнь 2016
+
+string.ljust(width_int, '.') — align by left (fill '.' on right)
+string.rjust(width_int, '*') — align by right (fill '*' on left)
+string.center(width_int, '-') — align by center (fill '-' on both sides -left and right)

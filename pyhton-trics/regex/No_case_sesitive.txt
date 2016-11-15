@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-01T00:07:57+03:00
+
+====== No case sesitive ======
+Created Пятница 01 Июль 2016
+
+re.IGNORECASE or re.I as a second argument to re.compile() make case insensitive

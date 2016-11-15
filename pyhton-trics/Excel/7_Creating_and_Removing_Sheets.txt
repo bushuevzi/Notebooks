@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T01:37:06+03:00
+
+====== 7 Creating and Removing Sheets ======
+Created Воскресенье 10 Июль 2016
+**Creating sheets:**
+In [73]: wb.create_sheet()
+Out[73]: <Worksheet "Sheet">
+
+In [74]: wb.get_sheet_names()
+Out[74]: ['Spam Bacon Eggs Sheet', 'Sheet']
+
+In [75]: wb.create_sheet(index=0, title='First Sheet')
+Out[75]: <Worksheet "First Sheet">
+
+In [76]: wb.get_sheet_names()
+Out[76]: ['First Sheet', 'Spam Bacon Eggs Sheet', 'Sheet']
+
+In [77]: wb.create_sheet(index=2, title='Middle Sheet')
+Out[77]: <Worksheet "Middle Sheet">
+
+In [78]: wb.get_sheet_names()
+Out[78]: ['First Sheet', 'Spam Bacon Eggs Sheet', 'Middle Sheet', 'Sheet']
+----------------------------------------------------------------------------------------------------------------------------------
+**remove sheet:**
+In [78]: wb.get_sheet_names()
+Out[78]: ['First Sheet', 'Spam Bacon Eggs Sheet', 'Middle Sheet', 'Sheet']
+
+In [79]: wb.remove_sheet(wb.get_sheet_by_name('Middle Sheet'))
+
+In [80]: wb.remove_sheet(wb.get_sheet_by_name('Sheet'))
+
+In [81]: wb.get_sheet_names()
+Out[81]: ['First Sheet', 'Spam Bacon Eggs Sheet']

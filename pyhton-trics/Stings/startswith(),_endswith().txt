@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-21T00:47:15+03:00
+
+====== startswith(), endswith() ======
+Created Вторник 21 Июнь 2016
+
+>>> 'Hello world!'.startswith('Hello')
+True
+>>> 'Hello world!'.endswith('world!')
+True

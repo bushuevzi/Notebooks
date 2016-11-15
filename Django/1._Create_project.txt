@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-25T09:55:44+03:00
+
+====== 1. Create project ======
+Created четверг 25 Август 2016
+
+
+Run the command **django-admin.py startproject mysite** to create a mysite directory in your current directory.
+
+· **__init__.py**: A file required for Python treat the directory as a package (i.e., a group of modules)
+· **manage.py**: A command-line utility that lets you interact with this Django project in various ways
+· **settings.py**: Settings/configuration for this Django project
+· **urls.py**: The URL declarations for this Django project; a “table of contents” of your
+Django-powered site

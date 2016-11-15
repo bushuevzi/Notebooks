@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-25T22:45:08+03:00
+
+====== 7.1.2. Search template ======
+Created Воскресенье 25 Сентябрь 2016
+
+{{./pasted_image.png}}

@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T22:31:01+03:00
+
+====== 14 CARTS ======
+Created Воскресенье 10 Июль 2016
+
+To make a chart, you need to do the following:
+1. Create a //Reference// object from a rectangular selection of cells.
+2. Create a //Series// object by passing in the //Reference// object.
+3. Create a //Chart// object.
+4. Append the Series object to the //Chart// object.
+5. Optionally, set the //drawing.top , drawing.left , drawing.width// , and
+//drawing.height// variables of the Chart object.
+6. Add the Chart object to the Worksheet object.

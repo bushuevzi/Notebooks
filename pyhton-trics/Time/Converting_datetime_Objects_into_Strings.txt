@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T01:16:30+03:00
+
+====== Converting datetime Objects into Strings ======
+Created Четверг 11 Август 2016
+
+Use the strftime() method to display a datetime object as a string. (The f in the name of the strftime() function stands for format.)
+
+In [39]: import datetime
+In [43]: aus11st = datetime.datetime(2016,8,11,21,30,0)
+
+In [44]: aus11st.strftime('%Y/%m/%d %H:%M:%S')
+Out[44]: '2016/08/11 21:30:00'
+
+In [45]: aus11st.strftime('%I:%M %p')
+Out[45]: '09:30 PM'
+
+In [46]: aus11st.strftime("%B of '%y")
+Out[46]: "August of '16"
+
+{{./pasted_image.png}}

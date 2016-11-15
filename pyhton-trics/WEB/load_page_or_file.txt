@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-05T00:36:40+03:00
+
+====== load page or file ======
+Created Вторник 05 Июль 2016
+
+In [8]: import requests 
+
+In [9]: res = requests.get('http://www.gutenberg.org/cache/epub/1112/pg1112.txt')
+
+In [10]: res.status_code
+Out[10]: 200
+In [14]: res.status_code == requests.codes.OK
+Out[14]: True
+
+In [15]: len(res.text)
+Out[15]: 178981
+
+In [16]: print(res.text[:250])
+The Project Gutenberg EBook of Romeo and Juliet, by William Shakespeare
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Proje

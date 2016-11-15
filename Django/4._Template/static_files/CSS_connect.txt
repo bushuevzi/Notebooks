@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-04T23:14:41+03:00
+
+====== CSS connect ======
+Created Вторник 04 Октябрь 2016
+
+css - static file. For connect:
+1. in settings.py:
+	 INSTALLED_APPS = ... 'django.contrib.staticfiles',
+	
+	STATIC_URL = '/static/'
+	STATICFILES_DIRS = [
+		os.path.join(os.path.dirname(__file__), 'static').replace('\\', '/'),
+		#'/media/dev/MULTIBOOT/Notebooks/python_progs/sites/mysite/mysite/static',
+	]
+
+2. in template file:
+{{./pasted_image.png}}
+
+

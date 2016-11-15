@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-29T19:49:37+03:00
+
+====== dictionarys ======
+Created Суббота 29 Октябрь 2016
+
+{{./pasted_image001.png}}
+In [28]: menu_characteristics = {"Общие параметры": ["Тип", "Модель", "Год релиза"]}
+
+{{./pasted_image002.png}}

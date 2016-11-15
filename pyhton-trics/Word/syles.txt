@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-11T00:48:00+03:00
+
+====== styles ======
+Created Понедельник 11 Июль 2016
+
+{{./pasted_image.png}}When using a linked style for a Run object, you will need to add 'Char' to the end of its name. For example, to set the Quote linked style for a Paragraph object, you would use **paragraphObj.style = 'Quote'** , but for a Run object, you would use **runObj.style = 'QuoteChar'**

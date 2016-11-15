@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T19:25:01+03:00
+
+====== 10 Formulas ======
+Created Воскресенье 10 Июль 2016
+
+In [35]: import openpyxl
+In [36]: wb = openpyxl.Workbook()
+In [37]: sheet = wb.active
+In [38]: sheet['A1'] = 200
+In [39]: sheet['A2'] = 300
+**In [40]: sheet['A3'] = '=SUM(A1:A2)'**
+In [41]: wb.save('writeFormula.xlsx')
+----------------------------------------------------------------------------------------------------------------------------------
+**show Data not literal formulas:**
+
+

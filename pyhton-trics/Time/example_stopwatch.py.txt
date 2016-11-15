@@ -1,0 +1,53 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T00:15:30+03:00
+
+====== example stopwatch.py ======
+Created Четверг 11 Август 2016
+
+#!/usr/share/anaconda3/bin/python3.5
+  2 # -*- coding: utf-8 -*-
+  3 """
+  4 Created on Wed May  4 00:56:42 2016
+  5 
+  6 @author: root
+  7 """
+  8 ########################
+  9 # import block
+ 10 ########################
+ 11 
+ 12 import time
+ 13 
+ 14 ########################
+ 15 # def block
+ 16 ########################
+ 17 
+ 18 ########################
+ 19 # main block
+ 20 ########################
+ 21 def main():
+ 22     # Display the program's instructions.
+ 23     print('Press ENTER to begin. afterwards, press ENTER to "click"  the stopwatch. Press Ctrl-C to quit.')
+ 24     input()
+ 25     print('Started.')
+ 26     startTime = time.time()
+ 27     lastTime = startTime
+ 28     lapNum = 1
+ 29 
+ 30     # Start tracking the lap times.
+ 31     try:
+ 32         while True:
+ 33             input()
+ 34             lapTime = round(time.time() - lastTime,2)
+ 35             totalTime = round(time.time() - startTime, 2)
+ 36             print('Lap #%s: %s (%s)' %(lapNum, totalTime, lapTime), end='')
+ 37             lapNum += 1
+ 38             lastTime = time.time() # reset the last lap time
+ 39     except KeyboardInterrupt:
+ 40         # Handle the Ctrl-C exveption to keep its error message from displaying 
+ 41         print('\nDone.')
+ 42 
+ 43 
+ 44 
+ 45 if __name__ == '__main__':
+ 46     main()

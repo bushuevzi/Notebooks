@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-19T23:08:38+03:00
+
+====== 4.1. Filtering Data ======
+Created Понедельник 19 Сентябрь 2016
+
+In [29]: Publisher.objects.filter(name='Apress Publishing')
+Out[29]: <QuerySet [<Publisher: Apress Publishing>]>
+
+In [30]: Publisher.objects.filter(country="U.S.A.", state_province="CA")
+Out[30]: <QuerySet [<Publisher: Apress Publishing>]>
+
+
+**LIKE:**
+In [31]: Publisher.objects.filter(name**__contains**="press")
+Out[31]: <QuerySet [<Publisher: Apress Publishing>]>
+
+In [35]: Publisher.objects.filter(name**__contains**="Reil")
+Out[35]: <QuerySet [<Publisher: O'Reilly>]>
+
+**icontains** (case-insensitive LIKE), **startswith**
+and **endswith**, and **range** (SQL BETWEEN queries)

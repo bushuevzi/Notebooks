@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-08T11:46:45+03:00
+
+====== dedublicate ======
+Created понедельник 08 Август 2016
+
+**for lists, couples, sets:**
+In [27]: a
+Out[27]: [1, 5, 2, 1, 9, 1, 5, 10]
+
+In [28]: set(a)
+Out[28]: {1, 2, 5, 9, 10}
+In [29]: list(set(a))
+Out[29]: [1, 2, 10, 5, 9]
+
+**OR**
+
+In [18]: def dedupe(items):
+   ....:     seen = set()
+   ....:     for item in items:
+   ....:         if item not in seen:
+   ....:             yield item
+   ....:             seen.add(item)
+
+In [19]: a = [1,5,2,1,9,1,5,10]
+In [20]: list(dedupe(a))
+Out[20]: [1, 5, 2, 9, 10]
+-----------------------------------------------------------------------------------------------------------------------------
+**for dictionaries:**
+In [21]: def dedupe(items, key = None):
+   ....:     seen = set()
+   ....:     for item in items:
+   ....:         val = item if key is None else key(item)
+   ....:         if val not in seen:
+   ....:             yield item
+   ....:             seen.add(val)
+
+In [22]: a = [{'x':1, 'y': 2}, {'x': 1, 'y':3}, {'x':1,'y':2}, {'x':2,'y':4}]
+In [23]: list(dedupe(a, key = lambda d: (d['x'], d['y'])))
+Out[23]: [{'x': 1, 'y': 2}, {'x': 1, 'y': 3}, {'x': 2, 'y': 4}]
+
+In [25]: list(dedupe(a, key = lambda d: d['x']))
+Out[25]: [{'x': 1, 'y': 2}, {'x': 2, 'y': 4}]
+
+if you want to read a file, eliminating duplicate lines, you could simply do this:
+	with open(somefile,'r') as f:
+	for line in dedupe(f):
+	...
+

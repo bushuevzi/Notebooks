@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-10T21:49:20+03:00
+
+====== filtrating ======
+Created Четверг 10 Ноябрь 2016
+
+{{./pasted_image.png}}
+The Query object is fully generative, meaning that most method calls return a new Query object upon which further criteria may be added. For example, to query for users named “ed” with a full name of “Ed Jones”, you can call filter() twice, which joins criteria using AND:
+{{./pasted_image001.png}}

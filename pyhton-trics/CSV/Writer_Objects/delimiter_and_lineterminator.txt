@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-12T00:36:11+03:00
+
+====== delimiter and lineterminator ======
+Created Вторник 12 Июль 2016
+
+In [24]: import csv
+In [25]: csvFile = open('example.tsv', 'w', newline='')
+In [27]: csvWriter = csv.writer(csvFile, delimiter='\t', lineterminator='\n\n')
+In [28]: csvWriter.writerow(['apples', 'oranges', 'grapes'])
+Out[28]: 23
+
+In [29]: csvWriter.writerow(['eggs','bacon', 'ham'])
+Out[29]: 16
+
+In [30]: csvWriter.writerow(['spam', 'spam', 'spam', 'spam', 'spam', 'spam'])
+Out[30]: 31
+
+In [31]: csvFile.close()

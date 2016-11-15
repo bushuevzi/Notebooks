@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-16T00:57:48+03:00
+
+====== Undoing Changes ======
+Created Среда 16 Ноябрь 2016
+
+__SHORT:__
+{{./pasted_image003.png}}
+
+__LONG:__
+create multiple commits and than:
+{{./pasted_image.png}}
+
+to go for certain checkpoint:
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+

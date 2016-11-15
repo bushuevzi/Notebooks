@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-30T17:49:08+03:00
+
+====== work from Python ======
+Created Воскресенье 30 Октябрь 2016
+
+http://initd.org/psycopg/docs/usage.html

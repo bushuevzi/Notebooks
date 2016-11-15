@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-05T00:35:11+03:00
+
+====== open webpage in browser ======
+Created Вторник 05 Июль 2016
+
+In [1]: import webbrowser
+In [3]: webbrowser.open('http://inventwithpython.com')
+Out[3]: True
+

@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-10T00:30:22+03:00
+
+====== Create table ======
+Created Четверг 10 Ноябрь 2016
+
+
+3. Create Class that mapping to certain table (table metadata)
+{{./pasted_image002.png}}
+
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
+
+4. from this metadata create a table in DB:
+{{./pasted_image005.png}}
+
+5. Create instance of users, modify
+{{./pasted_image007.png}}
+{{./pasted_image008.png}}
+{{./pasted_image010.png}}
+	5.1. We can see, a new added elements:
+	{{./pasted_image012.png}}
+
+6.Commit changes (**if it's need sqlalchemy create indexes for primaly_key**)
+{{./pasted_image011.png}}
+{{./pasted_image014.png}}
+{{./pasted_image015.png}}
+Changes in DB
+{{./pasted_image013.png}}

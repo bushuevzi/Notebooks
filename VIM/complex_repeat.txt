@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-18T22:54:42+03:00
+
+====== complex repeat ======
+Created Воскресенье 18 Сентябрь 2016
+
+q{0-9a-zA-Z"}  # start recording
+	# doing some thing for repeating
+q   # end recording
+
+5@{0-9a-zA-Z"} to Repeat 5 times
+@{0-9a-zA-Z"} to execute

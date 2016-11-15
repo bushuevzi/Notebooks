@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-11T00:19:51+03:00
+
+====== function convert docx to txt ======
+Created Понедельник 11 Июль 2016
+
+import docx
+def getText(filename):
+doc = docx.Document(filename)
+fullText = []
+for para in doc.paragraphs:
+	fullText.append(para.text)
+return '\n'.join(fullText)
+
+
+>>> import readDocx
+>>> print(readDocx.getText('demo.docx'))
+Document Title
+A plain paragraph with some bold and some italic
+Heading, level 1
+Intense quote
+first item in unordered list
+first item in ordered list

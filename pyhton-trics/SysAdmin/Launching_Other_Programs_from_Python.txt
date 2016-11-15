@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-15T10:27:48+03:00
+
+====== Launching Other Programs from Python ======
+Created понедельник 15 Август 2016
+
+In [2]: import subprocess
+In [4]: subprocess.Popen("calc")
+Out[4]: <subprocess.Popen at 0x95d30b8>
+--------------------------------------------------------
+In [6]: calcProc = subprocess.Popen('calc')
+In [7]: calcProc.poll()					# check whether process is execute (run)? If run - return None, if close - return code of closing
+							#(usually 0 if none error, or 1 or other if error exist)
+
+In [8]: calcProc.poll() ==None
+Out[8]: True
+
+In [9]: calcProc.wait()					# wait to close process (calc) until this python program stop and not run.
+Out[9]: 0
+
+In [10]: calcProc.poll()
+Out[10]: 0

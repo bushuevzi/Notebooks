@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-22T00:15:05+03:00
+
+====== prefix and match ======
+Created Среда 22 Июнь 2016
+
+>>> batRegex = re.compile(r'__Bat__(man|mobile|copter|bat)')
+>>> mo = batRegex.search('Batmobile lost a wheel')
+>>> mo.group()
+'Batmobile'
+>>> mo.group(1)
+'mobile'

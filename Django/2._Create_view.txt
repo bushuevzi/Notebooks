@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-25T11:47:29+03:00
+
+====== 2. Create view ======
+Created четверг 25 Август 2016
+
+Each view is responsible for doing one of two things: Returning an **HttpResponse** object containing the content for the requested page, or raising an exception such as **Http404**
+Generally, a view retrieves data according to the parameters, loads a template and renders the template with the retrieved data.
+
+**views.py**
+from django.http import HttpResponse
+import datetime
+
+def current_datetime(request):
+	now = datetime.datetime.now()
+	html = "<html><body>It is now %s.</body></html>" % now
+	return HttpResponse(html)
+
+# create dinabmic content (relative from url http://127.0.0.1:8000/time/plus/**24/** )
+def hours_ahead(request, **offset**):							
+	offset = int(**offset**)
+	dt = datetime.datetime.now() + datetime.timedelta(hours=**offset**)
+	html = "<html><body> In %s hour(s), it will be %s.</body></html>" %(**offset**, **dt**)
+	return HttpResponse(html)
+	

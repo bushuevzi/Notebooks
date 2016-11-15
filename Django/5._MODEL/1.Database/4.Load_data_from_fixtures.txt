@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-07T12:35:08+03:00
+
+====== 4.Load data from fixtures ======
+Created Пятница 07 Октябрь 2016
+
+**python manage.py loaddata mydata.json**
+
+Django will search in three locations for fixtures:
+	In the fixtures directory of every installed application
+	In any directory named in the FIXTURE_DIRS setting
+	In the literal path named by the fixture
+
+
+**python manage.py loaddata foo/bar/mydata.json**
+would search **<app_label>/fixtures/foo/bar/mydata.json** for each installed application, **<dirname>/foo/bar/mydata.json** for each directory in **FIXTURE_DIRS**, and the literal path **foo/bar/mydata.json.**
+
+
+===== The dumpdata command can be used to generate input for loaddata. =====

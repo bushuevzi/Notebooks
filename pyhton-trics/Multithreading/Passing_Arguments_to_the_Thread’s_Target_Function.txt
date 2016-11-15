@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T16:50:20+03:00
+
+====== Passing Arguments to the Thread’s Target Function ======
+Created четверг 11 Август 2016
+
+In [1]: print('Cats', 'Dogs', 'Frogs', sep= ' & ')
+Cats & Dogs & Frogs
+
+In [2]: import threading
+In [3]: threadObj = threading.Thread(target=print, args=['Cats', 'Dogs', 'Frogs'], kwargs={'sep' : ' & '})
+
+In [4]: threadObj.start()
+Cats & Dogs & Frogs

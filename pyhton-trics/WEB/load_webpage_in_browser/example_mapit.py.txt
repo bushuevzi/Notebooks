@@ -1,0 +1,43 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T00:23:03+03:00
+
+====== example mapit.py ======
+Created Четверг 11 Август 2016
+
+#!/usr/share/anaconda3/bin/python3.5
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  4 00:56:42 2016
+
+@author: root
+"""
+########################
+#import block
+########################
+
+import webbrowser
+import sys
+import pyperclip
+
+########################
+#def block
+########################
+
+########################
+#main block
+########################
+def main():
+	if len(sys.argv) > 1:
+		# Get address from command line.
+		address = ' '.join(sys.argv[1:])
+	else:
+		# Get address from clipboard.
+		address = pyperclip.paste()
+
+	webbrowser.open('http://www.google.com/maps/plase/' + address)
+
+
+
+if __name__ == '__main__':
+	main()

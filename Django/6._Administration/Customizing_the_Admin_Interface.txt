@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-21T00:32:42+03:00
+
+====== Customizing the Admin Interface ======
+Created Среда 21 Сентябрь 2016
+
+in **admin.py** in app: 
+1. for each model what we ar castomasing create new //Model//Admin class in that model change settings of admin panel fuctionality.
+2. after that register the admin element with class of model and a class of//Model//Admin.
+
+from books.models import Publisher
+
+class PublisherAdmin(admin.ModelAdmin):   			# **1**
+	list_display = ('name', 'address', 'website')
+	list_filter = ('name', 'address')
+	ordering = ('name',)
+	search_fields = ('name',)
+admin.site.register(Publisher, PublisherAdmin)		# **2**
+
+

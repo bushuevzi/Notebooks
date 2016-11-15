@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-18T00:07:01+03:00
+
+====== locals() ======
+Created Воскресенье 18 Сентябрь 2016
+
+**locals()** returns a dictionary mapping all local variable names to their values.
+
+def current_datetime(request):
+	current_date = datetime.datetime.now()
+	return render_to_response('current_datetime.html', **locals()**)

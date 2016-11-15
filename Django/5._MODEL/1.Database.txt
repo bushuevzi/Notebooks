@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-18T15:20:03+03:00
+
+====== 1.Database ======
+Created Воскресенье 18 Сентябрь 2016
+
+**which psql** #show location executable file of postgresql
+
+**sudo -u postgres psql**
+**createuser -U postgres web -P**       
+	if there is error then go [[/etc/postgresql/9.1/main/pg_hba.conf]] and set
+	{{./pasted_image.png}}
+	sudo service postgresql restart
+**sudo -u postgres psql**
+	**ALTER ROLE web CREATEDB;    **# Attention! **;** is must be
+
+
+== ==================== ==
+in settings.py set:
+DATABASES = {
+	'default' {
+		'ENGINE': 'django.db.backends.postgresql',
+		'NAME': 'mysite',
+		'USER': 'web',
+		'PASSWORD': 'w123',
+		'HOST': '',
+		'PORT': '',
+	}
+}
+
+{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}
+
+

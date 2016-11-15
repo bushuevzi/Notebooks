@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-21T00:48:16+03:00
+
+====== join(), split() ======
+Created Вторник 21 Июнь 2016
+
+>>> ', '.join(['cats', 'rats', 'bats'])
+'cats, rats, bats'
+>>> ' '.join(['My', 'name', 'is', 'Simon'])
+'My name is Simon'
+--------------------------------------------------------------------
+>>> 'My name is Simon'.split()
+['My', 'name', 'is', 'Simon']
+>>> 'My name is Simon'.split('m')
+['My na', 'e is Si', 'on']
+
+__#splitting new string into list__
+>>> spam = '''Dear Alice,
+How have you been? I am fine.
+There is a container in the fridge
+that is labeled "Milk Experiment".
+Please do not drink it.
+Sincerely,
+Bob'''
+>>> spam.split('\n')
+['Dear Alice,', 'How have you been? I am fine.', 'There is a container in the
+fridge', 'that is labeled "Milk Experiment".', '', 'Please do not drink it.',
+'Sincerely,', 'Bob']

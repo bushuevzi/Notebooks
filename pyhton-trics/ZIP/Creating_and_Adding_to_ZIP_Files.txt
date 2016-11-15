@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-03T23:20:09+03:00
+
+====== Creating and Adding to ZIP Files ======
+Created Воскресенье 03 Июль 2016
+
+**Create new zip:**
+In [78]: newZip = zipfile.ZipFile('new.zip', 'w')
+
+In [79]: newZip.write('./spam/spam.txt',compress_type = zipfile.ZIP_DEFLATED)
+
+In [80]: newZip.close()
+
+----------------------------------------------------------------------------------------------------------------------------------
+**Append files to exist zip:**
+In [78]: newZip = zipfile.ZipFile('new.zip', **'a'**)
+
+In [79]: newZip.write('./spam/spam.txt',compress_type = zipfile.ZIP_DEFLATED)
+
+In [80]: newZip.close()

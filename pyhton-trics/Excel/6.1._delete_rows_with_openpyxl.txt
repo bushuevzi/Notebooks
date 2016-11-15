@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-19T14:45:30+03:00
+
+====== 6.1. delete rows with openpyxl ======
+Created пятница 19 Август 2016
+
+If you want to do this within the Worksheet, you need to copy the values from the old position to the new position, and set the value of the cells that are no longer needed to **''** or **None** and call **Worksheet.garbage_collect().**

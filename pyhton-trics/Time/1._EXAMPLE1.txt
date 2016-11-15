@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-11T22:31:13+03:00
+
+====== 1. EXAMPLE1 ======
+Created Воскресенье 11 Сентябрь 2016
+
+In [21]: import datetime
+In [22]: d = datetime.date(1993, 5, 2)
+In [23]: d.year
+Out[23]: 1993
+
+In [24]: d.month
+Out[24]: 5
+
+In [25]: d.day
+Out[25]: 2

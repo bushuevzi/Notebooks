@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-26T23:27:24+03:00
+
+====== 7.2.3. books.views ======
+Created Понедельник 26 Сентябрь 2016
+
+from django.shortcuts import render_to_response
+from books.forms import **ContactForm**
+
+**def contact(request):**
+**    form = ContactForm(initial={'sendler':'**user@exaple.com'}**)**
+**    return render_to_response('contact.html', {'form':form})**

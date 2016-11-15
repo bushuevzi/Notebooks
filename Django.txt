@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-17T16:13:23+03:00
+
+====== Django ======
+Created среда 17 Август 2016
+

@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-30T17:49:29+03:00
+
+====== connect ======
+Created Воскресенье 30 Октябрь 2016
+{{./pasted_image001.png}}
+{{./pasted_image.png}}
+

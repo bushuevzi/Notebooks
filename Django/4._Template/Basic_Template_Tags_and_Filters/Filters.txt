@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-14T23:00:55+03:00
+
+====== Filters ======
+Created Среда 14 Сентябрь 2016
+
+examples:
+{{./pasted_image.png}}
+This displays the value of the {{./pasted_image001.png}} variable after being filtered through the //lower// filter, which converts text to lowercase. Use a pipe (|) to apply a filter.
+
+
+Escaping text contents, and then converting line breaks to <p> tags:
+{{./pasted_image002.png}}
+
+* //addslashes//: Adds a backslash before any backslash, single quote, or double quote. This is useful if the produced text is included in a JavaScript string.
+* //date//: Formats a //date// or //datetime// object according to a format string given in the parameter, for example:
+{{./pasted_image003.png}}
+* //escape//: Escapes ampersands, quotes, and angle brackets in the given string. This is useful for
+sanitizing user-submitted data and for ensuring data is valid XML or XHTML. Specifically, //escape//
+makes these conversions:
+	♦ Converts & to &amp;
+	♦ Converts < to &lt;
+	♦ Converts > to &gt;
+	♦ Converts " (double quote) to &quot;
+	♦ Converts ' (single quote) to &#39;
+* //length//: Returns the length of the value. You can use this on a list or a string, or any Python object
+that knows how to determine its length (i.e., any object that has a __len__() method).

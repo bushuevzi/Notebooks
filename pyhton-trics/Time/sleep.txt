@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-10T23:43:04+03:00
+
+====== sleep ======
+Created Среда 10 Август 2016
+
+In [1]: import time
+In [4]: for i in range(3):
+   ...:     print('Tick')
+   ...:     time.sleep(1)
+   ...:     print('Tock')
+   ...:     time.sleep(1)
+Tick
+Tock
+Tick
+Tock
+Tick
+Tock

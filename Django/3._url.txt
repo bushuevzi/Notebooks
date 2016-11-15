@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-25T11:49:51+03:00
+
+====== 3. url ======
+Created четверг 25 Август 2016
+**urls.py**
+
+from django.conf.urls import url
+from django.contrib import admin
+**from mysite.views import current_datetime**
+
+urlpatterns = [
+	url(r'^admin/', admin.site.urls),
+	**url(r'^time/$', current_datetime),**
+	url(r'^time/plus/**(**\d{1,2}**)**/$', hours_ahead), 	# placing parenthesesaround the data in the URLpattern if we want 
+									# passing that data to the view function-- we’re using parentheses to capture
+									# data from the matched text.
+]

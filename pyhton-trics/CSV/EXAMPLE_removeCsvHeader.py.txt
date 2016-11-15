@@ -1,0 +1,54 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T00:46:49+03:00
+
+====== EXAMPLE removeCsvHeader.py ======
+Created Четверг 11 Август 2016
+
+#!/usr/share/anaconda3/bin/python3.5
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  4 00:56:42 2016
+
+@author: root
+"""
+########################
+# import block
+########################
+
+import csv
+import os
+
+########################
+# def block
+########################
+
+########################
+# main block
+########################
+def main():
+	os.makedirs('headerRemoved', exist_ok = True)
+	# Loop through every file in the current working directory.
+	for csvFilename in os.listdir('.'):
+		if not csvFilename.endswith('.csv'):
+			continue        # skip non-csv files
+		print('Removingheader from '+ csvFilename + '...')
+
+		# Read the CSV file in (skipping first row)
+		csvRows = []
+		csvFileObj = open(csvFilename)
+		readerObj = csv.reader(csvFileObj)
+		for row in readerObj:
+			if readerObj.line_num == 1:
+				continue    #skip first row
+			csvRows.append(row)
+		csvFileObj.close()
+
+		# Write out the CSV file.
+		csvFileObj = open(os.path.join('headerRemoved', csvFilename), 'w', newline = '')
+		csvWriter = csv.writer(csvFileObj)
+		csvWriter.writerows(csvRows)
+		csvFileObj.close()
+
+if __name__ == '__main__':
+	main()

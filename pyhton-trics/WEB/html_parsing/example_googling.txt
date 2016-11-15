@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T00:24:11+03:00
+
+====== example googling ======
+Created Четверг 11 Август 2016
+
+#!/usr/share/anaconda3/bin/python3.5
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  4 00:56:42 2016
+
+search request https://www.google.ru/?client=browser-ubuntu#q=ubuntu+clear+
+terminal&channel=fe&hl=en&gws_rd=cr,ssl
+
+@author: root
+"""
+########################
+#import block
+########################
+
+import requests, sys, webbrowser, bs4
+
+
+########################
+#def block
+########################
+
+########################
+#main block
+########################
+def main():
+
+	print('Googling...') # display text while downloading the Google page
+	print('http://google.com/?client=browser-ubuntu#q=' + '+'.join(sys.argv[1:]))
+	res = requests.get('http://google.com/?client=browser-ubuntu#q=' + '+'.join(sys.argv[1:]))
+	print(res.text)
+	res.raise_for_status()
+	# Retrieve top search result links.
+	soup = bs4.BeautifulSoup(res.text)
+
+	# Open a browser tab for each result.
+	linkElems = soup.select('.r a')
+	numOpen = min(5, len(linkElems))
+	for i in range(numOpen):
+		webbrowser.open(linkElems[i].get('href'))
+
+
+if __name__ == '__main__':
+	main()

@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-22T00:38:45+03:00
+
+====== Matching One or More with the Plus ======
+Created Среда 22 Июнь 2016
+
+>>> batRegex = re.compile(r'Bat(wo)+man')
+>>> mo1 = batRegex.search('The Adventures of Batwoman')
+>>> mo1.group()
+'Batwoman'
+>>> mo2 = batRegex.search('The Adventures of Batwowowowoman')
+>>> mo2.group()
+'Batwowowowoman'
+>>> mo3 = batRegex.search('The Adventures of Batman')
+>>> mo3 == None
+True

@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-23T01:25:31+03:00
+
+====== detal ======
+Created Воскресенье 23 Октябрь 2016
+
+"""
+Needs two args: 1) file with detalizacia;
+				2) file with data base phone numbers
+"""
+
+
+import pandas as pd
+import re
+import sys
+
+# open detalizacia.xls and phone database
+
+search_field = '№ устройства'
+db_field = '№ телефона'
+wrong_file_name = 'wrong_numbers.xls'
+cost_field = 'Сумма'
+
+det = pd.read_excel(sys.argv[1], 0)
+phone_numbers = pd.read_excel(sys.argv[2], 1)
+
+# delete dublicates in detalizacia
+det1 = det.groupby(search_field).sum()
+
+# exclude phone numbers thet's belongs LUCOIL INFORM
+re_lin_ph_num = re.compile(r'2134\d{3}|23889\d{2}')
+
+# find number which is not in databese
+wrong = []
+
+for ph_num in det1.index.tolist():
+	if not str(ph_num) in str(phone_numbers[db_field].tolist()):
+		if not re_lin_ph_num.search(ph_num):
+			wrong.append(ph_num)
+
+# create DataFrame where there is no right numbers and position with 0 cost
+det_wrong = det[det[search_field].isin(wrong) & det[cost_field] != 0]
+# det_wrong = det[det[search_field].isin(wrong)]
+
+# save DataFrame as excel file
+det_wrong.to_excel(wrong_file_name, index=False)

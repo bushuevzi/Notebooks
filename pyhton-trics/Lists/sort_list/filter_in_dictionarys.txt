@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-08T10:25:59+03:00
+
+====== filter in dictionarys ======
+Created понедельник 08 Август 2016
+
+In [11]: a = {
+   ....:        'x' : 1,
+   ....:        'y' : 2,
+   ....:        'z' : 3
+   ....: }
+
+In [16]: c = {key: a[key] for key in a.keys() - {'z', 'w'}}
+In [17]: c
+Out[17]: {'x': 1, 'y': 2}

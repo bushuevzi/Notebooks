@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-25T11:47:02+03:00
+
+====== 0. Start development server ======
+Created четверг 25 Август 2016
+
+python g:\Notebooks\python_progs\sites\mysite\manage.py runserver
+
+
+
+
+python manage.py shell  			# open shell
+
+

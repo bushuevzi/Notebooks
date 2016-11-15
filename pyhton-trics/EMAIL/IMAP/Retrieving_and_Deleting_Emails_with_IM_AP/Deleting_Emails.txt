@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-16T17:23:59+03:00
+
+====== Deleting Emails ======
+Created вторник 16 Август 2016
+
+To delete emails, pass a list of message UIDs to the IMAPClient object’s delete_messages() method. This marks the emails with the \Deleted flag. Calling the expunge() method will permanently delete all emails with the \Deleted flag in the currently selected folder. Consider the following interactive shell example:
+
+>>> imapObj.select_folder('INBOX', readonly=False)
+>>> UIDs = imapObj.search(['ON 09-Jul-2015'])
+>>> UIDs
+[40066]
+>>> imapObj.delete_messages(UIDs)
+{40066: ('\\Seen', '\\Deleted')}
+>>> imapObj.expunge()
+('Success', [(5452, 'EXISTS')])

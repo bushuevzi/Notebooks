@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-26T23:23:03+03:00
+
+====== 7.2. Form feadback ======
+Created Понедельник 26 Сентябрь 2016
+
+{{./pasted_image.png}}

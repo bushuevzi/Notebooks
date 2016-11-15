@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-21T23:57:52+03:00
+
+====== Grouping ======
+Created Вторник 21 Июнь 2016
+
+Adding parentheses will create groups in the regex: __(\d\d\d)-(\d\d\d-\d\d\d\d)__
+__>>> mo.group(1)__
+'415'
+__>>> mo.group(2)__
+'555-4242'

@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-15T22:57:09+03:00
+
+====== Access to related models objects from templates ======
+Created Суббота 15 Октябрь 2016
+
+
+0. in db and models.py necessary have a foreign key (in models.py its a models.ForeignKey)
+1. always type **classname_set** with lowcase first literal, even name of model class begin with Capital character 
+2. classname_set - list of object, therefore to access first classname object necessary type **classname_set.0**
+
+{{./pasted_image001.png}}
+hhkh

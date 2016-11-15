@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-27T01:55:02+03:00
+
+====== Own Charavter Classes ======
+Created Понедельник 27 Июнь 2016
+
+You can define your own character class using square brackets. For example, the character class [aeiouAEIOU].
+
+>>> vowelRegex = re.compile(r'[aeiouAEIOU]')
+>>> vowelRegex.findall('RoboCop eats baby food. BABY FOOD.')
+['o', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
+
+You can also include ranges of letters or numbers by using a hyphen. For example, the character class [a-zA-Z0-9] will match all lowercase letters, uppercase letters, and numbers. You do not need to escape the . , * , ? , or () characters with a preceding backslash
+
+By placing a caret character ( ^ ) just after the character class’s opening bracket, you can make a negative character class. A negative character class will match all the characters that are not in the character class.

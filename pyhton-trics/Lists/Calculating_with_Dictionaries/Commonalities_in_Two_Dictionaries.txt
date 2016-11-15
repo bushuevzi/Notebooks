@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-08T10:22:48+03:00
+
+====== Commonalities in Two Dictionaries ======
+Created понедельник 08 Август 2016
+
+In [11]: a = {
+   ....:        'x' : 1,
+   ....:        'y' : 2,
+   ....:        'z' : 3
+   ....: }
+
+In [12]: b = {
+   ....:        'w' : 10,
+   ....:        'x' : 11,
+   ....:        'y' : 2
+   ....: }
+
+In [13]: a.keys() & b.keys()
+Out[13]: {'x', 'y'}
+
+In [14]: a.keys() - b.keys()
+Out[14]: {'z'}
+
+In [15]: a.items() & b.items()
+Out[15]: {('y', 2)}

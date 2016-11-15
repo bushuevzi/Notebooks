@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{ object|escape }}</title>
+  </head>
+  <body>
+    <h1>Объект: <strong>{{ object|escape }}</strong></h1>
+    <h2>Адрес: <strong>{{ address|escape }}</strong></h2>
+    <h2>Основной канал:</h2>
+    <p>Оператор: <strong>{{ provider|escape }}</strong></p>
+    <p>Услуга: <strong>{{ service|escape }}</strong></p>
+    <p>Пропускная способность порта: <strong>{{ throughput|escape }}</strong></p>
+    <p>Последняя миля: <strong>{{ last_mile|escape }}</strong></p>
+    <p>Договор: №<strong>{{ contract_number_legal|escape }}</strong></p>
+    <p>Бланк-заказа: №<strong>{{ b_z|escape }}</strong></p>
+    {% load humanize %}
+    <p>Тариф: <strong>{{ tarif|floatformat:2|escape }}</strong> руб./мес, без учета НДС</p>
+    
+  </body>
+</html>

@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-22T00:21:11+03:00
+
+====== Optional Matching with the Question Mark ======
+Created Среда 22 Июнь 2016
+
+**You can think of the ? as saying, “Match zero or one of the group preceding this question mark.”**
+
+>>> batRegex = re.compile(r'Bat__(wo)?__man')
+>>> mo1 = batRegex.search('The Adventures of Batman')
+>>> mo1.group()
+'Batman'
+>>> mo2 = batRegex.search('The Adventures of Batwoman')
+>>> mo2.group()
+'Batwoman

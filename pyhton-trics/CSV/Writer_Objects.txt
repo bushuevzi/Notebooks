@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-12T00:23:29+03:00
+
+====== Writer Objects ======
+Created Вторник 12 Июль 2016
+
+In [12]: import csv
+In [13]: outputFile = open('./Documents/coding/auto_boring_stuff/output.csv', 'w', newline='''') # if forget the newline='''' ther is a blank lines betwing data
+In [14]: outputWriter = csv.writer(outputFile)
+In [15]: outputWriter.writerow(['spam','eggs', 'bacon', 'ham'])
+Out[15]: 21
+
+In [16]: outputWriter.writerow(['Hello, world!', 'eggs', 'bacon', 'ham'])
+Out[16]: 32
+
+In [19]: outputWriter.writerows([['Hello, world!', 'eggs', 'bacon', 'ham'],[1,2,3.141592,4]])
+In [20]: outputFile.close()
+

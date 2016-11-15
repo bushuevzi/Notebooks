@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-10T23:41:04+03:00
+
+====== Working with Related Objects ======
+Created Четверг 10 Ноябрь 2016
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}

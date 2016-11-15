@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-21T00:45:46+03:00
+
+====== isX ======
+Created Вторник 21 Июнь 2016
+
+rand_string.isalpha()
+rand_string.isalnum()
+rand_string.isdecimal()
+rand_string.isspace()
+rand_string.istitle()

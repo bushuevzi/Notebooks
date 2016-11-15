@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-18T23:47:57+03:00
+
+====== 3. Create a tables in DB ======
+Created Воскресенье 18 Сентябрь 2016
+
+**python manage.py makemigrations**
+**python manage.py migrate**

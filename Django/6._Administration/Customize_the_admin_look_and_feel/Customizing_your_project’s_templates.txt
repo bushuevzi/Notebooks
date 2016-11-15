@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-11T22:47:15+03:00
+
+====== Customizing your project’s templates ======
+Created Вторник 11 Октябрь 2016
+
+Create a **templates** directory in your project directory (the one that contains **manage.py**). 
+
+In settings file (**mysite/settings.py**, remember) and add a **DIRS** option in the **TEMPLATES** setting:
+{{./pasted_image001.png}}
+
+Now create a directory called **admin** inside **templates**, and copy the template **admin/base_site.html** from within the default Django admin template directory in the source code of Django itself (**django/contrib/admin/templates**) into that directory.
+Then, just edit the file and replace {{./pasted_image003.png}} (including the curly braces) with your own site’s name as you see fit. You should end up with a section of code like:
+{{./pasted_image002.png}}

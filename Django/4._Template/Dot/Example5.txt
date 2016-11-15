@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-11T22:45:31+03:00
+
+====== Example5 ======
+Created Воскресенье 11 Сентябрь 2016
+
+{{./pasted_image.png}}
+
+Note that you don’t include parentheses in the method calls. Also, it’s not possible to pass arguments to the methods; you can only call methods that have no required arguments.

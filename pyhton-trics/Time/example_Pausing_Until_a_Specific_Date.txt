@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T01:11:01+03:00
+
+====== example Pausing Until a Specific Date ======
+Created Четверг 11 Август 2016
+
+In [39]: import datetime
+In [40]: import time
+In [41]: halloween2016 = datetime.datetime(2016,10,31,0,0,0)
+In [42]: while datetime.datetime.now() < halloween2016:
+   ....:     time.sleep(1)
+
+
+Rather, the while loop will just check the condition once per second and continue with the rest of the program after Halloween 2016 (or whenever you program it to stop).

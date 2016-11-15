@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-07T00:29:04+03:00
+
+====== Example ======
+Created Пятница 07 Октябрь 2016
+
+{{./pasted_image001.png}}
+For example, if a user requested the URL “/articles/2005/05/39323/”, Django would call the function news.views.article_detail(request, '2005', '05', '39323').

@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-12T01:00:59+03:00
+
+====== os ======
+Created Вторник 12 Июль 2016
+
+In [2]: os.getcwd()
+Out[2]: '/home/dev'
+
+In [3]: os.chdir('./Documents/coding/work/')
+
+In [4]: os.rename('./Копия Данные абонентов (недостающие5).xlsx', './abonentsData.xlsx')
+
+In [5]: os.listdir()
+Out[5]: ['default.py', 'abonentsData.xlsx']
+
+
+os.makedirs('headerRemoved', exist_ok = True)

@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T01:29:04+03:00
+
+====== 6 Creating and Saving Excel Documents ======
+Created Воскресенье 10 Июль 2016
+**Create document:**
+In [70]: import openpyxl
+In [62]: wb = openpyxl.Workbook()
+In [64]: wb.get_sheet_names()
+Out[64]: ['Sheet']
+
+In [66]: sheet = wb.active
+In [67]: sheet.title
+Out[67]: 'Sheet'
+
+In [68]: sheet.title = 'Spam Bacon Eggs Sheet'
+In [69]: wb.get_sheet_names()
+Out[69]: ['Spam Bacon Eggs Sheet']
+----------------------------------------------------------------------------------------------------------------------------------
+**Save Excel document:**
+In [71]: wb.save('example_copy.xlsx')
+

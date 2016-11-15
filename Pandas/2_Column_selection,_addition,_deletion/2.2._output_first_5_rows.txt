@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-22T00:41:37+03:00
+
+====== 2.2. output first 5 rows ======
+Created Суббота 22 Октябрь 2016
+
+In [10]: df.head()
+
+In [15]: df.tail(3)

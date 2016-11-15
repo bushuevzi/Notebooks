@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-22T23:47:12+03:00
+
+====== search element of one list in another ======
+Created Суббота 22 Октябрь 2016
+
+convert to list and search:
+
+for ph_num in det['№ устройства'].**tolist()**:
+	if not str(ph_num) **in** str(phone_numbers['№ телефона'].**tolist()**):
+		print('False %s' %ph_num)

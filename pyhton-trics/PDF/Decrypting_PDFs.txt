@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T23:38:39+03:00
+
+====== Decrypting PDFs ======
+Created Воскресенье 10 Июль 2016
+
+In [13]: import PyPDF2
+In [14]: pdfReader = PyPDF2.PdfFileReader(open('../data/automate_online-materials/encrypted.pdf', 'rb'))
+
+In [15]: pdfReader.isEncrypted
+Out[15]: True
+
+In [20]: pdfReader.numPages
+Out[20]: 19
+
+In [19]: pageObj = pdfReader.getPage(1)

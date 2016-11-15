@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-11T00:23:26+03:00
+
+====== 1. Simple test model ======
+Created Вторник 11 Октябрь 2016
+
+{{./pasted_image.png}}
+
+**python manage.py test polls**
+output:
+{{./pasted_image001.png}}
+What happened is this:
+
+* **python manage.py test polls** looked for tests in the **polls** application
+* it found a subclass of the **django.test.TestCase** class
+* it created a special database for the purpose of testing
+* it looked for test methods - ones whose names begin with **test**
+* in **test_was_published_recently_with_future_question** it created a **Question** instance whose pub_date field is 30 days in the future
+* ... and using the **assertIs()** method, it discovered that its **was_published_recently()** returns **True**, though we wanted it to return **False**
+
+The test informs us which test failed and even the line on which the failure occurred.
+
+

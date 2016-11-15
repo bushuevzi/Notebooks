@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T23:37:34+03:00
+
+====== Extracting Text from PDFs ======
+Created Воскресенье 10 Июль 2016
+
+In [1]: import PyPDF2
+In [2]: pdfFile = open('../data/automate_online-materials/meetingminutes.pdf', 'rb')
+In [3]: pdfReader = PyPDF2.PdfFileReader(pdfFile)
+In [4]: pdfReader.numPages
+Out[4]: 19
+
+In [5]: pageObj = pdfReader.getPage(0)
+In [6]: pageObj.extractText()
+Out[6]: 'OOFFFFIICCIIAALL  BBOOAARRDD  MMIINNUUTTEESS   Meeting of \nMarch 7\n, 2014\n        \n     The Board of Elementary and Secondary Education shall provide leadership and \ncreate policies for education that expand opportunities for children, empower \nfamilies and communities, and advance Louisiana in an increasingly \ncompetitive glob\nal market.\n BOARD \n of ELEMENTARY\n and \n SECONDARY\n EDUCATION\n  '

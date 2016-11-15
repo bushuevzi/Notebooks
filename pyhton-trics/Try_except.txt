@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-12T01:26:25+03:00
+
+====== Try except ======
+Created Вторник 12 Июль 2016
+
+###
+def do_it():
+	try:
+		do_much_stuff()
+	except AttributeError:
+		do_it()
+	except TypeError:
+		do_it()
+###
+
+
+Here's another way to write the same thing:
+
+###
+def do_it():
+	try:
+		do_much_stuff()
+	except (AttributeError, TypeError):
+		do_it()
+###

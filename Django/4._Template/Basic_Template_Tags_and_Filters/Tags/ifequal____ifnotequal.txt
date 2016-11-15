@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-11T23:42:46+03:00
+
+====== ifequal    ifnotequal ======
+Created Воскресенье 11 Сентябрь 2016
+
+To compare two values and display something if they’re equal—and Django provides an **{% ifequal %}** tag for that purpose.
+The **{% ifequal %}** tag compares two values and displays everything between **{% ifequal %}** and **{% endifequal %}** if the values are equal.
+
+This example compares the template variables //user// and //currentuser//:
+{{./pasted_image.png}}
+
+The arguments can be hard-coded strings, with either single or double quotes, so the following is valid:
+{{./pasted_image001.png}}
+
+Just like {% if %}, the **{% ifequal %}** tag supports an optional **{% else %}**:
+{{./pasted_image002.png}}
+
+
+**Only template variables, strings, integers, and decimal numbers are allowed as arguments to {% ifequal %}.** 

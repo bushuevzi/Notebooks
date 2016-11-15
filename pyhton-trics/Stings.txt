@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-21T00:42:25+03:00
+
+====== Stings ======
+Created Вторник 21 Июнь 2016
+

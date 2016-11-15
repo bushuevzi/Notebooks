@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-20T23:57:57+03:00
+
+====== Pandas ======
+Created Четверг 20 Октябрь 2016
+
+In [1]: import pandas as pd
+
+In [2]: import numpy as np
+
+In [3]: import matplotlib.pyplot as plt

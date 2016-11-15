@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-11T23:12:01+03:00
+
+====== if else ======
+Created Воскресенье 11 Сентябрь 2016
+
+The {% if %} tag evaluates a variable, and if that variable is “true” (i.e., it exists, is not empty, and is not a false Boolean value), the system will display everything between {% if %} and {% endif %}, for example:
+{{./pasted_image001.png}}
+==========================================================================================
+
+{{./pasted_image002.png}}
+
+The use of parentheses for controlling order of operations is not supported. If you find yourself needing
+parentheses, consider performing logic in the view code in order to simplify the templates. Even so, if you
+need to combine and and or to do advanced logic, just use nested {% if %} tags.
+**invalid:**
+{% if athlete_list and coach_list or cheerleader_list %}
+Multiple uses of the same logical operator are fine, but you can’t combine different operators. For example,
+this is **valid**:
+{% if athlete_list or coach_list or parent_list or teacher_list %}
+

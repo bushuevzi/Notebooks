@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-18T19:10:09+03:00
+
+====== 5. MODEL ======
+Created Воскресенье 18 Сентябрь 2016
+
+three-step guide to making model changes:
+
+1. Change your models (in **models.py**).
+2. Run **python manage.py makemigrations** to create migrations for those changes
+3. Run **python manage.py migrate** to apply those changes to the database.

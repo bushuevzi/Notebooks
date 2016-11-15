@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-30T21:04:21+03:00
+
+====== caret and dollar char's ======
+Created Четверг 30 Июнь 2016
+
+^ - beginning of the searched text.
+$ - end of the serched text
+
+>>> beginsWithHello = re.compile(r'^Hello')
+>>> beginsWithHello.search('Hello world!')
+<_sre.SRE_Match object; span=(0, 5), match='Hello'>
+>>> beginsWithHello.search('He said hello.') == None
+True

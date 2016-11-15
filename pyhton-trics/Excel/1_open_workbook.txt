@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T00:36:46+03:00
+
+====== 1 open workbook ======
+Created Воскресенье 10 Июль 2016
+
+**import openpyxl:**
+In [1]: import openpyxl
+----------------------------------------------------------------------------------------------------------------------------------
+**Opening Excel Documents:**
+In [7]: wb = openpyxl.load_workbook('../data/automate_online-materials/example.xlsx')
+----------------------------------------------------------------------------------------------------------------------------------
+**Getting Sheets from the Workbook:**
+In [8]: wb.get_sheet_names()
+Out[8]: ['Sheet1', 'Sheet2', 'Sheet3']
+
+In [12]: sheet = wb.get_sheet_by_name('Sheet1')
+----------------------------------------------------------------------------------------------------------------------------------

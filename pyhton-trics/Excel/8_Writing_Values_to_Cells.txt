@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T01:43:53+03:00
+
+====== 8 Writing Values to Cells ======
+Created Воскресенье 10 Июль 2016
+
+In [82]: import openpyxl
+In [83]: wb = openpyxl.Workbook()
+In [84]: sheet = wb.get_sheet_by_name('Sheet')
+In [85]: sheet['A1'] = 'Hello world'
+In [86]: sheet['A1'].value
+Out[86]: 'Hello world'
+
+In [16]: sheet['A1'].value ='Hello world!'
+
+In [60]: sheet.cell(row=2, column=2).value = 'Wide column'

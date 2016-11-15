@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-11T22:51:21+03:00
+
+====== 0.0.0.Where are the Django source files ======
+Created Вторник 11 Октябрь 2016
+
+{{./pasted_image.png}}

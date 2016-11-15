@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T20:03:23+03:00
+
+====== 13 Freeze Panes ======
+Created Воскресенье 10 Июль 2016
+
+{{./pasted_image.png}}
+
+In [2]: import openpyxl
+In [3]: wb = openpyxl.load_workbook('../data/automate_online-materials/produceSales.xlsx')
+
+In [4]: sheet = wb.active
+In [5]: sheet.freeze_panes='A2'
+In [6]: wb.save('freezeExample.xlsx')

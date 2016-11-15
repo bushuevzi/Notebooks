@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-09T21:05:34+03:00
+
+====== pass ======
+Created Воскресенье 09 Октябрь 2016
+
+tut01:
+	username: admin
+	password: Qq123456
+	

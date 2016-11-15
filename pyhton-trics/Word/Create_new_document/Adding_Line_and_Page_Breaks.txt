@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-11T01:54:49+03:00
+
+====== Adding Line and Page Breaks ======
+Created Понедельник 11 Июль 2016
+
+In [54]: doc = docx.Document()
+
+In [55]: doc.add_paragraph('This is on the first page!')
+Out[55]: <docx.text.paragraph.Paragraph at 0x7f42f5011198>
+
+In [57]: doc.add_page_break()
+Out[57]: <docx.text.paragraph.Paragraph at 0x7f42f4fb9f98>
+
+In [58]: doc.add_paragraph('This is on the second page!')
+Out[58]: <docx.text.paragraph.Paragraph at 0x7f42f4f0fe80>
+
+In [59]: doc.save('twoPage.docx')

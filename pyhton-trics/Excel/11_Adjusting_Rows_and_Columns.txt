@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T19:37:38+03:00
+
+====== 11 Adjusting Rows and Columns ======
+Created Воскресенье 10 Июль 2016
+
+In [56]: import openpyxl
+In [57]: wb = openpyxl.Workbook()
+In [58]: sheet = wb.active
+In [59]: sheet['A1'] = 'Tall row'
+In [60]: sheet.cell(row=2, column=2).value = 'Wide column'
+In [61]: sheet.row_dimensions[1].height = 70
+In [62]: sheet.column_dimensions['B'].width = 20
+In [63]: wb.save('dimensions.xlsx')

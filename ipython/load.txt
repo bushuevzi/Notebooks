@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-11T00:15:07+03:00
+
+====== load ======
+Created Пятница 11 Ноябрь 2016
+
+%run file.py

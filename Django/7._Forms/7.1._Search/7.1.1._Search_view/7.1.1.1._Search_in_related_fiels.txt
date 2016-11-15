@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-24T01:38:26+03:00
+
+====== 7.1.1.1. Search in related fiels ======
+Created Понедельник 24 Октябрь 2016
+
+
+if need search in related field, for example in field **Kpd.platform_name:**
+**Kpd.platform_name **in models.py:
+{{./pasted_image.png}}
+
+**DO in views.**
+{{./pasted_image002.png}}

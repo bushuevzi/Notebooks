@@ -1,0 +1,53 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T00:39:34+03:00
+
+====== 3 range of rows and columns ======
+Created Воскресенье 10 Июль 2016
+
+**Getting Rows and Columns from the Sheets:**
+You can slice Worksheet objects to get all the Cell objects in a row, column, or rectangular area of the spreadsheet. Then you can loop over all the cells in the slice.
+In [44]: tuple(sheet['A1':'C3'])
+Out[44]: 
+((<Cell Sheet1.A1>, <Cell Sheet1.B1>, <Cell Sheet1.C1>),
+ (<Cell Sheet1.A2>, <Cell Sheet1.B2>, <Cell Sheet1.C2>),
+ (<Cell Sheet1.A3>, <Cell Sheet1.B3>, <Cell Sheet1.C3>))
+
+In [49]: for rowOfCellObjects in sheet['A1':'C3']:
+   ....:     for cellObj in rowOfCellObjects:
+   ....:         print(cellObj.coordinate, cellObj.value, end=";\t")
+   ....:     print('\n--- END OF ROW ---')
+A1 2015-04-05 13:34:02;	B1 Apples;	C1 73;	
+--- END OF ROW ---
+A2 2015-04-05 03:41:23;	B2 Cherries;	C2 85;	
+--- END OF ROW ---
+A3 2015-04-06 12:46:51;	B3 Pears;	C3 14;	
+--- END OF ROW ---
+
+**use a Worksheet object’s rows and columns attribute to access the values of cells in a particular row or column:**
+In [50]: sheet.columns[1]
+Out[50]: 
+(<Cell Sheet1.B1>,
+ <Cell Sheet1.B2>,
+ <Cell Sheet1.B3>,
+ <Cell Sheet1.B4>,
+ <Cell Sheet1.B5>,
+ <Cell Sheet1.B6>,
+ <Cell Sheet1.B7>)
+
+In [52]: for cellObj in sheet.columns[1]:
+   ....:     print(cellObj.value)
+Apples
+Cherries
+Pears
+Oranges
+Apples
+Bananas
+Strawberries
+
+In [53]: for cellObj in sheet.rows[1]:
+   ....:     print(cellObj.value)
+2015-04-05 03:41:23
+Cherries
+85
+

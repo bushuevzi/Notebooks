@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T18:57:25+03:00
+
+====== 9 Font Style of Cells ======
+Created Воскресенье 10 Июль 2016
+
+In [1]: import openpyxl
+In [2]: from openpyxl.styles import Font, Style
+In [3]: wb = openpyxl.Workbook()
+In [5]: sheet = wb.get_sheet_by_name('Sheet')
+In [6]: italic24Font = **Font(size=24, italic=True)**
+In [8]: styleObj = Style(font = italic24Font)
+In [11]: sheet['A1'].style=styleObj
+In [12]: sheet['A1']='Hello world!'
+In [13]: wb.save('shyled.xlsx')
+{{./pasted_image.png}}
+
+
+In [20]: import openpyxl
+In [21]: from openpyxl.styles import Font, Style
+In [22]: wb = openpyxl.Workbook()
+In [23]: sheet = wb.active
+In [24]: fontObj1 = Font(name = 'Times New Roman', bold=True)
+In [25]: styleObj = Style(font=fontObj1)
+In [26]: sheet['A1'].style=styleObj
+In [28]: sheet['A1'] = 'Bold Times New Roman'
+In [29]: 
+In [29]: fontObj2 = Font(size=24, italic=True)
+In [30]: styleObj2 = Style(font=fontObj2)
+In [31]: sheet['B3'].style = styleObj2
+In [32]: sheet['B3'] = '24 pt Italic'
+In [33]: wb.save('styles.xls')

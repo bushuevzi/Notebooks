@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-23T00:31:33+03:00
+
+====== Customizing the Admin Interface’s Look and Feel ======
+Created Пятница 23 Сентябрь 2016
+
+1. **django/contrib/admin/templates/admin/base_site.html** to
+ **/home/mytemplates/admin/base_site.html**
+
+ 2.Then, just edit the new admin/base_site.html file to replace the generic Django text with your own site’s name as you see fit

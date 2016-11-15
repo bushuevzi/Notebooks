@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-23T00:07:45+03:00
+
+====== change highlighting syntax ======
+Created Пятница 23 Сентябрь 2016
+
+:set syntax=php
+:set syntax=perl
+:set syntax=html
+:set syntax=off
+
+
+**:setfiletype=...**

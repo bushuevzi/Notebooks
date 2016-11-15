@@ -1,0 +1,79 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-02T14:34:59+03:00
+
+====== direcktory ======
+Created Суббота 02 Июль 2016
+
+**crossplatporm directory path:**
+>>> import os
+>>> os.path.join('usr', 'bin', 'spam')
+'usr/bin/spam'
+
+In [3]: myFiles = ['accounts.txt', 'details.csv', 'invite.docx']
+In [4]: for filename in myFiles:
+	   ...:     print(os.path.join('/usr/bin', filename))
+/usr/bin/accounts.txt
+/usr/bin/details.csv
+[[/usr/bin/invite.docx]]
+----------------------------------------------------------------------------------------------------------------------------------
+**currnent working directory**
+os.getcwd() - get current directory as string
+os.chdir('/path/to/dir') - change curr. work directory
+----------------------------------------------------------------------------------------------------------------------------------
+**create new folder**
+os.makedirs('/path/to/newdir') - create intermediate dirs: path, to,newdir
+----------------------------------------------------------------------------------------------------------------------------------
+**get absolute path**
+os.path.abspath('./relative/path') - in fact it's convert relative path to absolute
+----------------------------------------------------------------------------------------------------------------------------------
+{{./pasted_image.png}}
+In [11]: path = '/home/dev/Documents/coding/auto_boring_stuff/phoneAndEmail.py'
+In [12]: os.path.basename(path)
+Out[12]: 'phoneAndEmail.py'
+In [13]: os.path.dirname(path)
+Out[13]: '/home/dev/Documents/coding/auto_boring_stuff'
+In [14]: os.path.split(path)
+Out[14]: ('/home/dev/Documents/coding/auto_boring_stuff', 'phoneAndEmail.py')          
+----------------------------------------------------------------------------------------------------------------------------------
+**get list of files in folder**
+In [16]: os.listdir(os.path.split(path)[0])
+Out[16]: 
+['tabulate.py',
+ 'phone_number_detector.py',
+ 'automate_the_boring_stuff_with_python_2015.pdf',
+ 'default.py',
+ 'phoneAndEmail.py',
+ 'bulletPointAdder.py',
+ 'pw.py']
+
+In [17]: os.listdir(os.path.dirname(path))
+Out[17]: 
+['tabulate.py',
+ 'phone_number_detector.py',
+ 'automate_the_boring_stuff_with_python_2015.pdf',
+ 'default.py',
+ 'phoneAndEmail.py',
+ 'bulletPointAdder.py',
+ 'pw.py']
+
+----------------------------------------------------------------------------------------------------------------------------------
+**Copy directorys:**
+In [14]: shutil.copytree('../data', '../data1')
+Out[14]: '../data1'
+----------------------------------------------------------------------------------------------------------------------------------
+**remove directory:**
+In [21]: shutil.rmtree('../data1')
+os.rmdir(path) will delete the folder at path . This folder must be empty of any files or folders.
+----------------------------------------------------------------------------------------------------------------------------------
+**walk through directory tree:**
+In [42]: for folderName, subfolders, filenames in os.walk('/home/dev/Documents'):
+   ....:     print('This current folder is ', folderName)
+   ....:     for subfolder in subfolders:
+   ....:         print('SUBFOLDER OF ' + folderName + ': ' + subfolder)
+   ....:     for filename in filenames:
+   ....:         print('FILE INSIDE ' + folderName + ': ' + filename)
+   ....:     print('')
+          
+
+

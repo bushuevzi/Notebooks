@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-23T17:34:43+03:00
+
+====== Multiple args in request ======
+Created Воскресенье 23 Октябрь 2016
+
+if we need use multiple args for select one certain object from db, then:
+
+in **urls.py** send to properties(**P**):
+{{./pasted_image.png}}
+
+in views.py get it's properties and sent to sniplet **get_object_or_404:**
+{{./pasted_image001.png}}

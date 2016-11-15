@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T00:38:52+03:00
+
+====== 5 Converting Between Column Letters and Numbers ======
+Created Воскресенье 10 Июль 2016
+
+**Converting Between Column Letters and Numbers:**
+In [35]: from openpyxl.cell import get_column_letter,column_index_from_string
+In [37]: get_column_letter(2)
+Out[37]: 'B'
+In [39]: get_column_letter(27)
+Out[39]: 'AA'
+In [40]: get_column_letter(900)
+Out[40]: 'AHP'
+
+In [41]: get_column_letter(sheet.max_column)
+Out[41]: 'C'
+In [42]: column_index_from_string('A')
+Out[42]: 1
+In [43]: column_index_from_string('AB')
+Out[43]: 28

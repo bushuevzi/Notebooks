@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-24T02:07:59+03:00
+
+====== Send to a.href (urls) parametr ======
+Created Понедельник 24 Октябрь 2016
+
+{{./pasted_image.png}}
+kpd.provider - parametr (it use in urls.py as **P =** **provider**):
+{{./pasted_image001.png}}

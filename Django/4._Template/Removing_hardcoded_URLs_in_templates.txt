@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-15T23:06:18+03:00
+
+====== Removing hardcoded URLs in templates ======
+Created Суббота 15 Октябрь 2016
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+
+**Namespacing URL names**
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}

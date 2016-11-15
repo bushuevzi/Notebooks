@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-09T22:56:35+03:00
+
+====== Reading JSON ======
+Created Вторник 09 Август 2016
+
+In [1]: stringOfJsonData = '{"name": "Zophie", "isCat": true, "miceCaught":0, "felineIQ": null}'
+In [2]: **import json**
+In [3]: jsonDataAsPythonValue = json**.loads**(stringOfJsonData)
+In [4]: jsonDataAsPythonValue
+Out[4]: {'felineIQ': None, 'isCat': True, 'miceCaught': 0, 'name': 'Zophie'}

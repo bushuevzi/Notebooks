@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T01:23:10+03:00
+
+====== Converting Strings into datetime Objects ======
+Created Четверг 11 Август 2016
+
+The **datetime.datetime.strptime()** function is convert date information, such as '2015/10/21 16:29:00' or  'October 21, 2015' to a datetime object (The **p** in the name of the **strptime()** function stands for **parse**.)
+
+In [49]: datetime.datetime.strptime('October 21, 2015', '%B %d, %Y')
+Out[49]: datetime.datetime(2015, 10, 21, 0, 0)
+
+In [50]: datetime.datetime.strptime('2015/10/21 16:29:00', '%Y/%m/%d %H:%M:%S')
+Out[50]: datetime.datetime(2015, 10, 21, 16, 29)
+
+In [51]: datetime.datetime.strptime("October of '15", "%B of '%y")
+Out[51]: datetime.datetime(2015, 10, 1, 0, 0)
+
+In [52]: datetime.datetime.strptime("November of '63", "%B of '%y")
+Out[52]: datetime.datetime(2063, 11, 1, 0, 0)

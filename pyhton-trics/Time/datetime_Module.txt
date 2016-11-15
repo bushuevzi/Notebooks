@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T00:49:45+03:00
+
+====== datetime Module ======
+**Created Четверг 11 Август 2016**
+
+FORMAT: 
+**datetime.datetime(year, month,day,hour,minutes, seconds)**
+
+
+In [13]: import datetime
+In [15]: dt = datetime.datetime(2015, 10,21,16,29,0)
+In [17]: dt.year, dt.month, dt.day
+Out[17]: (2015, 10, 21)
+
+In [18]: dt = datetime.datetime.now()
+In [21]: dt
+Out[21]: datetime.datetime(2016, 8, 11, 0, 51, 34, 764845)
+In [19]: dt.year, dt.month, dt.day
+Out[19]: (2016, 8, 11)
+In [20]: dt.hour, dt.minute,dt.second
+Out[20]: (0, 51, 34)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A Unix epoch timestamp can be converted to a datetime object with the **datetime.datetime.fromtimestamp()** function.
+
+In [22]: datetime.datetime.fromtimestamp(1000000)
+Out[22]: datetime.datetime(1970, 1, 12, 17, 46, 40)
+In [24]: datetime.datetime.fromtimestamp(time.time())
+Out[24]: datetime.datetime(2016, 8, 11, 0, 55, 38, 140725)

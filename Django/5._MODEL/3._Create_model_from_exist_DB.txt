@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-25T00:09:25+03:00
+
+====== 3. viCreate model from exist DB ======
+Created Воскресенье 25 Сентябрь 2016
+
+1. change setings.py for select new //default// db
+2. **python manage.py inspectdb > models.py**

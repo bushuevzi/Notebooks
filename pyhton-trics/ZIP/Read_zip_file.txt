@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-03T22:46:27+03:00
+
+====== Read zip file ======
+Created Воскресенье 03 Июль 2016
+
+In [42]: import zipfile
+
+In [45]: exampleZip = zipfile.ZipFile('example.zip')
+In [46]: exampleZip.namelist()
+Out[46]: ['spam.txt', 'cats/', 'cats/catnames.txt', 'cats/zophie.jpg']
+
+In [47]: spamInfo = exampleZip.getinfo('spam.txt')
+In [48]: spamInfo.file_size
+Out[48]: 13908
+
+In [49]: spamInfo.compress_size
+Out[49]: 3828
+
+In [51]: exampleZip.close()

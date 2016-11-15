@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-09T22:56:17+03:00
+
+====== JSON ======
+Created Вторник 09 Август 2016
+
+**JSON strings always use double quotes. **
+In [1]: stringOfJsonData = **'{"name": "Zophie", "isCat": true, "miceCaught":0, "felineIQ": null}'**

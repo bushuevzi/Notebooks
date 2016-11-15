@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-22T00:45:58+03:00
+
+
+
+====== 1.2. Create DataFrame ======
+Created Суббота 22 Октябрь 2016
+
+**from numPy array:**
+In [11]: df3 = pd.DataFrame(np.random.randn(10,4), columns=['A', 'B', 'C', 'D'])
+In [12]: df3
+{{./pasted_image.png}}
+
+
+{{./pasted_image002.png}}
+
+
+
+
+
+**from dictionary:**
+{{./pasted_image001.png}}
+
+
+

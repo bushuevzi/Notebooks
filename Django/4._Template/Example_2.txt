@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-07T00:49:58+03:00
+
+====== Example 2 ======
+Created Пятница 07 Октябрь 2016
+
+{{./pasted_image.png}}
+Simplistically, it defines the look-and-feel of the site (with the site’s logo), and provides “holes” for child templates to fill. This makes a site redesign as easy as changing a single file – the base template.
+
+== ================================================================= ==
+{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}It means “First load the template called ‘base’, which has defined a bunch of blocks, and fill the blocks with the following blocks.”

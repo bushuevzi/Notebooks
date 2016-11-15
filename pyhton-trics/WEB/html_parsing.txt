@@ -1,0 +1,78 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-05T00:52:24+03:00
+
+====== html parsing ======
+Created Вторник 05 Июль 2016
+**step 1: open parse text:**
+In [21]: import requests, bs4
+In [22]: res = requests.get('http://nostarch.com') #get page
+In [23]: res.raise_for_status()
+In [24]: noStarchSoup = bs4.BeautifulSoup(res.text)
+
+OR
+
+In [26]: exampleFile = open('./automate_online-materials/example.html')
+In [27]: exampleSoup = bs4.BeautifulSoup(exampleFile)
+------------------------------------------------------------------------------------------------------------------------------------
+**step 2: find the certein text by use css selectors:**
+{{./pasted_image.png}}
+**In [34]: elems = exampleSoup.select('#author')**
+In [35]: type(elems)
+Out[35]: list
+
+In [36]: len(elems)
+Out[36]: 1
+
+In [37]: type(elems[0])
+Out[37]: bs4.element.Tag
+
+In [38]: elems[0].getText()
+Out[38]: 'Al Sweigart'
+
+In [40]: str(elems[0])
+Out[40]: '<span id="author">Al Sweigart</span>'
+
+In [41]: elems[0].attrs
+Out[41]: {'id': 'author'}
+----------------------------------------------------
+**OR**
+**In [42]: pElems = exampleSoup.select('p')**
+
+In [43]: str(pElems[0])
+Out[43]: '<p>Download my <strong>Python</strong> book from <a href="http://inventwithpython.com">my website</a>.</p>'
+
+In [44]: pElems[0].getText()
+Out[44]: 'Download my Python book from my website.'
+
+In [45]: str(pElems[1])
+Out[45]: '<p class="slogan">Learn Python the easy way!</p>'
+
+In [46]: pElems[1].getText()
+Out[46]: 'Learn Python the easy way!'
+
+In [47]: str(pElems[2])
+Out[47]: '<p>By <span id="author">Al Sweigart</span></p>'
+
+In [48]: pElems[2].getText()
+Out[48]: 'By Al Sweigart'
+
+**------------------------------------------------------------------------------------------------------------------------------------**
+**Getting Data from an Element’s Attributes**
+In [50]: import bs4
+In [51]: soup = bs4.BeautifulSoup(open('./automate_online-materials/example.html'))
+In [52]: spanElem = soup.select('span')[0]
+In [53]: str(spanElem)
+Out[53]: '<span id="author">Al Sweigart</span>'
+
+In [54]: spanElem.get('id')
+Out[54]: 'author'
+
+In [55]: spanElem.get('some_nonexistent_addr') == None
+Out[55]: True
+
+In [56]: spanElem.attrs
+Out[56]: {'id': 'author'}
+
+
+

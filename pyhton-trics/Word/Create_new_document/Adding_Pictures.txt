@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-11T02:00:00+03:00
+
+====== Adding Pictures ======
+Created Понедельник 11 Июль 2016
+
+In [53]: doc.save('headings.docx')
+In [54]: doc = docx.Document()
+In [60]: doc.add_picture('../data/automate_online-materials/zophie.png', width = docx.shared.Inches(1), height = docx.shared.Cm(4))
+Out[60]: <docx.shape.InlineShape at 0x7f42f4f872e8>
+
+In [61]: doc.save('twoPage.docx')

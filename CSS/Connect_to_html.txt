@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-04T21:31:10+03:00
+
+====== Connect to html ======
+Created Вторник 04 Октябрь 2016
+
+ <head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+

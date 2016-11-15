@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-25T22:00:17+03:00
+
+====== 7.1.1. Search view ======
+Created Воскресенье 25 Сентябрь 2016
+
+**to urls.py insert** {{./pasted_image002.png}}
+
+------------------------------
+
+{{./pasted_image.png}}
+
+
+1. {{./pasted_image001.png}} looks for a GET parameter named q and returns an empty string if that parameter wasn’t submitted.
+2. //Q// objects are used to build up complex queries — in this case, we’re searching for any books where either the title or the name of one of the authors matches the search query
+3. //icontains// is a case-insensitive search that uses the SQL LIKE operator in the underlying database.
+4. Adding //.distinct()// to the filter lookup eliminates any duplicate results.

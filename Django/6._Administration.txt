@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-20T22:48:25+03:00
+
+====== 6. Administration ======
+Created Вторник 20 Сентябрь 2016
+
+1. ?????  it nessesary????? Add admin metadata to your models.
+class Book(models.Model):
+	title = models.CharField(max_length = 100)
+	author = models.ManyToManyField(Author)
+	publisher = models.ForeignKey(Publisher)
+	publication_date = models.DateField()
+
+	def __str__(self):
+		return self.title
+	class Admin:
+		pass
+
+
+
+
+**python manage.py makemigrations**
+**python manage.py migrate**
+**python manage.py createsuperuser**
+
+in urls.py:
+
+from django.contrib import admin
+urlpatterns = [
+	**url(r'^admin/', admin.site.urls),**
+	url(r'^time/$', current_datetime),
+	url(r'^time/plus/(\d{1,2})/$', hours_ahead),
+]
+
+2. to **app/admin.py** declarete models:
+	from django.contrib import admin
+	**from .models import Author, Publisher, Book**
+	# Register your models here.
+	**admin.site.register(Author)**
+	**admin.site.register(Publisher)**
+	**admin.site.register(Book)**
+
+
+		
+		
+
+
+
+

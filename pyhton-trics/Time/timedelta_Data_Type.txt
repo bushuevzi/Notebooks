@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T00:57:16+03:00
+
+====== timedelta Data Type ======
+Created Четверг 11 Август 2016
+
+The **datetime.timedelta()** function takes keyword arguments **weeks** , **days** , **hours** , **minutes** , **seconds** , **milliseconds** , and **microseconds** .
+
+In [25]: delta = datetime.timedelta(days=11, hours=10, minutes=9, seconds=8)
+In [26]: delta.days,delta.seconds, delta.microseconds
+Out[26]: (11, 36548, 0)    	# seconds calculate as —  hours*60*60+ minutes*60 + seconds 
+							   #(10 hours, 9 minutes, and 8 seconds, expressed in seconds)
+In [27]: delta.total_seconds()   
+Out[27]: 986948.0
+In [29]: str(delta)
+Out[29]: '11 days, 10:09:08'
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+In [35]: dt = datetime.datetime.now()
+In [36]: dt
+Out[36]: datetime.datetime(2016, 8, 11, 1, 7, 36, 723998)
+
+In [37]: thousandDays = datetime.timedelta(days = 1000)
+In [38]: dt+thousandDays
+Out[38]: datetime.datetime(2019, 5, 8, 1, 7, 36, 723998)

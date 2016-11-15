@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-10T01:30:36+03:00
+
+====== url ======
+Created Понедельник 10 Октябрь 2016
+
+insted
+{{./pasted_image.png}}
+
+**right is:**
+{{./pasted_image001.png}}
+
+detail is name in urls.py
+{{./pasted_image002.png}}

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-12T01:48:19+03:00
+
+====== 2D-array ======
+Created Вторник 12 Июль 2016
+
+values = [[0 for x in range(sheet.max_column)] for y in range(sheet.max_row)]

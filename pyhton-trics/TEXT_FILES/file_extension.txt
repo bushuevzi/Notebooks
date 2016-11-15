@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-13T00:37:39+03:00
+
+====== file extension ======
+Created Среда 13 Июль 2016
+
+Use [[https://docs.python.org/2/library/os.path.html#os.path.splitext|os.path.splitext]]:
+
+>>> import os
+>>> filename, file_extension = os.path.splitext('/path/to/somefile.ext')
+>>> filename
+'/path/to/somefile'
+>>> file_extension
+'.ext'
+--------------------------------------------------------------------------------------------------------------------------------------------
+import os.path
+extension = os.path.splitext(filename)[1]
+--------------------------------------------------------------------------------------------------------------------------------------------
+if not csvFilename.endswith('.csv'):

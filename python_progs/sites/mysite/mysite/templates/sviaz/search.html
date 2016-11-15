@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Search {% if query %}
+      Results      
+    {% endif %}</title>
+  </head>
+  <body>
+    <h1>Search</h1>
+    <form action="." method="GET">
+      <label for="q">Search: </label>      
+      <input type="text" name="q" id="" value="{{ query|escape }}">
+      <input type="submit" name="" id="" value="Search">
+    </form>
+
+    {% if query %}
+      <h2>Results for "{{ query|escape }}":</h2> 
+      {% if results %}
+        <!--<ul>
+          {% for kanal in results %}
+            <li>{{ kanal.platform|escape }}</li>            
+            {% endfor %}-->
+         <table>
+           {% for kanal in results|dictsort:'platform' %}
+             <tr>
+               <th><a href="../object/{{ kanal.platform|escape }}">{{ kanal.platform|escape }}</a></th>
+               <th>{{ kanal.service|escape }}</th>
+               <th>{{ kanal.throughput|escape }}</th>
+               <th>{{ kanal.tarif|escape }}</th>
+               <th>{{ kanal.last_mile|escape }}</th>
+               <th>{{ kanal.provider|escape }}</th>
+               <th>{{ kanal.contract_number_legal|escape }}</th>
+               <th>{{ kanal.b_z|escape }}</th>
+             </tr>
+           {% endfor %}
+         </table>
+        </ul>
+      {% else %}
+        <p>No kanals found</p>
+      {% endif %}
+    {% endif %}
+  </body>
+</html>

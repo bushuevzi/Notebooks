@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-30T21:35:05+03:00
+
+====== Wildcard Character ======
+Created Четверг 30 Июнь 2016
+
+. (or dot) — wildcard that match any character except for a newline.

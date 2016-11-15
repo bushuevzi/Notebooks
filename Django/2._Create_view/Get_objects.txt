@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-23T18:47:06+03:00
+
+====== Get objects ======
+Created Воскресенье 23 Октябрь 2016
+
+**qset and Q:**
+from django.db.models import Q
+
+query = request.POST.get('q','')
+	if query:
+		qset = (
+			Q(platform_name__icontains=query) |
+			Q(region__icontains=query) |
+			Q(address__icontains=query) |
+			Q(oil_base__icontains=query)
+		)
+		platforms=Platform.objects.filter(qset).distinct()
+
+**certain object:**
+{{./pasted_image002.png}}
+{{./pasted_image.png}}
+
+
+{{./pasted_image001.png}}

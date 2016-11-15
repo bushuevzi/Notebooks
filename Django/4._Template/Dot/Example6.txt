@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-11T22:48:49+03:00
+
+====== Example6 ======
+Created Воскресенье 11 Сентябрь 2016
+
+Dots are also used to access list indices, for example:
+{{./pasted_image.png}}
+
+Negative list indices are not allowed.

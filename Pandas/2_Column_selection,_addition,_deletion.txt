@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-21T00:58:03+03:00
+
+====== 2 Column selection, addition, deletion ======
+Created Пятница 21 Октябрь 2016
+
+====== select ======
+In [30]: df['№ устройства']
+Out[30]: 
+0           ПП03604
+1             20400
+2             20400
+3             20400
+4             20400
+5             20400
+....
+
+====== delete ======
+
+In [31]: del df['С Даты']
+In [32]: del df['По дату']
+
+====== inserting ======
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}

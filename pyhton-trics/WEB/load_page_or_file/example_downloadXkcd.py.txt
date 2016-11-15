@@ -1,0 +1,64 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-11T00:21:30+03:00
+
+====== example downloadXkcd.py ======
+Created Четверг 11 Август 2016
+
+#!/usr/share/anaconda3/bin/python3.5
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May  4 00:56:42 2016
+
+@author: root
+"""
+########################
+# import block
+########################
+
+import requests
+import os
+import bs4
+
+########################
+# def block
+########################
+
+########################
+# main block
+########################
+def main():
+	url = 'http://xkcd.com'             # starting url
+	os.makedirs('xkcd', exist_ok=True)  # store comics in ./xkcd
+	while not url.endswith('#'):
+		# Download the page
+		print('Downlading page %s...' % url)
+		res = requests.get(url)
+		res.raise_for_status()
+
+		soup = bs4.BeautifulSoup(res.text)
+		# Find the URL of the comix image.
+		comicElem = soup.select('#comic img')
+		if comicElem == []:
+			print('Could not find comic image.')
+		else:
+			comicUrl = 'http:' + comicElem[0].get('src')
+			# Download the image.
+			print('Downloading image %s...' % (comicUrl))
+			res = requests.get(comicUrl)
+			res.raise_for_status()
+			# Save the image to ./xkcd
+			imageFile = open(os.path.join('xkcd', os.path.basename(comicUrl)), 'wb')
+			for chunk in res.iter_content(100000):
+				imageFile.write(chunk)
+			imageFile.close()
+		# Get the Prev button's url.
+		prevLink = soup.select('a[rel="prev"]')[0]
+		url = 'http://xkcd.com' + prevLink.get('href')
+
+	print('Done.')
+
+
+
+if __name__ == '__main__':
+	main()

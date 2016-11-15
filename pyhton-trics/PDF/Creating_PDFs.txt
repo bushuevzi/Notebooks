@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T23:47:59+03:00
+
+====== Creating PDFs ======
+Created Воскресенье 10 Июль 2016
+
+PyPDF2 doesn’t allow you to directly edit a PDF. Instead, you have to
+create a new PDF and then copy content over from an existing document.
+The examples in this section will follow this general approach:
+1. Open one or more existing PDFs (the source PDFs) into PdfFileReader
+objects.
+2. Create a new PdfFileWriter object.
+3. Copy pages from the PdfFileReader objects into the PdfFileWriter object.
+4. Finally, use the PdfFileWriter object to write the output PDF.
+
+import PyPDF2
+pdf1File = open('meetingminutes.pdf', 'rb')
+pdf2File = open('meetingminutes2.pdf', 'rb')
+pdf1Reader = PyPDF2.PdfFileReader(pdf1File)
+pdf2Reader = PyPDF2.PdfFileReader(pdf2File)
+pdfWriter = PyPDF2.PdfFileWriter()
+
+for pageNum in range(pdf1Reader.numPages):
+	pageObj = pdf1Reader.getPage(pageNum)
+	pdfWriter.addPage(pageObj)
+
+for pageNum in range(pdf2Reader.numPages):
+	pageObj = pdf2Reader.getPage(pageNum)
+	pdfWriter.addPage(pageObj)
+
+pdfOutputFile = open('combinedminutes.pdf', 'wb')
+pdfWriter.write(pdfOutputFile)
+pdfOutputFile.close()
+pdf1File.close()
+pdf2File.close()

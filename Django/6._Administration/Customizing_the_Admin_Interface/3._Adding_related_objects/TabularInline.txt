@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-11T22:14:43+03:00
+
+====== TabularInline ======
+Created Вторник 11 Октябрь 2016
+
+**TabularInline** (instead of **StackedInline**):
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

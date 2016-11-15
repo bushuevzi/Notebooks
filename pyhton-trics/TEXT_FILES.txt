@@ -1,0 +1,66 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-02T01:32:09+03:00
+
+====== TEXT FILES ======
+Created Суббота 02 Июль 2016
+
+----------------------------------------------------------------------------------------------------------------------------------
+**get size of file**
+In [15]: os.path.getsize(path)
+Out[15]: 1576
+
+----------------------------------------------------------------------------------------------------------------------------------
+**Check exist files o directorys:**
+In [18]: os.path.exists('/home/dev/')
+Out[18]: True
+
+In [19]: os.path.exists('/home/dev/.viminfo')
+Out[19]: True
+----------------------------------------------------------------------------------------------------------------------------------
+**Reading/Writing Process**
+1. Call the open() function to return a File object.
+		file object = open(file_name [, access_mode][, buffering])
+	In [21]: helloFile = open('./hello.txt')
+	
+3. Call the read(). readline(), readlines() or write() method on the File object.
+	In [22]: helloContent = helloFile.read()
+	In [23]: helloContent
+	Out[23]: 'Hello world!\n'
+3.1 WRITE
+
+
+3.1. seek(offset[, from]) method changes the current file position. tell() method tells you the current position
+ 
+4. Close the file by calling the close() method on the File object.
+----------------------------------------------------------------------------------------------------------------------------------
+outputFile = open('output.csv', 'w', **newline=''**)
+----------------------------------------------------------------------------------------------------------------------------------
+**Copy files:**
+In [1]: import shutil
+In [3]: shutil.copy('./hello.txt', '../')
+Out[3]: '../hello.txt'
+
+In [6]: shutil.copy('./hello.txt', '../hello1.txt')
+Out[6]: '../hello1.txt'
+----------------------------------------------------------------------------------------------------------------------------------
+**Move files and folders:**
+In [29]: shutil.move('./bacon.txt', './aggs')
+Out[29]: './aggs/bacon.txt'
+----------------------------------------------------------------------------------------------------------------------------------
+**Remove files:**
+os.unlink(path) will delete the file at path .
+os.remove('./bacon.txt') 
+----------------------------------------------------------------------------------------------------------------------------------
+**search files with certain extention:**
+In [38]: for filename in os.listdir():
+   ....:     if filename.**endswith('.txt')**:
+   ....:         print(filename)
+
+In [38]: for filename in os.listdir():
+   ....:     if filename.**startswith('file_na')**:
+   ....:         print(filename)
+
+
+
+

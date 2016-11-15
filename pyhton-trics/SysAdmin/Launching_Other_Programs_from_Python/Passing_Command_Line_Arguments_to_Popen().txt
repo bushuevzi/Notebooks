@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-15T11:09:28+03:00
+
+====== Passing Command Line Arguments to Popen() ======
+Created понедельник 15 Август 2016
+
+In [11]: subprocess.Popen(['notepad', 'C:\\Temp\\Hello.txt'])	# send args as second element of list that is agrument of Popen() function
+Out[11]: <subprocess.Popen at 0x95e2b70>

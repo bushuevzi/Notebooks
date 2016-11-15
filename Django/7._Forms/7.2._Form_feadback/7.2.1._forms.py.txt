@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-26T23:23:36+03:00
+
+====== 7.2.1. forms.py ======
+Created Понедельник 26 Сентябрь 2016
+----------------------------------------------------------------------------------------------------------------------------------------
+from django import forms 
+
+TOPIC_CHOICES = (
+	('general', 'General enquiry'),
+	('bug', 'Bug report'),
+	('suggestion', 'Suggestion'),
+)
+
+class ContactForm(forms.Form):
+	topic = forms.ChoiceField(choices=TOPIC_CHOICES)
+	message = forms.CharField(widget=forms.Textarea(), initial='Replace with your feedback')
+	sender = forms.EmailField(required=False)
+----------------------------------------------------------------------------------------------------------------------------------------
+

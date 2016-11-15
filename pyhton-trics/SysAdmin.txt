@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-15T10:27:21+03:00
+
+====== SysAdmin ======
+Created понедельник 15 Август 2016
+

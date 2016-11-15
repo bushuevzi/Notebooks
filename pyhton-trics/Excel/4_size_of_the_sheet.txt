@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T00:38:15+03:00
+
+====== 4 size of the sheet ======
+Created Воскресенье 10 Июль 2016
+
+**Size of the sheet:**
+In [33]: sheet.max_column
+Out[33]: 3
+In [34]: sheet.max_row
+Out[34]: 7
+
+//old version://
+In [31]: sheet.get_highest_column()
+Out[31]: 3
+In [32]: sheet.get_highest_row()
+Out[32]: 7

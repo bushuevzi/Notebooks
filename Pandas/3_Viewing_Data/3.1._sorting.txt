@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-22T15:25:01+03:00
+
+====== 3.1. sorting ======
+Created Суббота 22 Октябрь 2016
+
+{{./pasted_image.png}}

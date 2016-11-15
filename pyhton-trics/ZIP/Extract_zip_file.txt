@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-03T22:54:50+03:00
+
+====== Extract zip file ======
+Created Воскресенье 03 Июль 2016
+**Extract all files from zip archive:**
+In [42]: import zipfile
+In [52]: exampleZip = zipfile.ZipFile('example.zip')
+In [53]: exampleZip.extractall('../')
+In [54]: exampleZip.close()
+----------------------------------------------------------------------------------------------------------------------------------
+**Extract single file from zip archive:**
+
+In [55]: exampleZip = zipfile.ZipFile('example.zip')
+
+In [56]: exampleZip.extract('spam.txt', '../spam/')
+Out[56]: '../spam/spam.txt'
+
+In [54]: exampleZip.close()

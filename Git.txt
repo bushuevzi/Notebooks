@@ -1,0 +1,43 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-15T22:45:38+03:00
+
+====== Git ======
+Created Вторник 15 Ноябрь 2016
+
+__configure:__
+{{./pasted_image.png}}
+
+__using:__
+**git init ** --- create a git repository
+**git status ** — show difference (new files or chenged files), show untracked files
+**git diff** — show differences in 
+{{./pasted_image006.png}}
+**git add file_name.ext  **— add file to repository (track chanches - that file) for commit
+**git commit **— commit changes in content of files:
+**git commit** **-m 'new updates' ** — commit changes with message "new updates"
+**git reset clalc.py**  — remove file from staging area (from list files for commit)
+
+__information:__
+**git remote -v**
+**git branch -a**  
+
+__create new branch:__
+**git branch MyBranch ** — create new branch "MyBranch"
+**git checkout MyBranch ** — switch to new branch 'MyBranch'
+**git checkout master ** — switch to master branch
+**git branch ** — without branch_name show all branches:
+{{./pasted_image005.png}}
+**git branch -d name_of_branch **— delete branch
+
+**git merge MyBranch**  — display differances between and merge both branches
+**git mergetool ** — if there is conflicts  use this tool
+
+__get help:__
+{{./pasted_image001.png}}
+
+__for ignore:__
+{{./pasted_image002.png}}
+and fill it with filenames (support filemasks):
+{{./pasted_image003.png}}
+

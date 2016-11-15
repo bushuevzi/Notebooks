@@ -1,0 +1,44 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-11T23:21:07+03:00
+
+====== for ======
+Created Воскресенье 11 Сентябрь 2016
+
+The {% for %} tag allows you to loop over each item in a sequence. As in Python’s for statement, the syntax is for X in Y, where Y is the sequence to loop over and X is the name of the variable to use for a particular cycle of the loop. Each time through the loop, the template system will render everything between {% for %} and {% endfor %}.
+
+Display a list of athletes given a variable athlete_list:
+{{./pasted_image.png}}
+
+Add **reversed** to the tag to loop over the list in reverse:
+{{./pasted_image001.png}}
+
+== ==================================================================================== ==
+The {% for %} tag sets a magic **forloop** template variable within the loop. This variable has a few
+attributes that give you information about the progress of the loop:
+* **forloop.counter** is always set to an integer representing the number of times the loop has been
+entered. This is one-indexed, so the first time through the loop, **forloop.counter** will be set to **1**.
+Here’s an example:
+	{{./pasted_image003.png}}
+* **forloop.counter0** is like forloop.counter, except it’s zero-indexed. Its value will be set to
+**0** the first time through the loop.
+* **forloop.revcounter** is always set to an integer representing the number of remaining items in
+the loop. The first time through the loop, **forloop.revcounter** will be set to the total number of
+items in the sequence you’re traversing. The last time through the loop, **forloop.revcounter**
+will be set to **1**.
+* **forloop.revcounter0** is like forloop.revcounter, except it’s zero-indexed. The first
+time through the loop, **forloop.revcounter0** will be set to the number of elements in the
+sequence minus 1. The last time through the loop, it will be set to **0**.
+* **forloop.first** is a Boolean value set to True if this is the first time through the loop. This is
+convenient for special casing:
+	{{./pasted_image002.png}}
+* **forloop.last** is a Boolean value set to True if this is the last time through the loop. A common
+use for this is to put pipe characters between a list of links:
+		{{./pasted_image004.png}}
+	The above template code might output something like this::
+		Link1 | Link2 | Link3 | Link4
+* **forloop.parentloop** is a reference to the forloop object for the parent loop, in case of nested
+loops. Here’s an example:
+	{{./pasted_image005.png}}
+	{{./pasted_image008.png}}
+

@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-21T00:38:49+03:00
+
+====== sys ======
+Created Вторник 21 Июнь 2016
+
+sys.argv  - list of args (include program_name in position 0)
+sys.exit - end programm
+

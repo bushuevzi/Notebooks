@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T23:27:06+03:00
+
+====== PDF ======
+Created Воскресенье 10 Июль 2016
+
+Поддержка слабая

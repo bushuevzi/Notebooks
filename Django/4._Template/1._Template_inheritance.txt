@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-18T01:57:38+03:00
+
+====== 1. Template inheritance ======
+Created Воскресенье 18 Сентябрь 2016
+
+
+Define base template, and then in anorthe cildren templates define the snippets that are different
+**base.html:**
+{{./pasted_image.png}}
+
+**current_datetime.html:**
+{{./pasted_image001.png}}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Create a **base.html** template that holds the main look and feel of your site. This is the stuff that
+rarely, if ever, changes.
+2. Create a **base_SECTION.html** template for each “section” of your site (e.g.,
+**base_photos.html** and b**ase_forum.html**). These templates extend **base.html** and
+include section-specific styles/design.
+3. Create individual templates for each type of page, such as a forum page or a photo gallery. These
+templates extend the appropriate section template.

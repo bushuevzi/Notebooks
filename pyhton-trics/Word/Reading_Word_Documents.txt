@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-11T00:11:40+03:00
+
+====== Reading Word Documents ======
+Created Понедельник 11 Июль 2016
+
+In [1]: import docx
+In [2]: doc = docx.Document('../data/automate_online-materials/demo.docx')
+In [3]: len(doc.paragraphs)
+Out[3]: 7
+
+In [4]: doc.paragraphs[0].text
+Out[4]: 'Document Title'
+
+In [6]: doc.paragraphs[1].text
+Out[6]: 'A plain paragraph with some bold and some italic'
+
+In [7]: len(doc.paragraphs[1].runs)
+Out[7]: 5
+
+In [8]: doc.paragraphs[1].runs[0].text
+Out[8]: 'A plain paragraph with'
+
+In [9]: doc.paragraphs[1].runs[1].text
+Out[9]: ' some '
+
+In [10]: doc.paragraphs[1].runs[2].text
+Out[10]: 'bold'
+
+In [11]: doc.paragraphs[1].runs[3].text
+Out[11]: ' and some '
+
+In [12]: doc.paragraphs[1].runs[4].text
+Out[12]: 'italic'

@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-29T23:44:39+03:00
+
+====== 4. Template ======
+Created Понедельник 29 Август 2016
+==========================================================================================
+just write a **template**, create a **Template object**, create a **Context**, and call the **render()** method.		
+
+{{./pasted_image005.png}}     
+Hello, John
+Hello, Julie
+Hello, Pat
+
+==========================================================================================
+
+* Any text surrounded by a pair of braces (e.g., **{{ person_name }}**) is a **variable**. This means
+“insert the value of the variable with the given name.” How do we specify the values of the variables?
+We’ll get to that in a moment.
+* Any text that’s surrounded by curly braces and percent signs (e.g., **{% if ordered_warranty**
+**%}**) is a **template tag**. The definition of a tag is quite broad: a tag just tells the template system to “do
+something.”
+* Finally, the second paragraph of this template has an example of a filter, with which you can alter the
+display of a variable. In this example, {{./pasted_image.png?width=367}}, we’re passing the
+ship_date variable to the date filter, giving the date filter the argument "F j, Y". The date
+filter formats dates in a given format, as specified by that argument. Filters are attached using a pipe
+character (|), as a reference to Unix pipes.
+_______________________________________________________________________________________________________________
+
+**Using the Template System:**
+1. Create a Template object by providing the raw template code as a string. Django also offers a way
+to create Template objects by designating the path to a template file on the filesystem; 
+{{./pasted_image001.png}}
+//When using Django, you need to tell Django which settings to use. Interactively, this is typically done using//
+**python manage.py shell**
+
+
+2. Call the render() method of the Template object with a given set of variables (i.e., the context).A context is simply a set of variables and their associated values. This returns a fully rendered template as a string, with all of the variables and block tags evaluated according to the context. A Python dictionary is a mapping between known keys and variable values. A Context is similar to a dictionary, but a Context provides additional functionality
+{{./pasted_image002.png}}
+

@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-21T23:44:51+03:00
+
+====== regex ======
+Created Вторник 21 Июнь 2016
+tester of regex: http://regexpal.com/ 
+1. Import the regex module with __import re__ .
+2. Create a Regex object with the re.compile() function. (Remember to use a
+raw string.)
+__>>> phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')__
+3. Pass the string you want to search into the Regex object’s search() method.
+This returns a Match object.
+__mo = phoneNumRegex.search('My number is 415-555-4242.')__
+4. Call the Match object’s group() method to return a string of the actual
+matched text.
+__>>> print('Phone number found: ' + mo.group())__
+
+Adding parentheses will create groups in the regex: __(\d\d\d)-(\d\d\d-\d\d\d\d)__
+__>>> mo.group(1)__
+'415'
+>>> mo.group(2)
+'555-4242'
+________________________________________________________________________
+**Review of Regex Symbols**
+* The ? matches zero or one of the preceding group.
+* The * matches zero or more of the preceding group.
+* The + matches one or more of the preceding group.
+* The {n} matches exactly n of the preceding group.
+* The {n,} matches n or more of the preceding group.
+* The {,m} matches 0 to m of the preceding group.
+* The {n,m} matches at least n and at most m of the preceding group.
+* {n,m}? or *? or +? performs a nongreedy match of the preceding group.
+* ^spam means the string must begin with spam.
+* spam$ means the string must end with spam.
+* The . matches any character, except newline characters.
+* \d , \w , and \s match a digit, word, or space character, respectively.
+* \D , \W , and \S match anything except a digit, word, or space character,
+* respectively.
+* [abc] matches any character between the brackets (such as a, b, or c).
+* [^abc] matches any character that isn’t between the brackets.
+

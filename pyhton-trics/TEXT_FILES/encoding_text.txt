@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-03T23:10:07+03:00
+
+====== encoding text ======
+Created Воскресенье 03 Июль 2016
+
+In [69]: import codecs
+In [72]: spamFile = codecs.open('../spam/spam.txt', encoding = 'utf-16le')
+In [73]: spamcontent = spamFile.read()
+In [74]: spamcontent
+Out[74]: '\ufeff"Spam" is a popular Monty Python sketch, first televised in 1970. In the sketch, two customers are in a greasy spoon café trying ....

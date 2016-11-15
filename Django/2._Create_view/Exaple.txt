@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-07T00:33:24+03:00
+
+====== Exaple ======
+Created Пятница 07 Октябрь 2016
+
+{{./pasted_image.png}}

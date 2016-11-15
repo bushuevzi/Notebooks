@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-03T01:01:20+03:00
+
+====== liidelete element ======
+Created Воскресенье 03 Июль 2016
+
+del wrongAnswers[wrongAnswers.index(correctAnswer)]

@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-25T01:42:54+03:00
+
+====== Pydev ======
+Created Воскресенье 25 Сентябрь 2016
+
+Right click on your project folder and...
+
+PyDev > Set as PyDev project
+
+Right click again and...
+
+Properties > PyDev - PYTHONPATH
+
+Click on External Libraries. Click on Add source folder. Choose your project folder and also your site-packages folder. If you're using virtualenv, and of course, why wouldn't you be ;) you'll want to choose the appropriate virtualenv's site-packages. You do not have to choose the system site-packages folder.
+
+Now let's check the autocomplete settings... Window > Preferences > PyDev > Editor > Code Completion

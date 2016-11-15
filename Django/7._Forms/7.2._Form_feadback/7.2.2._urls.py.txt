@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-26T23:24:55+03:00
+
+====== 7.2.2. urls.py ======
+Created Понедельник 26 Сентябрь 2016
+
+from django.conf.urls import url
+from django.contrib import admin
+from mysite.views import current_datetime, hours_ahead
+import sviaz.views
+**import books.views**
+
+
+urlpatterns = [
+	url(r'^admin/', admin.site.urls),
+	url(r'^time/$', current_datetime),
+	url(r'^time/plus/(\d{1,2})/$', hours_ahead),
+	url(r'^search/$', sviaz.views.search),
+	url(r'^object/([\w\W]*)/$', sviaz.views.object_info),
+	**url(r'^contact/$', books.views.contact**),
+]

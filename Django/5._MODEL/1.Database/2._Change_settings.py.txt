@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-09-18T23:03:04+03:00
+
+====== 2. Change settings.py ======
+Created Воскресенье 18 Сентябрь 2016
+
+add app to INSTALLED_APPS
+
+
+INSTALLED_APPS = (
+	#'django.contrib.auth',
+	#'django.contrib.contenttypes',
+	#'django.contrib.sessions',
+	#'django.contrib.sites',
+	'mysite.books',
+)
+
+

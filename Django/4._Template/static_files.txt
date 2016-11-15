@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-11T15:54:30+03:00
+
+====== kjstatic files ======
+Created Вторник 11 Октябрь 2016
+
+**polls** - app
+
+First, create a directory called **static** in your **polls** directory. Django will look for static files there, similarly to how Django finds templates inside **polls/templates/.**
+Within the **static** directory you have just created, create another directory called **polls** and within that create a file called **style.css**. In other words, your stylesheet should be at **polls/static/polls/style.css**. Because of how the **AppDirectoriesFinder** staticfile finder works, you can refer to this static file in Django simply as **polls/style.css**, similar to how you reference the path for templates.
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}
+
+
+Next, we’ll create a subdirectory for images. Create an **images** subdirectory in the **polls/static/polls/ **directory. Inside this directory, put an image called **background.gif**. In other words, put your image in **polls/static/polls/images/background.gif**.
+{{./pasted_image003.png}}

@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-09T02:50:14+03:00
+
+====== 4. Filters ======
+Created Воскресенье 09 Октябрь 2016
+
+>>> from polls.models import Question, Choice
+>>> Question.objects.filter(question_text__startswith='What')
+<QuerySet [<Question: What's up?>]>
+
+In [4]: Question.objects.filter(question_text__contains='hat')
+Out[4]: <QuerySet [<Question: What's up?>]>
+
+In [7]: Question.objects.filter(question_text__endswith='?')
+Out[7]: <QuerySet [<Question: What's up?>]>
+
+>>> Question.objects.filter(id=1)
+<QuerySet [<Question: What's up?>]>
+
+
+
+# The API automatically follows relationships as far as you need.
+# Use double underscores to separate relationships.
+# This works as many levels deep as you want; there's no limit.
+# Find all Choices for any question whose pub_date is in this year
+# (reusing the 'current_year' variable we created above).
+>>> Choice.objects.filter(question__pub_date__year=current_year)
+<QuerySet [<Choice: Not much>, <Choice: The sky>, <Choice: Just hacking again>]>

@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-22T00:46:04+03:00
+
+====== Matching Specific Repetitions with Curly Brackets ======
+Created Среда 22 Июнь 2016
+
+Follow the group in your regex with a number in curly brackets. For example, the regex (Ha){3}.
+Instead of one number, you can specify a range by writing a minimum,a comma, and a maximum in between the curly brackets. For example, the regex (Ha){3,5} will match 'HaHaHa' , 'HaHaHaHa' , and 'HaHaHaHaHa'.

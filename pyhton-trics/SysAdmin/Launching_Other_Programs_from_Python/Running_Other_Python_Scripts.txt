@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-15T11:26:28+03:00
+
+====== Running Other Python Scripts ======
+Created понедельник 15 Август 2016
+
+os.system("script2.py 1")
+os.system("python /media/dev/MULTIBOOT/Notebooks/python_progs/sites/mysite/manage.py shell")

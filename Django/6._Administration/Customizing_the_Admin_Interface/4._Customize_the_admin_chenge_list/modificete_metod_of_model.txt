@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-11T22:28:04+03:00
+
+====== modificete metod of model ======
+Created Вторник 11 Октябрь 2016
+
+You can click on the column headers to sort by those values – except in the case of the **was_published_recently** header, because sorting by the output of an arbitrary method is not supported. Also note that the column header for **was_published_recently** is, by default, the name of the method (with underscores replaced with spaces), and that each line contains the string representation of the output.
+
+You can improve that by giving that method (in **polls/models.py**) a few attributes, as follows:
+{{./pasted_image.png}}

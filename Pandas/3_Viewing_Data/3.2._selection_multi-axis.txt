@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-10-22T15:39:35+03:00
+
+====== 3.2. selection multi-axis ======
+Created Суббота 22 Октябрь 2016
+
+**Selection by  label:**
+{{./pasted_image001.png}}
+
+**Selection by Position:**
+{{./pasted_image002.png}}

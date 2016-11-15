@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-21T00:43:51+03:00
+
+====== upper(),lower() ======
+Created Вторник 21 Июнь 2016
+
+rand_string.upper()
+rand_string.lower()
+rand_string.isupper()
+rand_string.islower()

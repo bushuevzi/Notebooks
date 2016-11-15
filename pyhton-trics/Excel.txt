@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-09T23:14:27+03:00
+
+====== Excel ======
+Created Суббота 09 Июль 2016
+
+http://openpyxl.readthedocs.org/
+
+readCensusExcel.py    >> save data in census2010.py 
+
+{{./pasted_image.png}}
+
+In [8]: import openpyxl  
+In [9]: wb = openpyxl.Workbook()
+In [10]: sheet = wb.active
+In [11]: for i in range (1,11):			# insert data on sheet
+   ....:     sheet['A'+str(i)] = i
+
+In [29]: chartObj = openpyxl.chart.BarChart() 	# set type of chart
+In [30]: chartObj.type = 'col'						# set type of BarChart
+In [31]: chartObj.style = 10
+In [33]: data = openpyxl.chart.Reference(sheet,min_col=1, min_row=1, max_row=10, max_col=1)										# create referense to data
+
+In [34]: chartObj.add_data(data)				# add data to chart
+In [35]: category = openpyxl.chart.Reference(sheet, min_row=1, min_col=1,max_row=10)							# create reference to x - values(scale)
+
+In [36]: chartObj.set_categories(category)		# add category to chart
+In [38]: sheet.add_chart(chartObj, 'C4')		# draw chart
+In [39]: wb.save('sampleChart.xlsx')

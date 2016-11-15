@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T00:37:31+03:00
+
+====== wb2 Getting Cells ======
+Created Воскресенье 10 Июль 2016
+
+**Getting Cells from the Sheets:**
+In [17]: sheet['A1']
+Out[17]: <Cell Sheet1.A1>
+
+In [18]: sheet['A1'].value
+Out[18]: datetime.datetime(2015, 4, 5, 13, 34, 2)
+
+In [19]: c = sheet['B1']
+
+In [21]: c.value
+Out[21]: 'Apples'
+
+In [22]: 'Row ' + str(c.row) + ', Column ' + c.column + ' is ' + c.value
+Out[22]: 'Row 1, Column B is Apples'
+
+In [23]: 'Cell ' + c.coordinate + ' is ' + c.value
+Out[23]: 'Cell B1 is Apples'
+
+In [24]: sheet['C1'].value
+Out[24]: 73
+
+**You can also get a cell using the sheet’s cell() method and passing integers for its row and column keyword arguments. The first row or column integer is 1 , not 0:**
+In [26]: sheet.cell(row=1, column=2).value
+Out[26]: 'Apples'
+
+In [27]: for i in range(1,8,2):
+   ....:     print(i, sheet.cell(row=i, column=2).value)
+1 Apples
+3 Pears
+5 Apples
+7 Strawberries

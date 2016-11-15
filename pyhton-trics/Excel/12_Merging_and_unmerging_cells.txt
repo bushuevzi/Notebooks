@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T19:47:07+03:00
+
+====== 12 Merging and unmerging cells ======
+Created Воскресенье 10 Июль 2016
+**merge cels:**
+In [67]: import openpyxl
+In [68]: wb = openpyxl.Workbook()
+In [69]: sheet = wb.active
+In [70]: sheet.merge_cells('A1:D3')
+In [71]: sheet.cell(row=1, column=1).value = 'Twelve cells merged together.'
+In [72]: sheet.merge_cells('C5:D5')
+In [75]: sheet['C5'] = 'Two merged cells.'
+In [76]: wb.save('merged.xlsx')
+
+To set the value of these merged cells, simply set the value of the top-left cell of the merged group.
+----------------------------------------------------------------------------------------------------------------------------------
+**unmerge cels:**
+In [78]: import openpyxl
+In [79]: wb = openpyxl.load_workbook('merged.xlsx')
+In [80]: sheet = wb.active
+In [81]: sheet.unmerge_cells('A1:D3')
+In [82]: sheet.unmerge_cells('C5:D5')
+In [83]: wb.save('merged.xlsx')

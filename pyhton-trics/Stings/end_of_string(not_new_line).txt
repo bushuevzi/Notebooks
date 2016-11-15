@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-10T00:22:13+03:00
+
+====== end of string(not new line) ======
+Created Воскресенье 10 Июль 2016
+
+print('Hello world', **end=""**)

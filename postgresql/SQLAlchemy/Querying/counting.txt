@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-10T23:03:10+03:00
+
+====== counting ======
+Created Четверг 10 Ноябрь 2016
+
+{{./pasted_image.png}}

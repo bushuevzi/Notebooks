@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-06-27T01:22:18+03:00
+
+====== Greedy and nongreedy matching ======
+Created Понедельник 27 Июнь 2016
+
+Python’s regular expressions are greedy by default, which means that in
+ambiguous situations they will match the longest string possible. The non-
+greedy version of the curly brackets, which matches the shortest string pos-
+sible, has the **closing curly bracket followed by a question mark.**
+
+>>> greedyHaRegex = re.compile(r'(Ha){3,5}')
+>>> mo1 = greedyHaRegex.search('HaHaHaHaHa')
+>>> mo1.group()
+'HaHaHaHaHa'
+**>>> nongreedyHaRegex = re.compile(r'(Ha){3,5}?')**
+**>>> mo2 = nongreedyHaRegex.search('HaHaHaHaHa')**
+**>>> mo2.group()**
+**'HaHaHa'**

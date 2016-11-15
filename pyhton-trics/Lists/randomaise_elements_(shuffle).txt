@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-07-03T01:04:25+03:00
+
+====== randomaise elements (shuffle) ======
+Created Воскресенье 03 Июль 2016
+
+random.shuffle(answerOptions)
