@@ -5,9 +5,16 @@ Creation-Date: 2016-11-15T23:57:14+03:00
 ====== remote ======
 Created Вторник 15 Ноябрь 2016
 
-git clone <url> <where to clone>
-git clone [[../remote_repo.git]] .       — example
+**git clone <url> <where to clone>**
+**git clone ../remote_repo.git .**       — example
 
 __information:__
-git remote -v
-git branch -a  
+**git remote -v**
+**git branch -a**  
+
+**git pull origin master**  — get from remote repository latest version
+**git push origin master** — save to remote repository version from local repository
+
+__if error, try this:__
+in remote repositary set:
+**git config receive.denyCurrentBranch "ignore"**

@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-21T00:15:55+03:00
+
+====== dedublicate lines in file ======
+Created Понедельник 21 Ноябрь 2016
+
+if you want to read a file, eliminating duplicate lines, you could simply do this:
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

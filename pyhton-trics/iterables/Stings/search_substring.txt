@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-08-19T14:10:37+03:00
+
+====== search substring ======
+Created пятница 19 Август 2016
+
+>>> substring = "please help me out"
+>>> string = "please help me out so that I could solve this"
+>>> substring in string
+True

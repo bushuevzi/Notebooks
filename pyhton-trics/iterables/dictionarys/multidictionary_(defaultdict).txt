@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-20T22:57:51+03:00
+
+====== multidictionary (defaultdict) ======
+Created Воскресенье 20 Ноябрь 2016
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}
+==========================================================================================================
+
+A feature of defaultdict is that it automatically initializes the first value so you can simply focus on adding items. For example:
+	In [3]: from collections import defaultdict
+	In [4]: d = defaultdict(list)
+	In [5]: d['a'].append(1)
+	In [6]: d['a'].append(2)
+	In [7]: d['b'].append(4)
+	In [8]: d
+	Out[8]: defaultdict(list, {'a': [1, 2], 'b': [4]})
+	
+	In [12]: d['a'].add(1)
+	In [13]: d['a'].add(2)
+	In [14]: d['a'].add(3)
+	In [15]: d['b'].add(4)
+	In [16]: d['b'].add(5)
+	In [17]: d
+	Out[17]: defaultdict(set, {'a': {1, 2, 3}, 'b': {4, 5}})
