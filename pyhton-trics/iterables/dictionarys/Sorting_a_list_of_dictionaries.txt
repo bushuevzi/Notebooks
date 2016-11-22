@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-22T23:07:21+03:00
+
+====== Sorting a list of dictionaries ======
+Created Вторник 22 Ноябрь 2016
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

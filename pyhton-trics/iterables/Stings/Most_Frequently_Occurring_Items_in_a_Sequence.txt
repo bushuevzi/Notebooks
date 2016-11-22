@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-22T22:36:47+03:00
+
+====== Most Frequently Occurring Items in a Sequence ======
+Created Вторник 22 Ноябрь 2016
+
+To illustrate, let’s say you have a list of words and you want to find out which words occur most often:
+
+{{./pasted_image.png}}
+

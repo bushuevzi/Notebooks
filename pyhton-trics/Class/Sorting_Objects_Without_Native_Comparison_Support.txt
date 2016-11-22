@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-22T23:35:17+03:00
+
+====== Sorting Objects Without Native Comparison Support ======
+Created Вторник 22 Ноябрь 2016
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
