@@ -9,3 +9,10 @@ Created Вторник 21 Июнь 2016
 True
 >>> 'Hello world!'.endswith('world!')
 True
+
+If you need to check against multiple choices, simply provide a tuple of possibilities to startswith() or endswith() :
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}
+

@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-23T23:48:31+03:00
+
+====== ignore case sensitive ======
+Created Среда 23 Ноябрь 2016
+
+{{./pasted_image.png}}
+
+The last example reveals a limitation that replacing text won’t match the case of the matched text. If you need to fix this, you might have to use a support function, as in the following:
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}

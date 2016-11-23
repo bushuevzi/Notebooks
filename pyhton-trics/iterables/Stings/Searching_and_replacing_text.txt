@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-23T23:34:41+03:00
+
+====== Searching and replacing text ======
+Created Среда 23 Ноябрь 2016
+
+For simple literal patterns, use the str.replace() method. For example:
+{{./pasted_image.png}}
+For more complicated patterns, use the sub() functions/methods in the re module. To illustrate, suppose you want to rewrite dates of the form “11/27/2012” as “2012-11-27.” Here is a sample of how to do it:
+{{./pasted_image001.png}}
+{{./pasted_image003.png}}
+The first argument to **sub()** is the pattern to match and the second argument is the replacement pattern. Backslashed digits such as **\3** refer to capture group numbers in the pattern.
+{{./pasted_image005.png}}
+
