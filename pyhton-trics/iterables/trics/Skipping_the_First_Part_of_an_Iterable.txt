@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T23:12:09+03:00
+
+====== Skipping the First Part of an Iterable ======
+Created Воскресенье 27 Ноябрь 2016
+**Problem**
+You want to iterate over items in an iterable, but the first few items aren’t of interest and you just want to discard them.
+**Solution**
+The itertools module has a few functions that can be used to address this task. The first is the itertools.dropwhile() function. To use it, you supply a function and an iterable. The returned iterator discards the first items in the sequence as long as the supplied function returns True . Afterward, the entirety of the sequence is produced.
+{{./pasted_image.png}}
+__If you want to skip all of the initial comment lines, here’s one way to do it:__
+{{./pasted_image001.png}}

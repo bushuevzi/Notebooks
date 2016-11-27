@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T23:27:20+03:00
+
+====== Iterating Over All Possible Combinations or Permutations ======
+Created Воскресенье 27 Ноябрь 2016
+
+You want to iterate over all of the possible combinations or **permutations** of a collection of items.
+{{./pasted_image.png}}
+Use **itertools.combinations()** to produce a sequence of combinations of items taken from the input. For example:
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+
+{{./pasted_image003.png}}

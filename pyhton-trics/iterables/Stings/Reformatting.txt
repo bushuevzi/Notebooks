@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T21:38:10+03:00
+
+====== Reformatting ======
+Created Воскресенье 27 Ноябрь 2016
+https://docs.python.org/3.3/library/textwrap.html#textwrap.TextWrapper
+
+
+
+{{./pasted_image.png}}

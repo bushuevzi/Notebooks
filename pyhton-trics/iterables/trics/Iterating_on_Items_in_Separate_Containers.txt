@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-28T00:13:51+03:00
+
+====== Iterating on Items in Separate Containers ======
+Created Понедельник 28 Ноябрь 2016
+
+**Problem**
+You need to perform the same operation on many objects, but the objects are contained in different containers, and you’d like to avoid nested loops without losing the readability of your code.
+**Solution**
+The **itertools.chain()** method can be used to simplify this task. It takes a list of iterables as input, and returns an iterator that effectively masks the fact that you’re really acting on multiple containers.
+{{./pasted_image.png}}

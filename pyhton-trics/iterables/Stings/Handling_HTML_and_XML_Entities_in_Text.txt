@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T21:47:10+03:00
+
+====== Handling HTML and XML Entities in Text ======
+Created Воскресенье 27 Ноябрь 2016
+
+{{./pasted_image001.png}}
+If you’re actually processing HTML or XML, try using a proper HTML or XML parser first. Normally, these tools will automatically take care of replacing the values for you during parsing and you don’t need to worry about it.
+
+If, for some reason, you’ve received bare text with some entities in it and you want them replaced manually, you can usually do it using various utility functions/methods associated with HTML or XML parsers. For example: 
+{{./pasted_image.png}}

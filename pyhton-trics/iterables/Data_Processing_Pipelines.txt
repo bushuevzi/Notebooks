@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-28T00:25:38+03:00
+
+====== Data Processing Pipelines ======
+Created Понедельник 28 Ноябрь 2016
+
+{{./pasted_image001.png}}
+You can now easily stack these functions together to make a processing pipeline. For example, to find all log lines that contain the word __python__, you would just do this:
+{{./pasted_image002.png}}

@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-28T00:49:08+03:00
+
+====== Iterating in Sorted Order Over Merged Sorted Ierables ======
+Created Понедельник 28 Ноябрь 2016
+**Problem**
+You have a collection of sorted sequences and you want to iterate over a sorted sequence of them all merged together.
+**Solution**
+The **heapq.merge()** function does exactly what you want. For example:
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}

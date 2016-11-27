@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T22:10:55+03:00
+
+====== Delegating Iteration ======
+Created Воскресенье 27 Ноябрь 2016
+
+**Problem**
+You have built a custom container object that internally holds a list, tuple, or some other iterable. You would like to make iteration work with your new container.
+**Solution**
+Typically, all you need to do is define an **__iter__()** method that delegates iteration to the internally held container. For example:
+{{./pasted_image.png}}

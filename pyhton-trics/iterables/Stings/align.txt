@@ -8,3 +8,17 @@ Created Вторник 21 Июнь 2016
 string.ljust(width_int, '.') — align by left (fill '.' on right)
 string.rjust(width_int, '*') — align by right (fill '*' on left)
 string.center(width_int, '-') — align by center (fill '-' on both sides -left and right)
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}
+The format() function can also be used to easily align things. All you need to do is use the < , > , or ^ characters along with a desired width. For example:
+{{./pasted_image002.png}}
+If you want to include a fill character other than a space, specify it before the alignment character:
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
+
+These format codes can also be used in the format() method when formatting multiple values. For example:
+{{./pasted_image005.png}}
+
+One benefit of format() is that it is not specific to strings. It works with any value, making it more general purpose. For instance, you can use it with numbers:
+{{./pasted_image006.png}}

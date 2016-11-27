@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T17:49:13+03:00
+
+====== Unicode decimal digit to ASCII ======
+Created Воскресенье 27 Ноябрь 2016
+
+{{./pasted_image.png}}
+

@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T22:40:30+03:00
+
+====== Creating New Iteration Patterns with Generators ======
+Created Воскресенье 27 Ноябрь 2016
+
+If you want to implement a new kind of iteration pattern, define it using a generator function. Here’s a generator that produces a range of floating-point numbers:
+{{./pasted_image.png}}
+**The mere presence of the yield statement in a function turns it into a generator**

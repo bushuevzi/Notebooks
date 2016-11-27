@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T22:50:59+03:00
+
+====== Defining Generator Functions with Extra State ======
+Created Воскресенье 27 Ноябрь 2016
+
+If you want a generator to expose extra state to the user, don’t forget that you can easily implement it as a class, putting the generator function code in the **__iter__()** method. For example:
+{{./pasted_image.png}}
+To use this class, you would treat it like a normal generator function. However, since it creates an instance, you can access internal attributes, such as the history attribute or the clear() method. For example:
+{{./pasted_image001.png}}

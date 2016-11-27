@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T16:12:11+03:00
+
+====== 1. freelancer ======
+Created Воскресенье 27 Ноябрь 2016
+
+https://www.freelancer.com/projects/Software-Architecture/Write-some-software-12193237/#placebid
+https://www.freelancer.com/projects/Python/Write-some-python-code-integrate/#placebid
+https://www.freelancer.com/projects/Web-Scraping/Scrape-info/#placebid

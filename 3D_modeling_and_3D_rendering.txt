@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T16:45:58+03:00
+
+====== 3D modeling and 3D rendering ======
+Created Воскресенье 27 Ноябрь 2016
+
+http://vpython.org/
+http://www.panda3d.org/

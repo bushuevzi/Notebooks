@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-28T00:06:23+03:00
+
+====== Iterating Over Multiple Sequences Simultaneously ======
+Created Понедельник 28 Ноябрь 2016
+
+**Problem**
+You want to iterate over the items contained in more than one sequence at a time.
+**Solution**
+To iterate over more than one sequence simultaneously, use the **zip()** function. For example:
+{{./pasted_image.png}}
+**zip(a, b)** works by creating an iterator that produces tuples **(x, y)** where **x** is taken from **a** and **y** is taken from **b** . Iteration stops whenever one of the input sequences is exhausted. Thus, the length of the iteration is the same as the length of the shortest input.
+__If this behavior is not desired, use i__**tertools.zip_longest()**__ instead. For example:__
+{{./pasted_image001.png}}

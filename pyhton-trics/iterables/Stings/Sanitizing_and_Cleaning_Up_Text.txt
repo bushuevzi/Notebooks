@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T17:40:36+03:00
+
+====== Sanitizing and Cleaning Up Text ======
+Created Воскресенье 27 Ноябрь 2016
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+===================================================================================
+
+{{./pasted_image003.png}}

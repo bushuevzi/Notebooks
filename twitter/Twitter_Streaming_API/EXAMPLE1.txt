@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T16:01:07+03:00
+
+====== EXAMPLE1 ======
+Created Воскресенье 27 Ноябрь 2016
+
+https://www.freelancer.com/projects/Software-Architecture/Filtering-tweets-using-Python-PostgreSQL-12196532/ 
+I would like this software to be developed for Windows using Python. I want to store tweets only from New York and London using Python and Twitter Streaming API. The tweets have to be stored on a PostgreSQL database.
+
+The database should store the following information about every tweet.
+
+tweet_id, user_id, tweet text, coordinates, created_at, place, retweet_count, favorite_count.
