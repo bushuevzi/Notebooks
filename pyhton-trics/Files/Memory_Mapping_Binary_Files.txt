@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-30T22:50:00+03:00
+
+====== Memory Mapping Binary Files ======
+Created Среда 30 Ноябрь 2016
+
+**Problem**
+You want to memory map a binary file into a mutable byte array, possibly for random access to its contents or to make in-place modifications.
+
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-30T23:10:50+03:00
+
+====== Manipulating Pathnames ======
+Created Среда 30 Ноябрь 2016
+
+**Problem**
+You need to manipulate pathnames in order to find the base filename, directory name, absolute path, and so on.
+**Solution**
+To manipulate pathnames, use the functions in the **os.path** module. 
+{{./pasted_image.png}}

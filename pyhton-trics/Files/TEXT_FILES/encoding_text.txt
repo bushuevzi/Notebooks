@@ -4,6 +4,8 @@ Creation-Date: 2016-07-03T23:10:07+03:00
 
 ====== encoding text ======
 Created Воскресенье 03 Июль 2016
+{{./pasted_image.png}}
+
 
 In [69]: import codecs
 In [72]: spamFile = codecs.open('../spam/spam.txt', encoding = 'utf-16le')

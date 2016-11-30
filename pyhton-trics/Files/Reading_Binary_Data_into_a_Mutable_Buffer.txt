@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-30T00:15:55+03:00
+
+====== Reading Binary Data into a Mutable Buffer ======
+Created Среда 30 Ноябрь 2016
+
+**Problem**
+You want to read binary data directly into a mutable buffer without any intermediate copying. Perhaps you want to mutate the data in-place and write it back out to a file.
+**Solution**
+To read data into a mutable array, use the readinto() method of files. For example:
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

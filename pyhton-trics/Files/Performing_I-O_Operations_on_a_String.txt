@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-30T00:03:58+03:00
+
+====== Performing I-O Operations on a String ======
+Created Среда 30 Ноябрь 2016
+
+**Problem**
+You want to feed a text or binary string to code that’s been written to operate on file-like objects instead.
+**Solution**
+Use the **io.StringIO()** and **io.BytesIO()** classes to create file-like objects that operate on string data. For example:
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
