@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-01T22:35:05+03:00
+
+====== Communicating with Serial Ports ======
+Created Четверг 01 Декабрь 2016
+
+**Problem**
+You want to read and write data over a serial port, typically to interact with some kind of hardware device (e.g., a robot or sensor).
+**Solution**
+Although you can probably do this directly using Python’s built-in I/O primitives, your best bet for serial communication is to use the pySerial package. Getting started with the package is very easy. You simply open up a serial port using code like this:
+{{./pasted_image.png}}
+Once open, you can read and write data using **read() , readline() , **and** write()** calls. For example:
+{{./pasted_image001.png}}
+Keep in mind that all I/O involving serial ports is binary (or perform proper text encoding/decoding)
