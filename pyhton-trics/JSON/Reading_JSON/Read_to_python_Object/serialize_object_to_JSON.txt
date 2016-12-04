@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T02:15:21+03:00
+
+====== serialize object to JSON ======
+Created Воскресенье 04 Декабрь 2016
+
+If you want to serialize instances, you can supply a function that takes an instance as input and returns a dictionary that can be serialized. For example:
+{{./pasted_image.png}}
+
+__Unserialize__
+{{./pasted_image001.png}}
+__Here is an example of how these functions are used:__
+{{./pasted_image002.png}}

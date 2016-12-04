@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T17:15:08+03:00
+
+====== Parsing Simple XML Data ======
+Created Воскресенье 04 Декабрь 2016
+
+**Problem**
+You would like to extract data from a simple XML document.
+{{./pasted_image.png}}
+
+OR USE __lxml__

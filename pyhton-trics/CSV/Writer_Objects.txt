@@ -17,3 +17,6 @@ Out[16]: 32
 In [19]: outputWriter.writerows([['Hello, world!', 'eggs', 'bacon', 'ham'],[1,2,3.141592,4]])
 In [20]: outputFile.close()
 
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+

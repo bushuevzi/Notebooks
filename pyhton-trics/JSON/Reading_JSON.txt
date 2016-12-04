@@ -10,3 +10,7 @@ In [2]: **import json**
 In [3]: jsonDataAsPythonValue = json**.loads**(stringOfJsonData)
 In [4]: jsonDataAsPythonValue
 Out[4]: {'felineIQ': None, 'isCat': True, 'miceCaught': 0, 'name': 'Zophie'}
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
