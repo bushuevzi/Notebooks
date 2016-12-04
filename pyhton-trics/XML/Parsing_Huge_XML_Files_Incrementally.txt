@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T17:55:26+03:00
+
+====== Parsing Huge XML Files Incrementally ======
+Created Воскресенье 04 Декабрь 2016
+
+**Problem**
+You need to extract data from a huge XML document using as little memory as possible.
+{{./pasted_image001.png}}
+{{./pasted_image.png}}
+{{./pasted_image002.png}}

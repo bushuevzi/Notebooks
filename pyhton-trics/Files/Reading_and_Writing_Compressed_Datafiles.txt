@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-30T00:09:05+03:00
+
+====== Reading and Writing Compressed Datafiles ======
+Created Среда 30 Ноябрь 2016
+
+__This allows the gzip and bz2 modules to work with various file-like objects such as sockets, pipes, and in-memory files.__
+
+**Problem**
+You need to read or write data in a file with gzip or bz2 compression.
+
+**Solution**
+The **gzip** and **bz2** modules make it easy to work with such files. Both modules provide an alternative implementation of **open()** that can be used for this purpose. For example, to read compressed files as text, do this:
+{{./pasted_image.png}}
+Similarly, to write compressed data, do this:
+{{./pasted_image001.png}}

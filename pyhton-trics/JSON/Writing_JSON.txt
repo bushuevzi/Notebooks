@@ -9,3 +9,6 @@ In [6]: import json
 In [7]: stringOfJsonData = json.dumps(pythonValue)
 In [8]: stringOfJsonData
 Out[8]: '{"isCat": true, "name": "Zophie", "miceCaught": 0, "felineIQ": null}'
+
+{{./pasted_image.png}}
+

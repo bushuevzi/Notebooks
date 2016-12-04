@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-29T23:21:51+03:00
+
+====== Printing to a File ======
+Created Вторник 29 Ноябрь 2016
+
+**Problem**
+You want to redirect the output of the print() function to a file.
+**Solution**
+Use the file keyword argument to print() , like this:
+{{./pasted_image.png}}

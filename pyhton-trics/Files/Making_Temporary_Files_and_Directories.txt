@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-01T22:27:09+03:00
+
+====== Making Temporary Files and Directories ======
+Created Четверг 01 Декабрь 2016
+
+**Problem**
+You need to create a temporary file or directory for use when your program executes. Afterward, you possibly want the file or directory to be destroyed.
+**Solution**
+The **tempfile** module has a variety of functions for performing this task. To make an unnamed temporary file, use **tempfile.TemporaryFile** :
+{{./pasted_image.png}}

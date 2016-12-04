@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-01T22:42:51+03:00
+
+====== Serializing Python Objects ======
+Created Четверг 01 Декабрь 2016
+
+**Problem**
+You need to serialize a Python object into a byte stream so that you can do things such as save it to a file, store it in a database, or transmit it over a network connection.
+**Solution**
+The most common approach for serializing data is to use the **pickle** module. To dump an object to a file, you do this:
+{{./pasted_image.png}}
+To dump an object to a string, use pickle.dumps() :
+{{./pasted_image001.png}}
+To re-create an object from a byte stream, use either the **pickle.load()** or **pickle.loads()** functions. For example:
+{{./pasted_image002.png}}

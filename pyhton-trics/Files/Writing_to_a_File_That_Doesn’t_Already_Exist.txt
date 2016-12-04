@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-29T23:55:01+03:00
+
+====== Writing to a File That Doesn’t Already Exist ======
+Created Вторник 29 Ноябрь 2016
+
+**Problem**
+You want to write data to a file, but only if it doesn’t already exist on the filesystem.
+**Solution**
+This problem is easily solved by using the little-known **x** mode to **open()** instead of the usual **w** mode. For example:
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}

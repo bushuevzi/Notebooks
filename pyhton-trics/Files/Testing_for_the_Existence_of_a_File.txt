@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-30T23:21:34+03:00
+
+====== Testing for the Existence of a File ======
+Created Среда 30 Ноябрь 2016
+
+**Problem**
+You need to test whether or not a file or directory exists.
+**Solution**
+Use the **os.path** module to test for the existence of a file or directory. For example:
+{{./pasted_image.png}}
+You can perform further tests to see what kind of file it might be. These tests return False if the file in question doesn’t exist:
+{{./pasted_image001.png}}
+
+If you need to get metadata (e.g., the file size or modification date), that is also available in the os.path module
+{{./pasted_image002.png}}

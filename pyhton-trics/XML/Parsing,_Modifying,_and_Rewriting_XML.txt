@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T22:50:07+03:00
+
+====== Parsing, Modifying, and Rewriting XML ======
+Created Воскресенье 04 Декабрь 2016
+
+**Problem**
+You want to read an XML document, make changes to it, and then write it back out as XML.
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}

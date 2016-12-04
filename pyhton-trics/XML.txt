@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T17:14:50+03:00
+
+====== XML ======
+Created Воскресенье 04 Декабрь 2016
+

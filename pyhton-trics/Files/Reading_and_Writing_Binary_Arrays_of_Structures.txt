@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T23:58:09+03:00
+
+====== Reading and Writing Binary Arrays of Structures ======
+Created Воскресенье 04 Декабрь 2016
+
+**Problem**
+You want to read or write data encoded as a binary array of uniform structures into Python tuples.
+**Solution**
+To work with binary data, use the **struct** module. Here is an example of code that writes a list of Python tuples out to a binary file, encoding each tuple as a structure using **struct** :
+{{./pasted_image.png}}
+Structures are always defined using a set of structure codes such as i , d , f , and so forth [see the Python documentation]. These codes correspond to specific binary data types such as 32-bit integers, 64-bit floats, 32-bit floats, and so forth. The < in the first character specifies the byte ordering. In this example, it is indicating “little endian.” Change the character to > for big endian or ! for network byte order.
+
+{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}

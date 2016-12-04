@@ -5,6 +5,8 @@ Creation-Date: 2016-10-20T23:57:57+03:00
 ====== Pandas ======
 Created Четверг 20 Октябрь 2016
 
+http://shop.oreilly.com/product/0636920023784.do 
+
 In [1]: import pandas as pd
 
 In [2]: import numpy as np

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T02:09:39+03:00
+
+====== Read to python Object ======
+Created Воскресенье 04 Декабрь 2016
+
+{{./pasted_image.png}}

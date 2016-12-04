@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T22:38:37+03:00
+
+====== Turning a Dictionary into XML ======
+Created Воскресенье 04 Декабрь 2016
+
+**Problem**
+You want to take the data in a Python dictionary and turn it into XML.
+**Solution**
+Although the xml.etree.ElementTree library is commonly used for parsing, it can also be used to create XML documents. For example, consider this function:
+{{./pasted_image.png}}
+If the order of the elements matters, consider making an **OrderedDict** instead of a normal dictionary

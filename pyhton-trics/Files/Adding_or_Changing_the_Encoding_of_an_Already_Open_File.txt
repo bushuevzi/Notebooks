@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-01T22:16:57+03:00
+
+====== Adding or Changing the Encoding of an Already Open File ======
+Created Четверг 01 Декабрь 2016
+
+
+**Problem**
+You want to add or change the Unicode encoding of an already open file without closing it first.
+**Solution**
+If you want to add Unicode encoding/decoding to an already existing file object that’s opened in binary mode, wrap it with an **io.TextIOWrapper()** object. For example:
+{{./pasted_image.png}}
+

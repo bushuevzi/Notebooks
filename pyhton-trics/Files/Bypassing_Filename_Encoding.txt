@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-01T22:03:50+03:00
+
+====== Bypassing Filename Encoding ======
+Created Четверг 01 Декабрь 2016
+**Problem**
+You want to perform file I/O operations using raw filenames that have not been decoded or encoded according to the default filename encoding.
+
+**Solution**
+By default, all filenames are encoded and decoded according to the text encoding returned by **sys.getfilesystemencoding() .** For example:
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}

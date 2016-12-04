@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-30T23:30:09+03:00
+
+====== Getting a Directory Listing ======
+Created Среда 30 Ноябрь 2016
+
+{{./pasted_image.png}}
+__Get all regular files:__
+{{./pasted_image001.png}}
+__Get all dirs:__
+{{./pasted_image002.png}}
+
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}

@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-05T00:31:55+03:00
+
+====== EXAMPLE from PythonCookBook ======
+Created Понедельник 05 Декабрь 2016
+
+Problem
+You need to crunch through large datasets and generate summaries or other kinds of statistics.
