@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-08T00:19:38+03:00
+
+====== Generating a Range of IP Addresses from a CIDR Address ======
+Created Четверг 08 Декабрь 2016
+
+**Solution**
+The **ipaddress (**https://docs.python.org/3/howto/ipaddress.html**) **module can be easily used to perform such calculations. For example:
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}
+**An IP address and network address can be specified together as an IP interface. For**
+**example:**
+{{./pasted_image005.png}}
+
+__indexing:__
+{{./pasted_image003.png}}
+__check for network membership:__
+{{./pasted_image004.png}}

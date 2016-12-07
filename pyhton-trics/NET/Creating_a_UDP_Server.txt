@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-07T23:58:36+03:00
+
+====== Creating a UDP Server ======
+Created Среда 07 Декабрь 2016
+
+**Problem**
+You want to implement a server that communicates with clients using the UDP Internet
+protocol.
+**Solution**
+As with TCP, UDP servers are also easy to create using the socketserver library. For
+example, here is a simple time server:
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-07T01:28:19+03:00
+
+====== basic authentication ======
+Created Среда 07 Декабрь 2016
+
+{{./pasted_image.png}}

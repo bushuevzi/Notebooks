@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-07T00:50:44+03:00
+
+====== Change HTTP haeders ======
+Created Среда 07 Декабрь 2016
+
+If you need to supply some custom HTTP headers in the outgoing request such as a
+change to the user-agent field, make a dictionary containing their value and create a
+Request instance and pass it to urlopen() like this:
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
