@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-08T22:37:42+03:00
+
+====== Simple HTTP server Creating a Simple REST-Based Interface ======
+Created Четверг 08 Декабрь 2016
+
+**Problem**
+You want to be able to control or interact with your program remotely over the network
+using a simple REST-based interface. However, you don’t want to do it by installing a
+full-fledged web programming framework.
+**Solution**
+One of the easiest ways to build REST-based interfaces is to create a tiny library based
+on the WSGI standard, as described in PEP 3333. Here is an example:
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+
+The environ argument is a dictionary that contains values inspired by the CGI interface
+provided by various web servers such as Apache
+
+http://webob.org/

@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-13T01:07:57+03:00
+
+====== RPC Implementing a Simple Remote Procedure Call with XML-RPC ======
+Created Вторник 13 Декабрь 2016
+
+**Problem**
+You want an easy way to execute functions or methods in Python programs running on remote machines.
+**Solution**
+Perhaps the easiest way to implement a simple remote procedure call mechanism is to use XML-RPC. Here is an example of a simple server that implements a simple key- value store:
+{{./pasted_image.png}}
+
+__remote calls from remotely client:__
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}

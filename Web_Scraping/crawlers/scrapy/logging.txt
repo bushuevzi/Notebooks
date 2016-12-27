@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-27T23:52:55+03:00
+
+====== logging ======
+Created Вторник 27 Декабрь 2016
+
+in **settings.py ** set 
+**LOG_LEVEL = 'ERROR'**
