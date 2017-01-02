@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-07T00:27:35+03:00
+
+====== Interacting with HTTP Services As a Client ======
+Created Среда 07 Декабрь 2016
+
+**Problem**
+You need to access various services via HTTP as a client. For example, downloading
+data or interacting with a REST-based API.
+**Solution**
+http://docs.python-requests.org/en/master/ 
+1.
+{{./pasted_image007.png}}
+
+2.
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
+For simple things, it’s usually easy enough to use the **urllib.request** module. For
+example, to send a simple HTTP GET request to a remote service, do something like this:
+{{./pasted_image.png}}
+__in wireshark:__
+{{./pasted_image001.png}}

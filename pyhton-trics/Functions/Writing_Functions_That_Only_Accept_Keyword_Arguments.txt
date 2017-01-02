@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-05T23:56:00+03:00
+
+====== Writing Functions That Only Accept Keyword Arguments ======
+Created Понедельник 05 Декабрь 2016
+
+**Problem**
+You want a function to only accept certain arguments by keyword.
+**Solution**
+This feature is easy to implement if you place the keyword arguments after a ***** argument or a single unnamed ***** . For example:
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}

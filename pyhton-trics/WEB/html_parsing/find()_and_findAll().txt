@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-18T22:17:21+03:00
+
+====== find() and findAll() ======
+Created Воскресенье 18 Декабрь 2016
+__findAll(tag, attributes, recursive, text, limit, keywords)__
+__find(tag, attributes, recursive, text, keywords)__
+
+**tag**  - you can pass a string name of a tag or even a Python list of string tag names. For example, the following will return a list of all the header tags: **.findAll({"h1","h2","h3","h4","h5","h6"})**
+**attributes - **Python dictionary of attributes and matches tags that contain any one of those attributes. For example, the following function would return both the green and red  span  tags  **.findAll("span", {"class":"green", "class":"red"})**
+
+__bsObj.findAll(tagName, tagAttributes)__
+{{./pasted_image.png}}

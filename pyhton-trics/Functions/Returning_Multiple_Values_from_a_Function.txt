@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-06T00:04:02+03:00
+
+====== Returning Multiple Values from a Function ======
+Created Вторник 06 Декабрь 2016
+
+**Problem**
+You want to return multiple values from a function.
+**Solution**
+To return multiple values from a function, simply return a tuple. For example:
+{{./pasted_image.png}}

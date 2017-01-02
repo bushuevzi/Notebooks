@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2016-08-09T22:56:35+03:00
 
-====== Reading JSON ======
+====== pReading JSON ======
 Created Вторник 09 Август 2016
 
 In [1]: stringOfJsonData = '{"name": "Zophie", "isCat": true, "miceCaught":0, "felineIQ": null}'

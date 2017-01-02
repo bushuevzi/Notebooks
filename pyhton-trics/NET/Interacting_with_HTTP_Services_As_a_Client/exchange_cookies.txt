@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-07T01:31:50+03:00
+
+====== exchange cookies ======
+Created Среда 07 Декабрь 2016
+
+Here is an example of using requests to pass HTTP cookies from one request to the
+next:
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

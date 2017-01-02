@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-07T23:34:40+03:00
+
+====== Creating a TCP Server ======
+Created Среда 07 Декабрь 2016
+
+**Problem**
+You want to implement a server that communicates with clients using the TCP Internet
+protocol.
+**Solution**
+An easy way to create a TCP server is to use the socketserver library. For example,
+here is a simple echo server:
+In this code, you define a special handler class that implements a handle() method for
+servicing client connections. The request attribute is the underlying client socket and
+client_address has client address.
+{{./pasted_image.png}}

@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-19T00:01:45+03:00
+
+====== parants ======
+Created Понедельник 19 Декабрь 2016
+
+**.paren** and **.parents:**
+{{./pasted_image.png}}
+__How does this work?__
+{{./pasted_image002.png}}
+{{./pasted_image001.png}}

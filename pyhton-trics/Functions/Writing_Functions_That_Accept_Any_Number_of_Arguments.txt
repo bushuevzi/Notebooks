@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-05T23:08:00+03:00
+
+====== Writing Functions That Accept Any Number of Arguments ======
+Created Понедельник 05 Декабрь 2016
+
+**Problem**
+You want to write a function that accepts any number of input arguments.
+**Solution**
+To write a function that accepts any number of positional arguments, use a ***** argument. For example:
+{{./pasted_image.png}}
+To accept any number of keyword arguments, use an argument that starts with ****** . For example:
+{{./pasted_image001.png}}

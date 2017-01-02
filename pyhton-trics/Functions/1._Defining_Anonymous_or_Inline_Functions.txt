@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-06T00:07:07+03:00
+
+====== 1. Defining Anonymous or Inline Functions ======
+Created Вторник 06 Декабрь 2016
+
+**Problem**
+You need to supply a short callback function for use with an operation such as **sort()** , but you don’t want to write a separate one-line function using the def statement. Instead, you’d like a shortcut that allows you to specify the function “in line.”
+**Solution**
+Simple functions that do nothing more than evaluate an expression can be replaced by a **lambda** expression. For example:
+{{./pasted_image.png}}
+**==================================================================================================**
+{{./pasted_image001.png}}
+for information:
+{{./pasted_image002.png}}
+
+== ================================================================================================== ==

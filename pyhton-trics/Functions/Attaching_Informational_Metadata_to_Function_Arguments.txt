@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-06T00:02:56+03:00
+
+====== Attaching Informational Metadata to Function Arguments ======
+Created Вторник 06 Декабрь 2016
+
+**Problem**
+You’ve written a function, but would like to attach some additional information to the arguments so that others know more about how a function is supposed to be used.
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

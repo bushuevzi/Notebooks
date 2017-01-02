@@ -24,6 +24,7 @@ __>>> mo.group(1)__
 ________________________________________________________________________
 **Review of Regex Symbols**
 * The **?** matches zero or one of the preceding group.
+* **?! **“Does	not contain.”	preceding	a character (or regular expression)
 * The ***** matches zero or more of the preceding group.
 * The **+** matches one or more of the preceding group.
 * The **{n}** matches exactly n of the preceding group.

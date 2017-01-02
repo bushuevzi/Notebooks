@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-06T00:23:58+03:00
+
+====== Capturing Variables in Anonymous Functions ======
+Created Вторник 06 Декабрь 2016
+
+**Problem**
+You’ve defined an anonymous function using **lambda** , but you also need to capture the values of certain variables at the time of definition.
+{{./pasted_image.png}}
+If you want an anonymous function to capture a value at the point of definition and keep it, include the value as a default value, like this:
+{{./pasted_image001.png}}

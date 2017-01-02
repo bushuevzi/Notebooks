@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-27T23:47:46+03:00
+
+====== scrapy ======
+Created Вторник 27 Декабрь 2016
+https://doc.scrapy.org/en/latest/
+
+**$scrapy	startproject	wikiSpider**
+{{./pasted_image001.png}}
+
+{{./pasted_image.png}}
+
+__result__
+{{./pasted_image003.png}}
+
+__save to diferent formats:__
+{{./pasted_image004.png}}
