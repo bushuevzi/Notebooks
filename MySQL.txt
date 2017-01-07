@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-06T00:37:47+03:00
+
+====== MySQL ======
+Created Пятница 06 Январь 2017
+{{./pasted_image001.png}}
+{{./pasted_image.png}}
+
+{{./pasted_image004.png}}
+{{./pasted_image005.png}}
+{{./pasted_image006.png}}
+
+{{./pasted_image007.png}}
+{{./pasted_image008.png}}
+
+{{./pasted_image009.png}}
+{{./pasted_image010.png}}
+{{./pasted_image011.png}}
+
+
+
+{{./pasted_image012.png}}
+it	is	a	good	idea,	especially	when	working	on	important	databases	that can’t	be	easily	restored,	to	write	any	 DELETE 	statements	as	a	 SELECT 	statement	first	(in	this case,	 SELECT	*	FROM	pages	WHERE		id	=	1 ),	test	to	make	sure	only	the	rows	you want	to delete	are	returned,	and	then	replace	 SELECT	* 	with	 DELETE .
+
+
+{{./pasted_image013.png}}
+{{./pasted_image014.png}}

@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-04T16:47:40+03:00
+
+====== example 1 ======
+Created Среда 04 Январь 2017
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+Having figured out how to extract each bit, we can now iterate over all the quotes elements and put them together into a Python dictionary:
+{{./pasted_image003.png}}
+
+finaly rewrite spider:
+{{./pasted_image004.png}}

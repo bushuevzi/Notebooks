@@ -4,6 +4,8 @@ Creation-Date: 2016-12-27T23:47:46+03:00
 
 ====== scrapy ======
 Created Вторник 27 Декабрь 2016
+
+Scrapy is an application framework for crawling web sites and extracting structured data which can be used for a wide range of useful applications, like data mining, information processing or historical archival.
 https://doc.scrapy.org/en/latest/
 
 **$scrapy	startproject	wikiSpider**

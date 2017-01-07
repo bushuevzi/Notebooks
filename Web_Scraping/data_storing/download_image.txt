@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-05T21:35:22+03:00
+
+====== download image ======
+Created Четверг 05 Январь 2017
+
+{{./pasted_image.png}}

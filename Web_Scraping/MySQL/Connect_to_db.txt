@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-06T01:34:39+03:00
+
+====== Connect to db ======
+Created Пятница 06 Январь 2017
+
+{{./pasted_image.png}}
+A	connection	can	have	many	cursors.	A	cursor	keeps	track	of	certain	state	information, such	as	which	database	it	is	using.	If	you	have	multiple	databases	and	need	to	write information	across	all	of	them,	you	might	have	multiple	cursors	to	handle	this.	A	cursor also	contains	the	results	of	the	latest	query	it	has	executed.	By	calling	functions	on	the cursor,	such	as	 cur.fetchone() ,	you	can	access	this	information.

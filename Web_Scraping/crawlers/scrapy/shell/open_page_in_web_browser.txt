@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-04T02:54:44+03:00
+
+====== open page in web browser ======
+Created Среда 04 Январь 2017
+
+{{./pasted_image001.png}}

@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-06T01:40:12+03:00
+
+====== support Unicode ======
+Created Пятница 06 Январь 2017
+
+Dealing	with	Unicode	text	can	be	tough	when	web	scraping.	By	default,	MySQL	does	not handle	Unicode.	Fortunately,	you	can	turn	on	this	feature	(just	keep	in	mind	that	doing	so will	increase	the	size	of	your	database).	Because	we’re	bound	to	run	into	a	variety	of colorful	characters	on	Wikipedia,	now	is	a	good	time	to	tell	your	database	to	expect	some Unicode:
+{{./pasted_image.png}}
+ALTER DATABASE scraping CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+ALTER TABLE pages CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE pages CHANGE title title VARCHAR(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE pages CHANGE content content VARCHAR(10000) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
