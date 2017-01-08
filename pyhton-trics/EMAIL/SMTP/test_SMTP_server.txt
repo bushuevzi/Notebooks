@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-08T00:02:30+03:00
+
+====== test SMTP server ======
+Created Воскресенье 08 Январь 2017
+
+{{./pasted_image.png}}
+import smtpd
+import asyncore
+class CustomSMTPServer(smtpd.SMTPServer):
+	def process_message(self, peer, mailfrom, rcpttos, data):
+		print('Receiving message from:', peer)
+		print('Message addressed from:', mailfrom)
+		print('Message addressed to  :', rcpttos)
+		print('Message length        :', len(data))
+		return
+server = CustomSMTPServer(('127.0.0.1', 1025), None)
+asyncore.loop()
+
+
+__Client:__
+{{./pasted_image001.png}}
+import smtplib
+from email.mime.text import MIMEText
+msg = MIMEText('This is the body of the message')
+msg['Subject'] = "Test Email"
+msg['From'] = "bushuevzi@mail.ru"
+msg['To'] = "bushuevzi@mail.ru"
+server = smtplib.SMTP("127.0.0.1", 1025)
+server.set_debuglevel(True)
+try:
+	server.sendmail('bushuevzi@mail.ru',['bushuevzi@mail.ru'], msg.as_string())
+finally:
+	server.quit()

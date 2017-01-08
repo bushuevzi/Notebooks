@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-07T22:20:04+03:00
+
+====== Example ======
+Created Суббота 07 Январь 2017
+
+{{./pasted_image.png}}
+import smtplib
+from email.mime.text import MIMEText
+msg['Subject'] = "Test Email"
+msg['From'] = "bushuevzi@mail.ru"
+msg['To'] = "bushuevzi@mail.ru"
+s = smtplib.SMTP("smtp.mail.ru", 465)
+s.starttls()
+s.login("bushuevzi@mail.ru","2CnpS1Lov4M")
+s.send_message(msg)
+s.quit()

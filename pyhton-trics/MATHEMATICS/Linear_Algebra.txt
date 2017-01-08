@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-08T23:30:27+03:00
+
+====== Linear Algebra ======
+Created Воскресенье 08 Январь 2017
+

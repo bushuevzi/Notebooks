@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-09T00:57:37+03:00
+
+====== Statistics ======
+Created Понедельник 09 Январь 2017
+
+{{./pasted_image001.png}}
+{{./pasted_image.png}}
+{{./pasted_image002.png}}
+======================================================
+{{./pasted_image003.png}}
+======================================================
+{{./pasted_image004.png}}
+
+
+{{./pasted_image007.png}}
+{{./pasted_image008.png}}
+A generalization of the median is the quantile, which represents the value less than
+which a certain percentile of the data lies. (The median represents the value less than
+which 50% of the data lies.)
+{{./pasted_image009.png}}
+
+{{./pasted_image010.png}}

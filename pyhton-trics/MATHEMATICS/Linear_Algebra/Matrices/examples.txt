@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-09T00:49:01+03:00
+
+====== examples ======
+Created Понедельник 09 Январь 2017
+
+we represented the edges of a network as a collection of pairs (i, j) . An alternative represen tation would be to create a matrix A such that A[i][j] is 1 if nodes i and j are connected and 0 otherwise. 
+
+before we had:
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}

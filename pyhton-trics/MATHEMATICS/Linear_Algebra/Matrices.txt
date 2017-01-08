@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-09T00:38:47+03:00
+
+====== Matrices ======
+Created Понедельник 09 Январь 2017
+
+A matrix is a two-dimensional collection of numbers. We will represent matrices as
+list s of list s, with each inner list having the same size and representing a row of the
+matrix. If A is a matrix, then A[i][j] is the element in the ith row and the jth column.
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
+{{./pasted_image005.png}}

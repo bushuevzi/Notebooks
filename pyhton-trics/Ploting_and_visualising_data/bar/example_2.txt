@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-08T22:43:11+03:00
+
+====== example 2 ======
+Created Воскресенье 08 Январь 2017
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+The third argument to plt.bar specifies the bar width. Here we chose a width of 8
+(which leaves a small gap between bars, since our buckets have width 10). And we
+shifted the bar left by 4, so that (for example) the “80” bar has its left and right sides at
+76 and 84, and (hence) its center at 80.

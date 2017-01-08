@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-08T23:30:35+03:00
+
+====== Vectors ======
+Created Воскресенье 08 Январь 2017
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
+{{./pasted_image005.png}}
+The dot product measures how far the vector v extends in the w direction. For exam‐
+ple, if w = [1, 0] then dot(v, w) is just the first component of v . Another way of
+saying this is that it’s the length of the vector you’d get if you projected v onto w
+{{./pasted_image006.png}}
+{{./pasted_image007.png}}
+========================================================================================
+{{./pasted_image008.png}}
+========================================================================================
+{{./pasted_image009.png}}
+{{./pasted_image010.png}}

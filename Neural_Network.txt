@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-08T02:14:27+03:00
+
+====== Neural Network ======
+Created Воскресенье 08 Январь 2017
+

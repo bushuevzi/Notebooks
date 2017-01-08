@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-08T23:10:50+03:00
+
+====== scaterplot ======
+Created Воскресенье 08 Январь 2017
+
+A scatterplot is the right choice for visualizing the relationship between two paired
+sets of data. For example, Figure  illustrates the relationship between the number
+of friends your users have and the number of minutes they spend on the site every day:
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-08T18:28:03+03:00
+
+====== Ploting and visualising data ======
+Created Воскресенье 08 Январь 2017
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+

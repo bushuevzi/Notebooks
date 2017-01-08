@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-08T23:26:51+03:00
+
+====== equal axis ======
+Created Воскресенье 08 Январь 2017
+
+__wrong:__
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+
+__right (add __**plt.axis("equal")**__):__
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}
