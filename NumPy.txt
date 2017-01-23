@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-23T00:31:37+03:00
+
+====== NumPy ======
+Created Понедельник 23 Январь 2017
+
+http://scipy.github.io/old-wiki/pages/Tentative_NumPy_Tutorial

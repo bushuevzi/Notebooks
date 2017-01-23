@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-23T01:18:15+03:00
+
+====== learning ======
+Created Понедельник 23 Январь 2017
+
+{{./pasted_image.png}}
+Next, we extract the first 100 class labels that correspond to the 50 Iris-Setosa and 50
+Iris-Versicolor flowers, respectively, and convert the class labels into the two integer
+class labels 1 (Versicolor) and -1 (Setosa) that we assign to a vector y where the values
+method of a pandas DataFrame yields the corresponding NumPy representation.
+Similarly, we extract the first feature column (sepal length) and the third feature
+column (petal length) of those 100 training samples and assign them to a feature
+matrix X , which we can visualize via a two-dimensional scatter plot:
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+Now it's time to train our perceptron algorithm on the Iris data subset that we just
+extracted. Also, we will plot the misclassification error for each epoch to check
+if the algorithm converged and found a decision boundary that separates the two Iris
+flower classes:
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
+
+Visualise Dessision regions:
+{{./pasted_image005.png}}
+{{./pasted_image006.png}}
+As we can see in the preceding plot, the perceptron learned a decision boundary that
+was able to classify all flower samples in the Iris training subset perfectly.

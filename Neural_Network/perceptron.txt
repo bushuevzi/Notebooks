@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-23T00:35:03+03:00
+
+====== perceptron ======
+Created Понедельник 23 Январь 2017
+
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+
+

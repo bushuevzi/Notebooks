@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-10T23:29:00+03:00
+
+====== Example correlation ======
+Created Вторник 10 Январь 2017
+
+{{./pasted_image.png}}
+The person with 100 friends (who spends only one minute per day on the site) is a huge outlier, and correlation can be very sensitive to outliers. What happens if we ignore him?
+{{./pasted_image001.png}}
+Without the outlier, there is a much stronger correlation:
+{{./pasted_image002.png}}
