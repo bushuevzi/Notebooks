@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-25T00:36:47+03:00
+
+====== adaptive neuron ======
+Created Среда 25 Январь 2017
+
+{{./pasted_image.png}}
+{{./pasted_image002.png}}
+
+{{./pasted_image003.png}}
+
+{{./pasted_image004.png}}
