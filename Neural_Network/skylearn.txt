@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-31T00:39:45+03:00
+
+====== skylearn ======
+Created Вторник 31 Январь 2017
+
