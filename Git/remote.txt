@@ -49,4 +49,4 @@ git pull --rebase
 
 И отправляешь свои:
 
-git push origin master
+**git push origin master**

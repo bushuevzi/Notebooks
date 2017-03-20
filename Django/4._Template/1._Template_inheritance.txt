@@ -21,3 +21,6 @@ rarely, if ever, changes.
 include section-specific styles/design.
 3. Create individual templates for each type of page, such as a forum page or a photo gallery. These
 templates extend the appropriate section template.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+{{./pasted_image003.png}}
