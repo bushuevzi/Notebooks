@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-12T00:33:39+03:00
+
+====== aproximation ======
+Created Воскресенье 12 Март 2017
+
+polyfit()
+{{./pasted_image.png}}{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}{{./pasted_image003.png}}
+
+{{./pasted_image004.png}}
+{{./pasted_image005.png}}
+{{./pasted_image006.png}}
+{{./pasted_image007.png}}

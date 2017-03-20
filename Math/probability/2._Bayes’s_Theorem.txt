@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-16T23:06:37+03:00
+
+====== 2. Bayes’s Theorem ======
+Created Четверг 16 Март 2017
+
+One of the data scientist’s best friends is Bayes’s Theorem, which is a way of “revers‐
+ing” conditional probabilities. Let’s say we need to know the probability of some event
+E conditional on some other event F occurring. But we only have information about
+the probability of F conditional on E occurring.
+
+{{./pasted_image.png}}

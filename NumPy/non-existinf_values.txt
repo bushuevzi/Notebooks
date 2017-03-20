@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-11T18:01:25+03:00
+
+====== non-existinf values ======
+Created Суббота 11 Март 2017
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

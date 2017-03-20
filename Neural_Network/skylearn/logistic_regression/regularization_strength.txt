@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-06T00:38:46+03:00
+
+====== regularization strength ======
+Created Понедельник 06 Февраль 2017
+
+Decreasing the value of the inverse regularization parameter **C** means
+that we are increasing the regularization strength, which we can visualize by plotting
+the L2 regularization path for the two weight coefficients:
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
