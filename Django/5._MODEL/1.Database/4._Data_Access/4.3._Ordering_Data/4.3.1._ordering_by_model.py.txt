@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-25T00:48:10+03:00
+
+====== 4.3.1. ordering by model.py ======
+Created Суббота 25 Март 2017
+
+{{./pasted_image.png}}{{./pasted_image001.png}}

@@ -11,20 +11,12 @@ table. This will cause an error the first time you use the Django database API t
 * Django does not care if a database table contains columns that are not defined in the model.
 * Django does not care if a database contains a table that is not represented by a model.
 
-First, take these steps in the development environment (i.e., not on the production server):
+
 1. Add the field to your model.
-2. Run manage.py sqlall [yourapp] to see the new CREATE TABLE statement for the model.
-Note the column definition for the new field.
-3. Start your database’s interactive shell (e.g., psql or mysql, or you can use manage.py
-dbshell). Execute an ALTER TABLE statement that adds your new column.
+2. Run **manage.py makemigrations [yourapp] **
+3. Run** manage.py migrate [yourapp] **
 4. (Optional.) Launch the Python interactive shell with manage.py shell and verify that the new
 field was added properly by importing the model and selecting from the table (e.g.,
 MyModel.objects.all()[:5]).
 
-Then on the production server perform these steps:
-1. Start your database’s interactive shell.
-2. Execute the ALTER TABLE statement you used in step 3 of the development environment steps.
-3. Add the field to your model. If you’re using source-code revision control and you checked in your
-change in development environment step 1, now is the time to update the code (e.g., svn update,
-with Subversion) on the production server.
-4. Restart the Web server for the code changes to take effect.
+
