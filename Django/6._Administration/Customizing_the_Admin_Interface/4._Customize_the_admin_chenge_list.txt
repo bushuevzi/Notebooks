@@ -5,4 +5,6 @@ Creation-Date: 2016-10-11T22:23:40+03:00
 ====== 4. Customize the admin chenge list ======
 Created Вторник 11 Октябрь 2016
 
-{{./pasted_image.png}}
+{{./pasted_image002.png}}
+
+

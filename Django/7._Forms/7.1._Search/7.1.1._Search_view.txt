@@ -16,3 +16,6 @@ Created Воскресенье 25 Сентябрь 2016
 2. //Q// objects are used to build up complex queries — in this case, we’re searching for any books where either the title or the name of one of the authors matches the search query
 3. //icontains// is a case-insensitive search that uses the SQL LIKE operator in the underlying database.
 4. Adding //.distinct()// to the filter lookup eliminates any duplicate results.
+
+**Warning!!!**
+if there is error "can not found **authors**, select **autor**, id ...." than in model of **Book** change **autor** to **autors**.
