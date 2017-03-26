@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-26T20:12:55+03:00
+
+====== Customize template form ======
+Created Воскресенье 26 Март 2017
+
+instead {{ form.as_table }}
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}
+
+to style add defitition for class **.errors**
+{{./pasted_image002.png}}

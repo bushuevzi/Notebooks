@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-26T22:31:23+03:00
+
+====== 7.3. Create forms from Models ======
+Created Воскресенье 26 Март 2017
+
+1. create class for from:
+{{./pasted_image.png}}
+2.create view:
+{{./pasted_image001.png}}
+3. create template
+{{./pasted_image002.png}}
+4. create record to urls.py:
+{{./pasted_image003.png}}

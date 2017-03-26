@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-26T19:04:13+03:00
+
+====== 7.2.1.1. Custom validation rules ======
+Created Воскресенье 26 Март 2017
+
+{{./pasted_image.png}}

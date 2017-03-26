@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-26T16:37:11+03:00
+
+====== csrf ======
+Created Воскресенье 26 Март 2017
+
+in **views.py** use **render()** instead **render_to_response()**{{./pasted_image.png}}
+
+in template set tag {{./pasted_image001.png}} in form:
+
+{{./pasted_image003.png}}

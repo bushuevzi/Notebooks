@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-26T18:51:09+03:00
+
+====== EMAIL ======
+Created Воскресенье 26 Март 2017
+
+for development run debug smtp server:
+**python -m smtpd -n -c DebuggingServer localhost:1025**
+
+in views.py:
+{{./pasted_image.png}}
+
+in settings.py:
+{{./pasted_image001.png}}
