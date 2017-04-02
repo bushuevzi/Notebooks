@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-01T20:12:04+03:00
+
+====== Cisco ======
+Created Суббота 01 Апрель 2017
+

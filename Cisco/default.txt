@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-02T23:00:31+03:00
+
+====== default ======
+Created Воскресенье 02 Апрель 2017
+
+conf t
+no logging con
+no ip domain-lookup
+end
+

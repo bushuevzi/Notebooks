@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-27T22:54:03+03:00
+
+====== named arguments for view ======
+Created Понедельник 27 Март 2017
+
+In Python regular expressions, the syntax for named regular expression groups is **(?P<name>pattern)**, where name is
+the name of the group and pattern is some pattern to match.
+
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+the captured values arepassed to view functions as keyword arguments rather than positional arguments.
+For example, with non-named groups, a request to /articles/2006/03/ would result in a function call equivalent
+to this:
+{{./pasted_image004.png}}
+
+
+___________________________________________________________--
+
+{{./pasted_image005.png}}

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-02T23:29:23+03:00
+
+====== OSI ======
+Created Воскресенье 02 Апрель 2017
+
+{{./pasted_image.png}}

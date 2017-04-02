@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-02T22:56:43+03:00
+
+====== config few ports ======
+Created Воскресенье 02 Апрель 2017
+
+int range fa0/4-24

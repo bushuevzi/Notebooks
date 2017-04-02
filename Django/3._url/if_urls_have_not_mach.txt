@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-27T23:02:32+03:00
+
+====== if urls have not mach ======
+Created Понедельник 27 Март 2017
+
+{{./pasted_image.png}}
