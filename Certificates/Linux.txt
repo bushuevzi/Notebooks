@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-04T20:29:07+03:00
+
+====== Linux ======
+Created Вторник 04 Апрель 2017
+
+**Сделать из *.cer файла,  *.pem файл (такие сертификаты использует Linux).**
+
+**openssl x509 -in certnewb.cer -inform DER -out certnewb.pem -outform PEM**
+
+
+__Установка:__
+1. Copy your certificate to the system certificate directory. At a terminal prompt, type:
+**$ sudo cp mycert.pem /usr/share/ca-certificates/mycert.crt**
+
+2. Edit the ca-certificates configuration file **/etc/ca-certificates.conf**. Add the name of the file you copied to /usr/share/ca-certificates to the top of the list just after the final "#".
+
+3.Update the CA certificates database by typing:
+**$ sudo update-ca-certificates**

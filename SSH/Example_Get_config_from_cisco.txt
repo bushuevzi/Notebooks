@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-23T15:28:45+03:00
+
+====== Example Get config from cisco ======
+Created Воскресенье 23 Апрель 2017
+
+{{./pasted_image.png}}

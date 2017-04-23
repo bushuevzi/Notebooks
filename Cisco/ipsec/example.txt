@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-03T23:30:48+03:00
+
+====== example ======
+Created Понедельник 03 Апрель 2017
+
+{{./pasted_image.png}}
+!
+R-MAIN:
+crypto isakmp policy 1
+	encr aes
+	authentication pre-share
+	group 2
+!
+crypto ipsec security-association lifetime seconds 86400
+!
+crypto ipsec transform-set SECUREWAN esp-aes esp-sha-hmac
+!
+crypto map IPSECWAN 100 ipsec-isakmp
+	set peer **2.2.2.2    **
+	set pfs group2
+	set security-association lifetime seconds 86400
+	set transform-set SECUREWAN
+	match address SECURED-TRAFFIC
+!
+ip access-list extended SECURED-TRAFFIC
+	permit ip 192.168.0.0 0.0.255.225 192.168.0.0 0.0.255.225
+!
+crypto isakmp key 0 address **2.2.2.2**
+

@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-15T20:56:38+03:00
+
+====== Скрытый ввод пароля ======
+Created Суббота 15 Апрель 2017
+
+import getpass
+pw = getpass.getpass()
+

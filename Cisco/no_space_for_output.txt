@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-15T21:36:27+03:00
+
+====== no space for output ======
+Created Суббота 15 Апрель 2017
+
+terminal length 0
