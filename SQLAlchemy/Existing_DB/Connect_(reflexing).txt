@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-08-21T22:06:52+03:00
+
+====== Connect (reflexing) ======
+Created Понедельник 21 Август 2017
+
+Подключение к имеющейся DB и получение из нее метаданных называется рефлексией и выглядит так:
+{{./pasted_image.png}}
+from sqlalchemy import create_engine, MetaData, Table
+engine = create_engine('postgresql://postgres:r123@localhost/lukoil')
+meta = MetaData()
+hardwares = Table('Hardware', meta, autoload=True, autoload_with=engine)
+for c in hardwares.columns:
+	print(c.name)
+
+
+Код
+Название основного средства
+CMDB №
+Инвентарный №
+Серийный №
+Местоположение
+Тип объекта обслуживания
+Количество
+Host_name
+IP
+Владелец
+Заказчик
+Обслуживающая организация
+Договор обслуживания
+SLA
+Состояние
+Примечания
+Региональное администрирование
+Вид монтажа
+Дата монтажа
+№ Б-З
+Оператор GSM
+ICCID (основной оператор)
+MSISDN(основной оператор)
+IMSI(основной оператор)
+Статус SIM-карты
+ICCID (оператор для смены)
+MSISDN(оператор для смены)
+Тариф
