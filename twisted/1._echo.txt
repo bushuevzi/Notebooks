@@ -1,0 +1,55 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-09-16T19:15:59+03:00
+
+====== 1. echo ======
+Created Суббота 16 Сентябрь 2017
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+
+**The Reactor**
+The core of Twisted is the reactor event loop. The reactor knows about network, file‐
+system, and timer events. It waits on and demultiplexes these events and dispatches
+them to waiting event handlers. Twisted takes care of abstracting away platform-specific
+behavior and using the underlying nonblocking APIs correctly. Twisted presents a
+common interface to the various event sources so that responding to events anywhere
+in the network stack is easy.
+In our echo server and client from Examples 2-1 and 2-2, the reactor’s listenTCP and
+connectTCP methods take care of registering callbacks with the reactor to get notified
+when data is available to read from a TCP socket on port 8000. After those callbacks have been registered, we start the reactor’s event loop with
+reactor.run . Once running, the reactor will poll for and dispatch events forever or
+until reactor.stop is called.
+
+**Transports**
+A transport represents the connection between two endpoints communicating over a
+network. Transports describe connection details: for example, is this connection stream-
+oriented (like TCP) or datagram-oriented (like UDP)? TCP, UDP, Unix sockets, and
+serial ports are examples of transports. Transports implement the //ITransport// interface,
+which has the following methods:
+	**write** — Write data to the physical connection in a nonblocking manner.
+	**writeSequence** — Write a list of strings to the physical connection. Useful when working with line-oriented protocols.
+	**loseConnection** — Write all pending data and then close the connection.
+	**getPeer** — Get the remote address of the connection.
+	**getHost** — Like getPeer , but returns the address of the local side of the connection.
+
+**Protocols**
+Protocols describe how to process network events asynchronously. Twisted maintains
+implementations for many popular application protocols, including HTTP, Telnet,
+DNS, and IMAP. Protocols implement the //IProtocol// interface, which has the following
+methods:
+	**makeConnection** — Create a connection between two endpoints across a transport.
+	**connectionMade** — Called when a connection to another endpoint is made.
+	**dataReceived** —  Called when data is received across a transport.
+	**connectionLost** — Called when the connection is shut down.
+
+
+**Protocol Factories**
+A new instance of our Echo protocol class is instantiated for every connection and goes
+away when the connection terminates. This means that persistent configuration infor‐
+mation is not saved in the protocol.
+Persistent configuration information is instead kept in an EchoFactory class, which
+inherits from protocol.Factory in the server and protocol.ClientFactory in the
+client. A factory’s buildProtocol method creates a protocol for each new connection,
+which gets passed to the reactor to register callbacks.
