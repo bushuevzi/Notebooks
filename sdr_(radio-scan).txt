@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-10-24T22:26:46+03:00
+
+====== sdr (radio-scan) ======
+Created Вторник 24 Октябрь 2017
+
+clover@dev-desktop:~$ usb-devices
+T:  Bus=01 Lev=01 Prnt=01 Port=01 Cnt=02 Dev#=  6 Spd=480 MxCh= 0
+D:  Ver= 2.00 Cls=00(>ifc ) Sub=00 Prot=00 MxPS=64 #Cfgs=  1
+P:  Vendor=**0bda** ProdID=**2838** Rev=01.00
+S:  Manufacturer=Realtek
+S:  Product=RTL2838UHIDIR
+S:  SerialNumber=00000001
+C:  #Ifs= 2 Cfg#= 1 Atr=80 MxPwr=500mA
+I:  If#= 0 Alt= 0 #EPs= 1 Cls=ff(vend.) Sub=ff Prot=ff Driver=dvb_usb_rtl28xxu
+I:  If#= 1 Alt= 0 #EPs= 0 Cls=ff(vend.) Sub=ff Prot=ff Driver=(none)
+
+
+http://osmocom.org/projects/sdr/wiki/rtl-sdr
+{{./pasted_image002.png}}
