@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-11T00:34:27+03:00
+
+====== capture video from web cam ======
+Created суббота 11 Ноябрь 2017
+
+http://synaptitude.me/blog/smooth-face-tracking-using-opencv/
+
+{{.\pasted_image.png}}
+
+OR
+{{.\pasted_image001.png}}
