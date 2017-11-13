@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-13T23:08:21+03:00
+
+====== 0. variables ======
+Created понедельник 13 Ноябрь 2017
+
+используют модификаторы  **private, public**
+если нужно отразить в свойствах объекта то добавляют Атрибут **[SerializeField]**
+{{.\pasted_image001.png}}
