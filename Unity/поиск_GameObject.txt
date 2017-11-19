@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-19T23:50:49+03:00
+
+====== поиск GameObject ======
+Created воскресенье 19 Ноябрь 2017
+
+по Тегу:
+{{.\pasted_image.png}}
