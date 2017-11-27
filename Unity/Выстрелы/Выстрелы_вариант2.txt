@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-24T21:21:59+03:00
+
+====== Выстрелы вариант2 ======
+Created пятница 24 Ноябрь 2017
+
+1. в точку на конце ствола прикрепляем компонент **Particle System** (вспышка от выстрела)
+2. туда же прикрепляем компонент **Effects->Line Renderer** ему в материалы кидаем нужный
+3. добавляем скрипт
+{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}

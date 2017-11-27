@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-24T21:00:57+03:00
+
+====== Жизнь врага и его смерть ======
+Created пятница 24 Ноябрь 2017
+
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
+
+чтобы вызвать функцию **StartSinking()** нужно зайти в анимацию кролика (project -> Models -> Characters->Zombunny) в инспекторе выбрать клип Death пролистать ползунок вниз и зайти в раздел Events, там отметить на временной оси с какого момента стартует функция назвать функцию StartSinking

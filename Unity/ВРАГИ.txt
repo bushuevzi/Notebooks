@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-24T16:05:31+03:00
+
+====== ВРАГИ ======
+Created пятница 24 Ноябрь 2017
+
+1. у врага создаем **Navigation -> Nav Mesh Agent**
+2. открываем окно **Windows -> Navigation**
+3. создаем **Animator Controller **и перетаскиваем его в поле **Controller** компонента **Animator**
+{{.\pasted_image001.png}}
+4. на вкладке **Navigation -> Bake** нужно нажать кнопку внизу **Bake**
+5. создаем скрипт
+{{.\pasted_image002.png}}
+__Враг атакует (атака врага)__
+{{.\pasted_image003.png}}
+{{.\pasted_image004.png}}
