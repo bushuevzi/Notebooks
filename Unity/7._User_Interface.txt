@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-16T11:40:53+03:00
+
+====== 7. User Interface ======
+Created четверг 16 Ноябрь 2017
+
+Элементы UI создается элементе **Canvas **который автоматом подстраивается под размер экрана
+вращать не надо — подстроится под ориентацию главной камеры
+
+{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}
