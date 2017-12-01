@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-01T11:37:39+03:00
+
+====== 3 Specular Mode ======
+Created пятница 01 Декабрь 2017
+
+__для металика/спекуляра и smoothness можно использовать одну и туже текстуру при чем монохромное изображение которое пойдет на металик/спекуляр, а альфаканал на smoothness__
+
+{{./pasted_image.png}}
+{{./pasted_image001.png?width=1024}}
+This chart shows the specular and smoothness values being ramped up from 0 to 1 together.
+
+{{./pasted_image002.png}}
+An example of a 1000kg weight with a strong specular reflection from a directional light.
+
+{{./pasted_image003.png?width=1024}}
+The same model, but with a specular map assigned, instead of a using constant value.
+
+Here a texture map controls the specularity and smoothness. This allows the specularity to vary across the surface of the model. Notice the edges have a higher specular effect than the centre, there are some subtle colour responses to the light, and area inside the lettering no longer has specular highlights. Pictured to the right are the RGB channels controlling the specular colour and strength, and the Alpha channel controlling the smoothness.

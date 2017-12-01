@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-01T10:09:57+03:00
+
+====== 1 Rendering Mode ======
+Created пятница 01 Декабрь 2017
+{{./pasted_image005.png}}
+
+	**Opaque** - Is the default, and suitable for normal solid objects with no transparent areas. — **обычные материалы метал, дерево, непрозрачный пластик**
+	**Cutout** - Allows you to create a transparent effect that has hard edges between the opaque and transparent areas. In this mode, there are no semi-transparent areas, the texture is either 100% opaque, or invisible. This is useful when using transparency to create the shape of materials such as leaves, or cloth with holes and tatters. — **Трава, листья, растения**
+{{./pasted_image004.png}}
+The grass in this image is rendered using the Cutout mode. This gives clear sharp edges to objects which is defined by specifying a cut-off threshold. All parts of the image with the alpha value above this threshold are 100% opaque, and all parts below the threshold are invisible. To the right in the image you can see the material settings and the alpha channel of the texture used.
+
+	**Transparent** - Suitable for rendering realistic transparent materials such as clear plastic or glass. In this mode, the material itself will take on transparency values (based on the texture’s alpha channel and the alpha of the tint colour), however reflections and lighting highlights will remain visible at full clarity as is the case with real transparent materials.** — прозрачные пластики, стекла**
+{{./pasted_image001.png}}
+	**Fade** - Allows the transparency values to entirely fade an object out, including any specular highlights or reflections it may have. This mode is useful if you want to animate an object fading in or out. It iss not suitable for rendering realistic transparent materials such as clear plastic or glass because the reflections and highlights will also be faded out. — **голограммы**
+{{./pasted_image003.png}}

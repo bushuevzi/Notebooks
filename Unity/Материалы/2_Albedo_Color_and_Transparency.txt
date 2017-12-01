@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-01T10:14:42+03:00
+
+====== 2 Albedo Color and Transparency ======
+Created пятница 01 Декабрь 2017
+
+{{./pasted_image.png}}
+A Standard Shader material with default parameters and no values or textures assigned. The Albedo Color parameter is highlighted.
+
+{{./pasted_image002.png?width=1024}}
+
+A range of black to white albedo values
+
+**Transparency**
+The alpha value of the Albedo colour controls the transparency level for the material. This only has an effect if the Rendering Mode for the material is set to one of the transparent mode, and not Opaque. As mentioned above, picking the correct transparency mode is important because it determines whether or not you will still see reflections and specular highlights at full value, or whether they will be faded out according to the transparency values too.
+{{./pasted_image003.png}}
+A range of transparency values from 0 to 1, using the Transparent mode suitable for realistic transparent objects
+
+__Разбитые окна (разная прозрачность):__
+When using a texture assigned for the Albedo parameter, you can control the transparency of the material by ensuring your albedo texture image has an alpha channel. The alpha channel values are mapped to the transparency levels with white being fully opaque, and black being fully transparent. This will have the effect that your material can have areas of varying transparency.
+{{./pasted_image004.png}}
+An imported texture with RGB channels and an Alpha Channel. You can click the RGB/A button as shown to toggle which channels of the image you are previewing.
+{{./pasted_image005.png}}

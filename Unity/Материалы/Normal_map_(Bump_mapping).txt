@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-01T15:20:33+03:00
+
+====== Normal map (Bump mapping) ======
+Created пятница 01 Декабрь 2017
+
+special kind of texture that allow you to add surface detail such as bumps, grooves, and scratches to a model which catch the light as if they are represented by real geometry.
+For example, you might want to show a surface which has grooves and screws or rivets across the surface, like an aircraft hull. One way to do this would be to model these details as geometry, as shown below.
+{{./pasted_image.png}} это заклепка трехмерная так делать ненадо!
+A sheet of aircraft metal with details modeled as real geometry.
+Depending on the situation it is not normally a good idea to have such tiny details modelled as “real” geometry. To avoid this, we should use a normal map to represent the fine surface detail, and a lower resolution polygonal surface for the larger shape of the model.
+{{./pasted_image001.png}}
+The screws, grooves and scratches are defined in a normalmap, which modifies how light reflects off the surface of this low-poly plane, giving the impression of 3D detail. As well as the rivets and screws, a texture allows us to include far more detail like subtle bumps and scratches.
+
+**How to create and use Bump Maps**

@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-01T11:54:40+03:00
+
+====== 4 Metallic mode ======
+Created пятница 01 Декабрь 2017
+
+__для металика/спекуляра и smoothness можно использовать одну и туже текстуру при чем монохромное изображение которое пойдет на металик/спекуляр, а альфаканал на smoothness__
+
+{{./pasted_image.png}}
+Metallic mode is not just for materials which are supposed to look metallic!
+
+The metallic parameter of a material determines how “metal-like” the surface is. When a surface is more metallic, it reflects the environment more and its albedo colour becomes less visible. At full metallic level, the surface colour is entirely driven by reflections from the environment. When a surface is less metallic, its albedo colour is more clear and any surface reflections are visible on top of the surface colour, rather than obscuring it.
+{{./pasted_image001.png}}
+A range of metallic values from 0 to 1 (with smoothness at a constant 0.8 for all samples)
+
+
+You would want the buckles and zips to have a higher metallic value than the fabric of the clothes. To achieve this, instead of using a single slider value, a __texture map can be assigned which contains lighter pixel colours in the areas of the buckles and zips, and darker values for the fabric__.
+{{./pasted_image002.png}}
+This image shows a case model with no metallic map
+
+{{./pasted_image003.png}}
+This image shows a case model with a metallic map applied
+
+т.е. для металика/спекуляра и smoothness можно использовать одну и туже текстуру при чем монохромное изображение которое пойдет на металик/спекуляр, а альфаканал на smoothness

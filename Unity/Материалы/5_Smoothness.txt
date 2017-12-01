@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-01T13:39:09+03:00
+
+====== 5 Smoothness ======
+Created пятница 01 Декабрь 2017
+
+__для металика/спекуляра и smoothness можно использовать одну и туже текстуру при чем монохромное изображение которое пойдет на металик/спекуляр, а альфаканал на smoothness__
+
+Гладкость поверхности
+
+{{./pasted_image.png}}
+
+Both shader modes are shown above, because if you choose to use a texture map for the Metallic or Specular parameter, the smoothness values are taken from that same map.
+{{./pasted_image001.png?width=1024}}
+
+A range of smoothness values from 0 to 1
+
+The “microsurface detail” is not something directly visible in Unity. It is a concept used in the lighting calculations. 
+{{./pasted_image002.png?width=1024}}
+A comparison of low, medium and high values for smoothness (left to right), as a diagram of the theoretical microsurface detail of a material. The yellow lines represent light rays hitting the surface and reflecting off the angles encountered at varying levels of smoothness.
+{{./pasted_image003.png}}
+A comparison of low, medium and high values for smoothness (top to bottom).
+
+__Using a Smoothness Texture Map__
+In a similar way to many of the other parameters, you can assign a texture map instead of using a single slider value. This allows you greater control over the strength and colour of the specular light reflections across the surface of the material.
+
