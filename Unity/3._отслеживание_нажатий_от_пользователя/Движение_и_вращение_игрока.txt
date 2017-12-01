@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-23T18:36:53+03:00
+
+====== Движение и вращение игрока ======
+Created четверг 23 Ноябрь 2017
+
+{{.\pasted_image.png}}
+нормализайия используется из за того что при сложении векторов суммарный вектор больше в 1.4 раза:
+{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}
+{{.\pasted_image003.png}}

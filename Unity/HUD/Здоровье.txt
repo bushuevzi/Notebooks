@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-11-24T19:44:20+03:00
+
+====== Здоровье ======
+Created пятница 24 Ноябрь 2017
+
+1. создаем скрипт [[PlayerHealth]] и перекидываем на игорока
+{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}
+
