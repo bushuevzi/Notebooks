@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-08T16:37:51+03:00
+
+====== Запущенные сервисы ======
+Created пятница 08 Декабрь 2017
+
+{{.\pasted_image.png}}
+

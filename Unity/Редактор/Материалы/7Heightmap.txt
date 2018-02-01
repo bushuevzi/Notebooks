@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-02T14:48:00+03:00
+
+====== 7Heightmap ======
+Created суббота 02 Декабрь 2017
+__parallax mapping__
+
+{{.\pasted_image.png}}
+A heightmap should be a greyscale image, with white areas representing the high areas of your texture and black representing the low areas. Here’s a typical albedo map and a heightmap to mat
+{{.\pasted_image002.png}}
+{{.\pasted_image001.png}}
+From left to right in the above image: 1. A rocky wall material with albedo assigned, but no normalmap or heightmap. 2. The normal assigned. Lighting is modified on the surface, but rocks do not occlude each other. 3. The final effect with normalmap and heightmap assigned. The rocks appear to protrude out from the surface, and nearer rocks seem to occlude rocks behind them.

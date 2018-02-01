@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-01T16:24:12+03:00
+
+====== What are Surface Normals ======
+Created пятница 01 Декабрь 2017
+
+{{./pasted_image.png}}
+The model on the right has the same number of polygons as the model on the left, however the shading appears smooth - the lighting across the polygons gives the appearance of a curved surface. Why is this? The reason is that the surface normal at each point used for reflecting light gradually varies across the width of the polygon, so that for any given point on the surface, the light bounces as if that surface was curved and not the flat constant polygon that it really is.
+{{./pasted_image001.png}}
+Smooth shading on three polygons, viewed as a 2D diagram
+In the diagram above, the red arrows indicate the stored normal direction at each vertex, and the orange arrows indicate examples of the interpolated normal directions across the area of the polygon.
+
+**What is Normal mapping?**
+Normal mapping takes this modification of surface normals one step further, by using a texture to store information about how to modify the surface normals across the model. A normal map is an image texture mapped to the surface of a model, similar to regular colour textures, however each pixel in the texture of the normal map (called a texel) represents a deviation in surface normal direction away from the “true” surface normal of the flat (or smooth interpolated) polygon. 
+{{.\pasted_image002.png}}
+ RGB values of each texel represent the X,Y & Z values of a direction vector, and are applied as a modification to the basic interpolated smooth normals of the polygon surfaces.
+{{.\pasted_image003.png}}
+{{.\pasted_image004.png}}
+
+
+**How do I get or make normal maps?**

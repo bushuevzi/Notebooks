@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-02T15:02:14+03:00
+
+====== 10 Secondary Maps (Detail Maps) & Detail Mask ======
+Created суббота 02 Декабрь 2017
+
+The reason for this is to allow the material to have sharp detail when viewed up close, while also having a normal level of detail when viewed from further away, without having to use a single extremely high texture map to achieve both goals.
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
+The Albedo skin pore detail texture
+{{.\pasted_image002.png}}
+The normal map for the skin pore detail
+{{.\pasted_image003.png}}

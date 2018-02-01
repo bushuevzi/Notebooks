@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-07T11:23:26+03:00
+
+====== route map ======
+Created четверг 07 Декабрь 2017
+
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}
+{{.\pasted_image003.png}}
+
+{{.\pasted_image004.png}}
+
+
+{{.\pasted_image006.png}}
+
+{{.\pasted_image008.png}}
+
+{{.\pasted_image009.png}}
+{{.\pasted_image008.png}}
+
+{{.\pasted_image008.png}}
+{{.\pasted_image007_1.png}}
+{{.\pasted_image008_1.png}}
+{{.\pasted_image009.png}}
+{{.\pasted_image010.png}}
+{{.\pasted_image011.png}}

@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-02T18:32:00+03:00
+
+====== Shader ======
+Created суббота 02 Декабрь 2017
+
+Встроенные шейдеры
+
+В дополнение к основным шейдерам, применяемым к игровым объектам, существует ряд других категорий для особых целей:-
+
+	FX: 		водные и световые эффекты.
+	GUI:		отображение графического интерфейса пользователя (GUI - это аббревиатура для Graphic User Interface, что в переводе означает “графический интерфейс пользователя”).
+	Mobile: 	Simplified high-performance shader for mobile devices.
+	Nature: 	деревья и земная поверхность.
+	Particles: 	эффекты системы частиц.
+	Skybox: 	For rendering background environments behind all geometry
+	Sprites: 	For use with the 2D sprite system
+	Toon: 	отрисовка в мультипликационном стиле.
+	Unlit: 		For rendering that entirely bypasses all light & shadowing
+	Legacy: 	The large collection of older shaders which were superseded by the Standard Shader
+
+Below is an example of a possible set-up combination using three materials, two shaders and one texture.
+{{.\pasted_image.png}}
+__шейдер определяет:__
+	The method to render an object. This includes code and mathematical calculations that may include the angles of light sources, the viewing angle, and any other relevant calculations. Shaders can also specify different methods depending on the graphics hardware of the end user.
+	The parameters that can be customised in the material inspector, such as texture maps, colours and numeric values.
+
+__Наиболее важная вещь - помнить о том, что один шейдер может быть использован во многих материалах, но один материал не может использовать несколько шейдеров.__

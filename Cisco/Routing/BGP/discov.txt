@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-08T11:07:29+03:00
+
+====== discov ======
+Created пятница 08 Декабрь 2017
+{{.\pasted_image003.png}}
+
+{{.\pasted_image.png}}
+
+устанавливаем соседство 
+
+{{.\pasted_image001.png}}
+анонсируем сети
+{{.\pasted_image002.png}}
+
+__ДЛЯ ЭКСТЕРНЕЛ СЕТЕЙ указываем __
+__neighbor 192.168.2.2 update-source lo0__
+__neighbor 192.168.2.2 ebgp-multihop__ 
+
+
+{{.\pasted_image004.png}}
+{{.\pasted_image005.png}}
+{{.\pasted_image006.png}}
+{{.\pasted_image007.png}}
+
+
+

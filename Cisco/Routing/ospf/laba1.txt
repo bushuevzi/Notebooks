@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-06T11:32:06+03:00
+
+====== laba1 ======
+Created среда 06 Декабрь 2017
+
+{{.\pasted_image.png}}
+.{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}
+{{.\pasted_image007.png}}
+{{.\pasted_image008.png}}
+{{.\pasted_image003.png}}
+{{.\pasted_image004.png}}
+
+{{.\pasted_image005.png}}
+
+{{.\pasted_image006.png}}
+
+
+
+--------------------
+
+

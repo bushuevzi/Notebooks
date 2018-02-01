@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-07T10:16:27+03:00
+
+====== манипулирование ======
+Created четверг 07 Декабрь 2017
+
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
+
+{{.\pasted_image002.png}}
+
+{{.\pasted_image003.png}}
+

@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-06T19:55:08+03:00
+
+====== Приведение типов ======
+Created суббота 06 Январь 2018
+
+{{.\pasted_image.png}}
+
+{{.\pasted_image001.png}}

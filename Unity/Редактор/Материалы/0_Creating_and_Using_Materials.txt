@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-02T23:04:00+03:00
+
+====== 0 Creating and Using Materials ======
+Created суббота 02 Декабрь 2017
+
+To create a new Material, use Assets->Create->Material from the main menu or the Project View context menu. 

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-08T16:37:01+03:00
+
+====== умножение и деление битовыми сдвигами ======
+Created понедельник 08 Январь 2018
+
+{{.\pasted_image.png}}

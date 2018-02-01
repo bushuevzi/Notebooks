@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-02T14:51:53+03:00
+
+====== 8 Occlusion Map ======
+Created суббота 02 Декабрь 2017
+
+{{.\pasted_image.png}}
+The occlusion map is used to provide information about which areas of the model should receive high or low indirect lighting. Indirect lighting comes from ambient lighting and reflections,
+An occlusion map is a greyscale image, with white indicating areas that should receive full indirect lighting, and black indicating no indirect lighting. 
+{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}

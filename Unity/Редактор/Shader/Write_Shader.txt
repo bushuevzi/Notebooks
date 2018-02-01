@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-02T18:32:10+03:00
+
+====== Write Shader ======
+Created суббота 02 Декабрь 2017
+
+{{.\pasted_image.png}}
+1. Создаем в проекте новый файл шейдера
+ПКМ->Create->Shader->Unit Shader
+{{.\pasted_image003.png}}
+
+{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}
+

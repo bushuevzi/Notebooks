@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-02T15:06:16+03:00
+
+====== 11 The Fresnel Effect ======
+Created суббота 02 Декабрь 2017
+
+{{.\pasted_image.png}}
+The fresnel effect visible at grazing angles in relation to the viewer is increasingly apparent as the surface of a material becomes smoother

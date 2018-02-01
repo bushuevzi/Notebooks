@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-07T16:35:04+03:00
+
+====== NAT ======
+Created четверг 07 Декабрь 2017
+
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}
+{{.\pasted_image003.png}}
+{{.\pasted_image004.png}}
+{{.\pasted_image005.png}}
+
+
+
+

@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-07T16:28:00+03:00
+
+====== base accessc config on switch ======
+Created четверг 07 Декабрь 2017
+
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}

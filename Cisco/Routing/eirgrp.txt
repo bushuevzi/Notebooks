@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-05T10:39:27+03:00
+
+====== eirgrp ======
+Created вторник 05 Декабрь 2017
+
+затащить DG
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
+
+
+
+__проверка__ 
+{{.\pasted_image002.png}}
+auto ballance
+ — добавляем 
+__Балансировка__ 
+{{.\pasted_image007.png}}
+{{.\pasted_image005.png}}
+{{.\pasted_image008.png}}
+{{.\pasted_image004.png}}

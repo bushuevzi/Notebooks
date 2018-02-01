@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-06T01:35:45+03:00
+
+====== examples ======
+Created суббота 06 Январь 2018
+
