@@ -5,3 +5,8 @@ Creation-Date: 2018-02-01T21:58:01+03:00
 ====== Cpp ======
 Created четверг 01 Февраль 2018
 
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}
+{{.\pasted_image003.png}}
+
