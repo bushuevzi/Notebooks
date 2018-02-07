@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-07T22:31:33+03:00
+
+====== Кирилица в консоле и пауза после выполнения программы ======
+Created среда 07 Февраль 2018
+
+{{.\pasted_image.png}}
