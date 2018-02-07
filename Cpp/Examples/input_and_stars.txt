@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-07T23:38:28+03:00
+
+====== input and stars ======
+Created среда 07 Февраль 2018
+
+{{.\pasted_image.png}}
