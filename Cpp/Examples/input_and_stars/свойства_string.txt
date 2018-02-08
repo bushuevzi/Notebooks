@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-08T22:37:49+03:00
+
+====== свойства string ======
+Created четверг 08 Февраль 2018
+
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
