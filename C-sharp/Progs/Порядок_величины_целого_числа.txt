@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-09T18:46:15+03:00
+
+====== Порядок величины целого числа ======
+Created вторник 09 Январь 2018
+
+{{./pasted_image.png}}

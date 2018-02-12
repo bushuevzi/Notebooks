@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-10T10:24:36+03:00
+
+====== вычисление 2 в разных степенях ======
+Created среда 10 Январь 2018
+
+{{./pasted_image.png}}

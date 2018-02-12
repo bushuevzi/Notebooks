@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-11T08:57:54+03:00
+
+====== do-while ======
+Created четверг 11 Январь 2018
+
+{{./pasted_image.png}}

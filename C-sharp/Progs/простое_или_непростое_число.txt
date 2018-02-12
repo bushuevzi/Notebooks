@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-25T09:45:44+03:00
+
+====== простое или непростое число ======
+Created четверг 25 Январь 2018
+
+{{./pasted_image.png}}

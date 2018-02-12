@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-12T10:46:11+03:00
+
+====== foreach ======
+Created пятница 12 Январь 2018
+
+{{./pasted_image.png}}

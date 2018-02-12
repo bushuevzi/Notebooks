@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-16T12:56:12+03:00
+
+====== 0. перебор строк в dataframe ======
+Created вторник 16 Январь 2018
+
+{{./pasted_image.png}}

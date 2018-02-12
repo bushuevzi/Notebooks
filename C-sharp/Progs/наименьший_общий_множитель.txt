@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-26T09:23:33+03:00
+
+====== наименьший общий множитель ======
+Created пятница 26 Январь 2018
+
+{{./pasted_image.png}}
