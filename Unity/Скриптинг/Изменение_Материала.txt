@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-02T18:08:07+03:00
+
+====== Изменение Материала ======
+Created суббота 02 Декабрь 2017
+
+All the parameters of a Material that you see in the inspector when viewing a material are accessible via script, giving you the power to change or animate how a material works at runtime.
+Function Name 	Use
+SetColor 		Change the color of a material (Eg. the albedo tint color)
+SetFloat 			Set a floating point value (Eg. the normal map multiplier)
+SetInt 			Set an integer value in the material
+SetTexture 		Assign a new texture to the material
+
+https://docs.unity3d.com/ru/530/ScriptReference/Material.html
+

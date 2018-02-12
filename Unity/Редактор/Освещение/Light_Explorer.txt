@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-03T00:17:13+03:00
+
+====== Light Explorer ======
+Created воскресенье 03 Декабрь 2017
+
+Light Explorer allows you to select and edit light sources
+**Window > Lighting > Light Explorer**
+{{.\pasted_image.png}}

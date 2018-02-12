@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-06T14:09:41+03:00
+
+====== суммаризация ======
+Created среда 06 Декабрь 2017
+
+
+{{.\pasted_image006.png}}
+
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
+{{.\pasted_image002.png}}
+{{.\pasted_image003.png}}
+{{.\pasted_image004.png}}
+
+__________________________________________
+внешняя суммаризация
+{{.\pasted_image007.png}}

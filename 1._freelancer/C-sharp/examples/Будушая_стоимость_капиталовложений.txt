@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-06T01:36:07+03:00
+
+====== Будушая стоимость капиталовложений ======
+Created суббота 06 Январь 2018
+
+{{.\pasted_image.png}}

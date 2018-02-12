@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-08T15:16:19+03:00
+
+====== исключающее или ======
+Created понедельник 08 Январь 2018
+
+{{.\pasted_image.png}}

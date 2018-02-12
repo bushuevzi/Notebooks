@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-02T23:27:07+03:00
+
+====== Редактор ======
+Created суббота 02 Декабрь 2017
+
