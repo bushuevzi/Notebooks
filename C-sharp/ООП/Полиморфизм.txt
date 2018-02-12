@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-28T11:36:25+03:00
+
+====== Полиморфизм ======
+Created четверг 28 Декабрь 2017
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

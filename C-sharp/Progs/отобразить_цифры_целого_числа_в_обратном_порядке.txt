@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-11T08:59:22+03:00
+
+====== отобразить цифры целого числа в обратном порядке ======
+Created четверг 11 Январь 2018
+
+{{./pasted_image.png}}
+
