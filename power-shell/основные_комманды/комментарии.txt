@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-13T15:56:45+03:00
+
+====== комментарии ======
+Created вторник 13 Февраль 2018
+
+{{.\pasted_image.png}}

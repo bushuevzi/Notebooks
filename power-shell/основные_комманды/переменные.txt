@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-13T16:00:19+03:00
+
+====== переменные ======
+Created вторник 13 Февраль 2018
+
+Переменная в PowerShell начинается со знака $
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}
+
+Узнать тип переменной:
+{{.\pasted_image002.png}}
+
+Установить тип переменной
+{{.\pasted_image003.png}}
