@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T23:56:42+03:00
+
+====== выбор определенного элемента из коллекции ======
+Created четверг 15 Февраль 2018
+
+без фильтрации (выбора определнного элемента из коллекции)
+{{{code: lang="sh" linenumbers="True"
+Get-NetAdapter
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  Realtek PCIe GBE Family Controller            7 Disconnected 00-E0-1C-68-09-03          0 bps
+Беспроводная сеть         TP-LINK Wireless USB Adapter                  5 Up           C4-6E-1F-12-54-57       150 Mbps
+}}}
+
+
+С фильтрацией — выбираем элемент  у которого Name = "Ethernet"
+{{{code: lang="sh" linenumbers="True"
+Get-NetAdapter | where {$_.Name -eq "Ethernet"} 
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet                  Realtek PCIe GBE Family Controller            7 Disconnected 00-E0-1C-68-09-03          0 bps
+}}}
+

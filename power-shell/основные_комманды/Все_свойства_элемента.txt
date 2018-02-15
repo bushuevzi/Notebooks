@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-16T00:21:35+03:00
+
+====== Все свойства элемента ======
+Created пятница 16 Февраль 2018
+
+{{{code: lang="sh" linenumbers="True"
+Get-NetAdapter | where {$_.Name -eq "Беспроводная сеть"} | Format-List
+
+
+Name                       : Беспроводная сеть
+InterfaceDescription       : TP-LINK Wireless USB Adapter
+InterfaceIndex             : 5
+MacAddress                 : C4-6E-1F-12-54-57
+MediaType                  : 802.3
+PhysicalMediaType          : Native 802.11
+InterfaceOperationalStatus : Up
+AdminStatus                : Up
+LinkSpeed(Mbps)            : 150
+MediaConnectionState       : Connected
+ConnectorPresent           : True
+DriverInformation          : Driver Date 2013-05-13 Version 10.0.0.25 NDIS 6.30
+}}}
+
