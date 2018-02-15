@@ -7,6 +7,26 @@ Created четверг 15 Февраль 2018
 
 {{.\pasted_image.png}}
 
-{{{code: lang="def" linenumbers="True"
+{{{code: lang="sh" linenumbers="True"
+$regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings"
+$proxyServer = ""
+$proxyServerToDefine = "{Proxy}:{Port}"
+Write-Host "Получаем настроки proxy server ..."
+$proxyServer = Get-ItemProperty -Path $regKey ProxyServer -ErrorAction SilentlyContinue
+Write-Host $proxyServer
 
+if([string]::IsNullOrEmpty($proxyServer))
+{
+    Write-Host -ForegroundColor Yellow "Proxy выключен"
+    Set-ItemProperty -Path $regKey ProxyEnable -Value 1
+    Set-ItemProperty -Path $regKey ProxyServer -Value $proxyServerToDefine
+    Write-Host -ForegroundColor Yellow "Proxy включен"
+}
+else
+{
+    Write-Host -ForegroundColor Yellow "Proxy включен"
+    Set-ItemProperty -Path $regKey ProxyEnable -Value 0
+    Remove-ItemProperty -Path $regKey -name ProxyServer
+    Write-Host -ForegroundColor Yellow "Proxy отключен"
+}
 }}}
