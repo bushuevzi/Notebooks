@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-13T17:14:06+03:00
+
+====== Экспорт в CSV и вывод содержимого файла ======
+Created вторник 13 Февраль 2018
+
+{{.\pasted_image.png}}

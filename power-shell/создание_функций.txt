@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-14T16:35:09+03:00
+
+====== создание функций ======
+Created среда 14 Февраль 2018
+
+{{.\pasted_image.png}}
+
+
+При вызове функции, все параметры разделяются пробелами
+{{.\pasted_image001.png}}

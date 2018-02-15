@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-12T15:49:38+03:00
+
+====== основные комманды ======
+Created понедельник 12 Февраль 2018
+
+Get-Process
+Get-Service
+
+Get-Content C:\Windows\System32\drivers\etc\hosts #для получения содержимого файла. В данном случае, файл hosts
+
+для получения справки:
+Get-Help -Category cmdlet
+
+#вывести все службы которые начинаются на "p"
+{{.\pasted_image.png}}
+
+
+#узнать свойства командлета
+{{.\pasted_image001.png}}
+
+
+
+Помощь по командлету с примерами
+{{.\pasted_image002.png}}

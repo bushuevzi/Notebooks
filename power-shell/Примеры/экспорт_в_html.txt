@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-14T16:14:39+03:00
+
+====== экспорт в html ======
+Created среда 14 Февраль 2018
+
+{{.\pasted_image.png}}

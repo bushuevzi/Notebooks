@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T16:28:15+03:00
+
+====== Сведения о bios ======
+Created четверг 15 Февраль 2018
+
+{{{code: lang="sh" linenumbers="True"
+Get-CimInstance Win32_Bios
+
+
+SMBIOSBIOSVersion : P02 Ver. 02.06
+Manufacturer      : HP
+Name              : P02 Ver. 02.06
+SerialNumber      : xxxxxxxxxxxxx
+Version           : HPQOEM - 0
+}}}
+

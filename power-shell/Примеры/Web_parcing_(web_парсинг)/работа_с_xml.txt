@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T16:21:54+03:00
+
+====== работа с xml ======
+Created четверг 15 Февраль 2018
+
+{{{code: lang="sh" linenumbers="True"
+$webClient = New-Object System.Net.WebClient
+$content = $webClient.DownloadString("http://blogs.msdn.com/PowerShell/rss.aspx")
+#$content.Substring(0,1000)
+
+$xmlContent = [xml] $content
+$xmlContent
+
+$xmlContent.rss
+
+$xmlContent.rss.channel.item | select Title
+
+$xmlContent.rss.channel.Item | Format-Table title, pubdate,link -Auto
+}}}
+

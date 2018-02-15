@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-14T16:25:59+03:00
+
+====== ForEach ======
+Created среда 14 Февраль 2018
+
+Цикл по коллекции объектов
+{{.\pasted_image.png}}

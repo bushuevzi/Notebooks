@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-13T16:35:52+03:00
+
+====== Массивы ======
+Created вторник 13 Февраль 2018
+
+{{.\pasted_image.png}}
+
+добавление элемента
+{{.\pasted_image001.png}}
+
+редактирование элемента.
+В массиве могут быть разные типы данных
+{{.\pasted_image002.png}}
+
+вывод значений
+{{.\pasted_image003.png}}
+{{.\pasted_image004.png}}

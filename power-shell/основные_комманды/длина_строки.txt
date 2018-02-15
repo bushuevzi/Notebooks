@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T13:11:53+03:00
+
+====== длина строки ======
+Created четверг 15 Февраль 2018
+
+{{{code: lang="sh" linenumbers="True"
+PS W:\> "Hello World".Length
+11
+}}}
