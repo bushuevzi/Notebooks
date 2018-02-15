@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T15:39:30+03:00
+
+====== поиск коммандлета ======
+Created четверг 15 Февраль 2018
+
+{{{code: lang="sh" linenumbers="True"
+PS C:\temp\test> Get-Command *process*
+
+CommandType     Name                                               Version    Source                                        
+-----------     ----                                               -------    ------                                        
+Function        Get-AppvVirtualProcess                             1.0.0.0    AppvClient                                    
+Function        Start-AppvVirtualProcess                           1.0.0.0    AppvClient                                    
+Cmdlet          Debug-Process                                      3.1.0.0    Microsoft.PowerShell.Management               
+Cmdlet          Enter-PSHostProcess                                3.0.0.0    Microsoft.PowerShell.Core                     
+Cmdlet          Exit-PSHostProcess                                 3.0.0.0    Microsoft.PowerShell.Core                     
+
+}}}
+
+

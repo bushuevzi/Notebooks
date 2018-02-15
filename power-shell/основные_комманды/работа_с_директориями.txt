@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T13:49:44+03:00
+
+====== работа с директориями ======
+Created четверг 15 Февраль 2018
+
+текущая директория
+{{{code: lang="sh" linenumbers="True"
+PS W:\> Get-Location
+
+Path
+----
+W:\ 
+}}}
+
+
+смена директории / сменить директорию
+{{{code: lang="sh" linenumbers="True"
+PS W:\> Set-Location -Path C:\temp\test
+}}}
+
+
+
+список файлов в директории
+{{{code: lang="sh" linenumbers="True"
+PS C:\temp\test> Get-ChildItem
+
+
+    Каталог: C:\temp\test
+
+
+Mode                LastWriteTime         Length Name                                                                       
+----                -------------         ------ ----                                                                       
+d-----       15.02.2018     13:48                dir1                                                                       
+d-----       15.02.2018     13:48                dir2       
+}}}
+
+
+копирование элементов
+{{{code: lang="sh" linenumbers="True"
+PS C:\temp\test> Get-Item C:\Temp\test\dir1\* | Copy-Item -Destination c:\Temp\test\dir3
+}}}
+
+
+перемещение элементов
+{{{code: lang="sh" linenumbers="True"
+PS C:\temp\test> Get-Item C:\Temp\test\dir1\ | Move-Item -Destination c:\Temp\test\dir4
+}}}
+

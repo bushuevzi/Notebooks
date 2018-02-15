@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T13:42:53+03:00
+
+====== дата - время ======
+Created четверг 15 Февраль 2018
+
+вычислить разницу между датами 
+{{{code: lang="sh" linenumbers="True"
+PS W:\> $result =  [DateTime]::Now - [DateTime]"02.02.1986"
+
+}}}
+
+выдать результат в колличестведней
+{{{code: lang="sh" linenumbers="True"
+PS W:\> $result.TotalDays
+11701.5709614307
+}}}
+

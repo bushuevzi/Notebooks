@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T14:09:59+03:00
+
+====== список процессов в виде таблицы ======
+Created четверг 15 Февраль 2018
+
+{{{code: lang="sh" linenumbers="True"
+Get-Process |
+Where-Object { $_.Handles -ge 500} |
+Sort-Object Handles |
+Format-Table Handles, Name, Description -Auto
+}}}
+
+{{.\pasted_image.png}}

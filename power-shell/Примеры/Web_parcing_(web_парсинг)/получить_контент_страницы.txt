@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T15:44:43+03:00
+
+====== получить контент страницы ======
+Created четверг 15 Февраль 2018
+
+{{{code: lang="sh" linenumbers="True"
+$webClient = New-Object System.Net.WebClient
+$content = $webClient.DownloadString("http://blogs.msdn.com/PowerShell/rss.aspx")
+$content.Substring(0,1000)
+
+}}}
+
