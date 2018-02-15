@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-14T13:45:24+03:00
+
+====== операторы сравления, регулярные выражения (regex), замена субстроки ======
+Created среда 14 Февраль 2018
+
+{{.\pasted_image.png}}
+{{.\pasted_image001.png}}

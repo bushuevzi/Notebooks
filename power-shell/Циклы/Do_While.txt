@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-14T16:22:46+03:00
+
+====== Do While ======
+Created среда 14 Февраль 2018
+
+Делать до тех пор, пока условие верно
+{{.\pasted_image.png}}

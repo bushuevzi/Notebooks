@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T11:32:59+03:00
+
+====== включаем выключаем прокси через реестр ======
+Created четверг 15 Февраль 2018
+
+{{.\pasted_image.png}}
+
+{{{code: lang="def" linenumbers="True"
+
+}}}

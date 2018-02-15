@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-14T16:25:23+03:00
+
+====== For ======
+Created среда 14 Февраль 2018
+
+Цикл, который повторяет одинаковые шаги определённое количество раз
+{{.\pasted_image.png}}

@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-14T13:47:43+03:00
+
+====== логические операторы ======
+Created среда 14 Февраль 2018
+
+{{.\pasted_image.png}}
