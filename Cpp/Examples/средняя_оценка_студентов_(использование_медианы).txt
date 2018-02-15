@@ -1,0 +1,102 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-15T22:20:20+03:00
+
+====== средняя оценка студентов (использование медианы) ======
+Created четверг 15 Февраль 2018
+
+в качестве массива данных используем вектор vector<double>
+тип включаемых в вектор объектов мы указываем в угловых скобках
+
+чтобы найти медианну в векторе нужно:
+	упорядочить значения в векторе
+	если количество значений нечетное — берем среднее значение
+	если количество значений четное — среднее арифметическое от двух серединных значений
+	
+функция sort не создает новый контейнер она переставляет значения элементов исходного контейнера
+homework.begin() — означает первый элемент в векторе, а homework.end() --"элемент",
+расположенный непосредственно за последним
+
+{{{code: lang="cpp" linenumbers="True"
+#include <iostream>
+#include <ios>
+#include <iomanip>	//для setprecision
+#include <Windows.h> //Для SetConsolCp, SetConsoleOutputCP
+#include <string>
+#include <vector>
+#include <algorithm> //для функции sort примененную к вектору
+
+using std::cin;		using std::setprecision;
+using std::cout;	using std::string;
+using std::endl;	using std::streamsize;
+using std::vector;	using std::sort;
+
+int main()
+{
+	// корректное отображение кирилицы в консоле
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	//запрашиваем и считываем имя студента
+	cout << "Пожалуйста, введите свое имя: ";
+	string name;
+	cin >> name;
+	cout << "Привет, " << name << "!" << endl;
+
+	//запрашиваем и считываем оценки по экзаменам,
+	//проведенным в середине и в конце семестра
+	cout << "Пожалуйста, введите оценки по экзаменам "
+		"в середине и в конце семестра: ";
+	double midterm, final;
+	cin >> midterm >> final;
+
+	//Запрашиваем оценки за выполение домашних заданий
+	cout << "Введите все оценки за выполенние домашних заданий, "
+		"завершив ввод прзнаком конца файла (ctrl-z -- windows, "
+		"ctrl-d -- linux): ";
+	
+	//переменная в которую производится считывание данных
+	double x;
+
+	//переменная для хранения всех оценок за домашнии задания
+	vector<double> homework;
+	while (cin >> x)
+		homework.push_back(x);
+
+	//определяем новый тип переменной и называем тип vec_sz
+	//т.е. vec_sz синоним vector<double>::size_type
+	typedef vector<double>::size_type vec_sz;
+	vec_sz size = homework.size();
+
+	//бессмысленно искать медиану в пустой коллекции
+	if (size == 0)
+	{
+		cout << endl << "Необходимо ввести оценки для расчета. "
+			"Пожалуйста, попытайтесь снова." << endl;
+		return 1;
+	}
+
+	//сортируем значения в векторе
+	sort(homework.begin(), homework.end());
+
+	
+	
+	//находим срединный элемент(элементы)
+	vec_sz mid = size / 2;
+	double median;
+	median = size % 2 == 0 ? (homework[mid] + homework[mid - 1]) / 2
+		: homework[mid];
+
+	//вычисление итоговой оценки
+	streamsize prec = cout.precision();
+	cout << "Ваша итоговая оценка равна " << setprecision(3)
+		<< 0.2*midterm + 0.4*final + 0.4*median
+		<< setprecision(prec) << endl;
+	
+	
+	//не закрывать консоль после пока ее не закроют вручную
+	system("pause");
+	return 0;
+}
+}}}
+
